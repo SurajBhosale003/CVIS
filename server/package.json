@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "suraj r. bhosale",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
