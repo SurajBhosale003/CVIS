@@ -1,0 +1,104 @@
+nav{
+    display: flex;
+    align-items: contex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: rgba(235, 233, 244, 0.708);
+
+    box-shadow: 1px 13px 19px -3px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 1px 13px 19px -3px rgba(0,0,0,0.53);
+    -moz-box-shadow: 1px 13px 19px -3px rgba(0,0,0,0.53);
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none ;
+    padding: 0 20px ;
+    position:relative ;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(10, 10, 27);
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(1, 214, 252);;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height:2px;
+    background: rgba(0, 255, 255, 0.491);
+    position: absolute;
+    bottom:-4px;
+    left:20px;
+}
+
+logoImg{
+
+    padding: 10px;
+
+}
+
+
+.footerHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background-color: rgba(51, 138, 173, 0.788);
+    position: relative;
+   
+   }
+.footerHeaderText{
+    color: aliceblue;
+}
+.FooterMain{
+    display:  flex;
+    background-color: rgb(21, 103, 141);
+}
+
+.button{
+    display: flex;
+    background-color: rgb(193, 240, 234);
+    list-style: none; 
+    width: 120px; 
+    height: 40px; 
+    border-radius: 20px;    
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+.button:hover {
+    background-color: rgb(224, 140, 200);
+}
+.FooterMainText{
+    flex :4;
+    padding: 30px;
+    color: aliceblue;
+    list-style: none;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.socialMediaLogo{
+    display: flex;
+    display: inline-block;
+    width: 30px;
+    height: 30%;
+    padding: 10px 20px;
+    align-items: right;
+    justify-content: center;
+    position: relative;
+
+}
