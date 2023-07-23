@@ -1,9 +1,10 @@
 import './Home.css'
+import Main_slider from './slider/main_slider'
 
 function Home() {
   return (
     <>
-    <div>Home</div>
+    <Main_slider/>
     </>
   )
 }
