@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import './main_slider.css'
 import SimpleImageSlider from "react-simple-image-slider";
 const images = [
@@ -15,14 +15,14 @@ export class main_slider extends Component {
         return (
             <div className="slider-container">
                 <SimpleImageSlider className="image-slider"
-                    width={1520}
+                    width={'100%'}
                     height={580}
                     images={images}
                     showBullets={true}
                     showNavs={true}
                     autoPlay={true}
                     autoPlayDelay={true}
-                    
+                    overflow={'hidden'}
                 />
             </div>
         )

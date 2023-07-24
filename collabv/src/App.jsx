@@ -7,6 +7,7 @@ import Learning from './components/learning_modules/Learning';
 import Navbar from './components/attributes/Navbar';
 import Footer from './components/attributes/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css'
 function App() {
   return (
     <>
