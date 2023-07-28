@@ -20,7 +20,7 @@ function Footer() {
         <div >
           <li className="FooterMainText">Contact :+91 8767421060</li>
           <li className="FooterMainText">
-            Address : Plot No.14, Laxmi Vasahat, Jawahar Nagar, Kolhapur-416012
+            Address : Plot No.14, Laxmi Vasahat,<br/> Jawahar Nagar,<br/> Kolhapur-416012
           </li>
 
           <div>

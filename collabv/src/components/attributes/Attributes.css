@@ -1,26 +1,23 @@
+/* the css is changed by Lahu */
 nav{
     display: flex;
     align-items: contex;
     justify-content: space-between;
     padding: 10px 40px;
     background-color: rgba(235, 233, 244, 0.708);
-
-    box-shadow: 1px 13px 19px -3px rgba(0,0,0,0.53);
-    -webkit-box-shadow: 1px 13px 19px -3px rgba(0,0,0,0.53);
-    -moz-box-shadow: 1px 13px 19px -3px rgba(0,0,0,0.53);
 }
 
-#navbar{
+.navbar{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#navbar li{
+.navbar li{
     list-style: none ;
     padding: 0 20px ;
     position:relative ;
 }
-#navbar li a{
+.navbar li a{
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
@@ -28,19 +25,19 @@ nav{
     transition: 0.3s ease-in-out;
 }
 
-#navbar li a:hover,
-#navbar li a.active{
-    color: rgb(1, 214, 252);;
+.navbar li a:hover,
+.navbar li a.active{
+    color:  rgb(2, 2, 39);
 }
 
-#navbar li a:hover::after,
-#navbar li a.active::after{
+.navbar li a:hover::after,
+.navbar li a.active::after{
     content: "";
     width: 30%;
     height:2px;
-    background: rgba(0, 255, 255, 0.491);
+    background:  black;
     position: absolute;
-    bottom:-4px;
+    bottom:-2px;
     left:20px;
 }
 
@@ -56,21 +53,25 @@ logoImg{
     align-items: center;
     justify-content: center;
     padding: 10px 40px;
-    background-color: rgba(51, 138, 173, 0.788);
+    background-color:  rgba(235, 233, 244, 0.708);
     position: relative;
-   
+    font-size: 600;
+    size: 600;
    }
 .footerHeaderText{
-    color: aliceblue;
+    color: black;
+    font-size:x-large;
+    text-decoration: underline solid black;
 }
 .FooterMain{
     display:  flex;
-    background-color: rgb(21, 103, 141);
+    background-color:  rgba(235, 233, 244, 0.708)
 }
 
 .button{
     display: flex;
-    background-color: rgb(193, 240, 234);
+    color: black;
+    background-color: aliceblue;
     list-style: none; 
     width: 120px; 
     height: 40px; 
@@ -80,12 +81,13 @@ logoImg{
     margin-left: 20px;
 }
 .button:hover {
-    background-color: rgb(224, 140, 200);
+    background-color: rgb(2, 2, 39);
+    color: white;
 }
 .FooterMainText{
     flex :4;
     padding: 30px;
-    color: aliceblue;
+    color: black;
     list-style: none;
     font-weight: 600;
     font-size: 25px;
