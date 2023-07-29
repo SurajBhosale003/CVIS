@@ -6,6 +6,7 @@ function Home() {
     <>
     <Main_slider/>
     <Ourfeedback/>
+    
     </>
   )
 }
