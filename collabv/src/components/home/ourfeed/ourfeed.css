@@ -1,0 +1,26 @@
+.feedHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    font-size: 600;
+    size: 600;
+   }
+.feedheadertitle{
+    color: black;
+    font-size:x-large;
+    text-decoration: underline solid black;
+}
+.FeedMain{
+    display:  flex;
+    background-color:  rgba(235, 233, 244, 0.708)
+}
+p{
+    flex :4;
+    padding: 30px;
+    color: black;
+    list-style: none;
+    font-weight: 600;
+    font-size: 25px;
+}
