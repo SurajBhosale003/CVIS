@@ -2,6 +2,7 @@ import "./Attributes.css";
 import insta from "../../assets/instagram.png";
 import linkedin from "../../assets/linked.png";
 import facebook from "../../assets/facebook.png";
+import Button from '@mui/material/Button';
 function Footer() {
   return (
     <>
@@ -13,7 +14,8 @@ function Footer() {
         <div >
           <li className="FooterMainText"> Join The success</li>
           <li className="button">
-            <a>Enroll Now </a>
+            
+            <Button  className = "button" variant="contained" >Enroll Now</Button>
           </li>
         </div>
 
