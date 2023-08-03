@@ -60,4 +60,30 @@
     border: 1px solid transparent;
     box-shadow: none;
   }
+
+
+
+
+
+  .brochure {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: #29ABCA;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #434343;
+  }
+  
   
