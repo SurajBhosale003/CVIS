@@ -3,7 +3,9 @@ import Android from "./card media/android dev.png";
 import SoftwareTesting from "./card media/software_testing.jpg";
 import DigitalMarketing from "./card media/digital marketing.png";
 import WebDesigning from "./card media/web_designing.jpg";
+import CardBrochure from "./CardBrochure";
 import "./cards.css"; 
+
 
 export default function Cards() {
   return (
@@ -79,6 +81,19 @@ export default function Cards() {
         </div>
       </div>
     </div>
+
+
+   
+
+
+  
+    
+  
+
+    <CardBrochure/>
     </>
   );
 }
+
+
+
