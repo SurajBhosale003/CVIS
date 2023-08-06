@@ -1,7 +1,11 @@
 .feedHeader{
+margin: 5rem;
+
+}
+.slick-dots {
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin-bottom: 20px; /* Adjust this margin as needed */
     position: relative;
     align-items: center;
     font-size: 600;
@@ -13,7 +17,7 @@
     text-decoration: underline solid black;
 }
 .FeedMain{
-    display:  flex;
+    display: flex;
     background-color:  rgba(235, 233, 244, 0.708)
 }
 p{

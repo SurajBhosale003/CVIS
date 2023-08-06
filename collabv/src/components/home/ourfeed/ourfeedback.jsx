@@ -1,23 +1,38 @@
-import React, { Component } from 'react'
+import  { Component } from 'react'
 import Slider from "react-slick";
-
-
-export class ourfeedback extends Component {
+//import { Card } from 'react-ui-cards';
+import "../ourfeed/ourfeedback"
+const ourfeedData = [
+  {
+    "title": "Tejswini Lad, Kolhapur",
+    "info": "hi",
+  },
+  {
+    "title": "Tejswini Lad, Kolhapur",
+    "info": "by ",
+  },
+  {
+    "title": "Tejswini Lad, Kolhapur",
+    "info": "hhh",
+  }
+];
+export class OurFeedback extends Component {
   render() {
     const settings = {
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 400,
-        autoplaySpeed: 1500,
-        cssEase: "linear"
-      };
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 400,
+      autoplaySpeed: 1500,
+      cssEase: "linear"
+    };
     return (
-        <div className='feedHeader'>
+      <div className='feedHeader'>
         <h1 className='feedheadertitle'>Our Feedbacks</h1>
+        <div>
         <Slider {...settings}>
-          <div className='FeedMain'>
+        <div className='FeedMain'>
             <h3>Tejswini Lad, Kolhapur</h3>
             <p >I am so glad we now have<br/> organizations like Collab Vision Infosolutions <br/>to help learners like me</p>
             <p >Tejaswini Lad<br/>Associate Software Engineer<br/>Annual Salary Offered: INR 4.5 Lakhs</p>
@@ -48,9 +63,10 @@ export class ourfeedback extends Component {
             <p>Tejaswini Lad<br/>Associate Software Engineer<br/>Annual Salary Offered: INR 4.5 Lakhs</p>
           </div>
         </Slider>
+        </div>
       </div>
-    )
+    );
   }
 }
 
-export default ourfeedback
+export default OurFeedback;
