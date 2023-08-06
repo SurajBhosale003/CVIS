@@ -50,6 +50,7 @@ function Services() {
           <div className='cards'>
             {cardData.map((card, index) => (
                 <NewsHeaderCard
+                key={index}
                   className='mainCard'
                   href={card.href}
                   thumbnail={card.thumbnail}

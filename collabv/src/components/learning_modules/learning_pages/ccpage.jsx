@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import { Button } from '@mui/material'
 import { Image } from 'antd'
 import { Collapse } from 'antd';

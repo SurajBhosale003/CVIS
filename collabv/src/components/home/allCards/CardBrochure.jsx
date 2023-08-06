@@ -25,8 +25,8 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function CardBrochure() {
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", width: "100vw" }}>
-      <div style={{ display: "flex", margin: 0, padding: 0, width: "100%" }}>
+    <Box sx={{ display: "flex", justifyContent: "center", width: "100vw", margin: "" }}>
+      <div style={{ display: "flex", margin: "2rem", padding: 2, width: "100%" }}>
         <Item style ={{backgroundColor: "#000000"  }}>
           <Box
             id="category-a"

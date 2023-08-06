@@ -41,6 +41,7 @@ function Learning() {
      <div className='cards'>
         {cardData.map((card, index) => (
             <TaggedContentCard
+              key={index}
               href={card.href}
               thumbnail={card.thumbnail}
               title={card.title}
