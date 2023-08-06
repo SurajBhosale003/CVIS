@@ -6,26 +6,28 @@ import insta from "../../../assets/instagram.png";
 import linkedin from "../../../assets/linked.png";
 import facebook from "../../../assets/facebook.png";
 import "../learning_pages/index.css";
-const items = [
-    {
-        key: '1',
-        label: 'Chapter 1 ',
-        lable2: '2 steps',
-        children: <ul><li>Lesson 1</li><li>Lesson 2</li></ul>,
-    },
-    {
-        key: '2',
-        label:'Chapter 2',
-        lable2: '2 steps',
-        children: <ul><li>Lesson 1</li><li>Lesson 2</li></ul>,
-    },
-    {
-        key: '3',
-        label: 'Chapter 3',
-        lable2: '2 steps',
-        children: <ul><li>Lesson 1</li></ul>,
-    },
-];
+import {dataforccpage} from '../learning_pages/data.json'
+const items=dataforccpage;
+// const items = [
+//     {
+//         key: '1',
+//         label: 'Chapter 1 ',
+//         lable2: '2 steps',
+//         children: <ul><li>Lesson 1</li><li>Lesson 2</li></ul>,
+//     },
+//     {
+//         key: '2',
+//         label:'Chapter 2',
+//         lable2: '2 steps',
+//         children: <ul><li>Lesson 1</li><li>Lesson 2</li></ul>,
+//     },
+//     {
+//         key: '3',
+//         label: 'Chapter 3',
+//         lable2: '2 steps',
+//         children: <ul><li>Lesson 1</li></ul>,
+//     },
+// ];
 export class ccpage extends Component {
     render() {
         return (
@@ -48,19 +50,15 @@ export class ccpage extends Component {
                 <p>Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. Large clouds often have functions distributed over multiple locations, each of which is a data center.</p>
                 <p>You can also join this program via the mobile app.<a href='#'> Go to the app</a></p>
             </div>
-            <div style={{ padding: '10px' }}>
-                <Collapse items={items} >
-                    <ul>
-                        <li>Lesson</li>
-                    </ul>
-                </Collapse>
-                <hr />
+            <div style={{ marginRight: '250px', marginLeft:'250px' }}>
+                <Collapse items={items} />
             </div>
+            <hr className='hrs' />
             <div style={{ padding: '10px' }}>
                 <h3>Price</h3>
                 <p>Free</p>
-                <hr />
             </div>
+            <hr  className='hrs'/>
             <div style={{ padding: '10px' }}>
                 <h2>Share</h2>
                 <div>
