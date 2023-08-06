@@ -2,6 +2,8 @@
     justify-content: center;
     margin-left: 4%;
 }
-hr{
+.hrs{
     text-decoration: solid black;
+    margin-left: 10px;
+    margin-right: 10px;
 }

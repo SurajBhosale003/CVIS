@@ -1,0 +1,63 @@
+{
+"dataforccpage":[
+    {
+        "key": "1",
+        "label": "Chapter 1",
+        "lable2": "2 steps",
+        "children": "Lesson 1 Lesson 2"
+    },
+    {
+        "key": "2",
+        "label": "Chapter 2",
+        "lable2": "2 steps",
+        "children": "Lesson 1 Lesson 2"
+    },
+    {
+        "key": "3",
+        "label": "Chapter 3",
+        "lable2": "2 steps",
+        "children": "Lesson 1"
+    }
+],
+"dataforSoftwarepage":[
+    {
+        "key": "1",
+        "label": "Chapter 1",
+        "lable2": "2 steps",
+        "children": "Lesson 1\n Lesson 2"
+    },
+    {
+        "key": "2",
+        "label": "Chapter 2",
+        "lable2": "2 steps",
+        "children": "Lesson 1 \nLesson 2"
+    },
+    {
+        "key": "3",
+        "label": "Chapter 3",
+        "lable2": "2 steps",
+        "children": "Lesson 1\n Lesson 2"
+    }
+],
+"dataforccMulpage":[
+    {
+        "key": "1",
+        "label": "Chapter 1",
+        "lable2": "2 steps",
+        "children": "Lesson 1 Lesson 2"
+    },
+    {
+        "key": "2",
+        "label": "Chapter 2",
+        "lable2": "2 steps",
+        "children": "Lesson 1 Lesson 2"
+    },
+    {
+        "key": "3",
+        "label": "Chapter 3",
+        "lable2": "2 steps",
+        "children": "Lesson 1 Lesson 2"
+    }
+]
+
+}
