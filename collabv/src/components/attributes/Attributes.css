@@ -12,6 +12,18 @@ nav{
     align-items: center;
     justify-content: center;
 }
+
+.stickyNav{
+   
+    position: fixed;
+    top:0;
+    left:0;
+    width: 0;
+    height: 8rem;
+    padding-top :0;
+    padding-bottom: 0;
+    width: 100%;
+}
 .navbar li{
     list-style: none ;
     padding: 0 20px ;

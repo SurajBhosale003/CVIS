@@ -1,0 +1,79 @@
+.coreValue
+{   
+    background: #000;
+}
+/* header */
+.coreValueHeader
+{
+    height: 177px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+ 
+}
+.coreValueHeaderTitle
+{
+    font-size: x-large;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 5%;
+}
+
+.coreValueHeaderText{
+    font-size: medium;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    
+}
+
+
+/* middle */
+.value{
+    background: #000;
+    color : white;
+    align-items: center;
+    text-align: center;
+    line-height: 1.8em;
+    
+}
+ 
+ .valueIcon{
+    padding-bottom: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.valueTitle{
+   font-size: large;
+   font-weight: 600;
+   padding-bottom: 15%;
+}
+
+.iconBorder {
+    border: 0.1px solid white; 
+    padding: 4px; 
+  }
+.ValueContent{
+    
+    text-align: left;
+    font-size: 16px;
+
+}   
+
+
+/* bottom */
+
+.coreValueBottom
+{
+    font-size: x-large;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    
+    padding-bottom: 2%;
+
+}
+
+
