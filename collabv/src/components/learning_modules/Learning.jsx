@@ -13,7 +13,7 @@ const cardData = [
     ]
   },
   {
-    "href": "/",
+    "href": "/learning/softwaretestinfpage",
     "thumbnail": "https://static.wixstatic.com/media/4cdf87_9e9081d1352843778dec36e8d8ff8c95~mv2.jpg/v1/fit/w_800,h_600,al_c,q_90/file.webp",
     "title": "Software testing",
     "description": "Grate material to learn the software testing",
@@ -24,8 +24,8 @@ const cardData = [
     ]
   },
   {
-    "href": "/",
-    "thumbnail": "https://static.wixstatic.com/media/4cdf87_c8c2b523d2d54986a21f2b964a8bd020~mv2.jpg/v1/fit/w_800,h_600,al_c,q_90/file.webp",
+    "href": "/learning/ccmulesoft",
+    "thumbnail": "https://img.freepik.com/free-photo/saas-concept-collage_23-2149399281.jpg?w=1060&t=st=1691315861~exp=1691316461~hmac=87318722d9b334d9ce0454cbdd3b676c146bdd6e28af7d30f3f30549eea36586",
     "title": "Cloud computing- Mulesoft",
     "description": "Rated course for cloud computing",
     "tags": [
@@ -41,6 +41,7 @@ function Learning() {
      <div className='cards'>
         {cardData.map((card, index) => (
             <TaggedContentCard
+              key={index}
               href={card.href}
               thumbnail={card.thumbnail}
               title={card.title}

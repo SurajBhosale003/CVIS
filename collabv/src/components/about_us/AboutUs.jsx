@@ -6,7 +6,7 @@ import CoreValues from './CoreValues'
 function AboutUs() {
   return (
    <>
-   <div>AboutUs</div>
+   <div>AboutUs</div> 
    <CoreValues/>
    
    </> 

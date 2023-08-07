@@ -95,6 +95,7 @@ export default function CoreValues() {
                 </div>
               </Grid>
             ))}
+            
           </Grid>
         </Box>
       </div>
