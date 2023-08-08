@@ -1,13 +1,99 @@
 import "./CoreValues.css";
 
-import { Box } from "@mui/material";
+// import { Box } from "@mui/material";
 import { Grid } from "@mui/material";
+import { Box, ThemeProvider } from '@mui/material';
 
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import ChecklistRtlIcon from "@mui/icons-material/ChecklistRtl";
 import CrisisAlertIcon from "@mui/icons-material/CrisisAlert";
 import FeedIcon from "@mui/icons-material/Feed";
 import QuestionAnswerOutlinedIcon from '@mui/icons-material/QuestionAnswerOutlined';
+
+
+import { createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  
+  typography: {
+    fontFamily: 'Arial, Helvetica, sans-serif',
+    fontSize: 16,
+    h4: {
+      fontSize: '2.5rem', // x-large size for header title
+      fontWeight: 600,
+      color: '#fff', // Header title color
+      textAlign: 'center',
+      marginTop: '10px',
+      paddingTop: '5%',
+    },
+    subtitle1: {
+      fontSize: '1.125rem', // medium size for header text
+      color: '#fff', // Header text color
+      textAlign: 'center',
+      paddingTop: '1%',
+    },
+    h6: {
+      fontSize: '1.5rem', // large size for value title
+      fontWeight: 600,
+      color: '#fff', // Value title color
+      paddingBottom: '15px',
+    },
+    body1: {
+      fontSize: '1rem', // default font size for content
+      textAlign: 'left',
+    },
+    h3: {
+      fontSize: '2.5rem', // x-large size for bottom text
+      fontWeight: 600,
+      color: '#fff', // Bottom text color
+      textAlign: 'center',
+      paddingBottom: '2%',
+    },
+  },
+  overrides: {
+    MuiGrid: {
+      root: {
+        '--Grid-borderWidth': '1px',
+        borderTop: 'var(--Grid-borderWidth) solid',
+        borderLeft: 'var(--Grid-borderWidth) solid',
+        borderColor: 'divider',
+        '& > div': {
+          borderRight: 'var(--Grid-borderWidth) solid',
+          borderBottom: 'var(--Grid-borderWidth) solid',
+          borderColor: 'divider',
+        },
+      },
+    },
+    MuiBox: {
+      root: {
+        flexGrow: 1,
+        padding: '16px', // Equivalent to p: 2 in Box
+      },
+    },
+    MuiGridListTile: {
+      root: {
+        border: '0.1px solid white', // Border for each value item
+      },
+    },
+    MuiCardContent: {
+      root: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100%', // To center the content within the value item
+      },
+    },
+    MuiSvgIcon: {
+      root: {
+        paddingBottom: '15%', // Padding for the icon within the value item
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
+    },
+  },
+});
 
 export default function CoreValues() {
   const values = [
@@ -44,6 +130,7 @@ export default function CoreValues() {
   ];
 
   return (
+    <ThemeProvider theme={theme}>
     <div className="coreValue">
       <div className="coreValueHeader">
         <div  className="coreValueHeaderTitle">            
@@ -104,5 +191,6 @@ export default function CoreValues() {
         We Work With the Very Best
       </div>
     </div>
+    </ThemeProvider>
   );
 }
