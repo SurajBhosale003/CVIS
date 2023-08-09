@@ -4,6 +4,12 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 
+
+import pencil from "./card media/pencil.ico";
+import Branding from "./card media/Branding.ico";
+import Internship from "./card media/Internship.ico";
+import Consulting from "./card media/Consulting.ico";
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -25,13 +31,14 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function CardBrochure() {
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", width: "100vw", margin: "" }}>
+    <Box sx={{ display: "flex", justifyContent: "center", width: "100vw", margin: "", }}>
       <div style={{ display: "flex", margin: "2rem", padding: 2, width: "100%" }}>
         <Item style ={{backgroundColor: "#000000"  }}>
           <Box
             id="category-a"
             sx={{  textTransform: "uppercase" }}        
           >
+            <img className = "icons" src={Branding} alt="Branding"  />
             <div className ="titleBranding">Branding</div>
             
           </Box>
@@ -49,6 +56,7 @@ export default function CardBrochure() {
             id="category-b"
             sx={{  textTransform: "uppercase" }}
           >
+             <img className = "icons" src={Internship} alt="Internship" />
              <div className ="title">Internship</div>
             
           </Box>
@@ -67,6 +75,7 @@ export default function CardBrochure() {
             sx={{  textTransform: "uppercase" }}
 
           >
+           <img className = "icons" src={pencil} alt="pencil" />
            <div className ="title">Design</div>
 
             
@@ -86,6 +95,7 @@ export default function CardBrochure() {
             sx={{  textTransform: "uppercase" }}
 
           >
+             <img className = "icons" src={Consulting} alt="Consulting" />
             <div className ="titleConsulting">Consulting</div>
 
             

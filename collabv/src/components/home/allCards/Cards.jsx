@@ -10,6 +10,7 @@ import "./cards.css";
 export default function Cards() {
   return (
     <>
+     <div className="section">
     <div className="card-container">
       <div className="row">
         {/* First Card - Android App Development */}
@@ -81,16 +82,10 @@ export default function Cards() {
         </div>
       </div>
     </div>
-
-
-   
-
-
-  
-    
-  
-
-    <CardBrochure/>
+    </div> 
+    <div className="section">
+        <CardBrochure />
+      </div>
     </>
   );
 }

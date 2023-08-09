@@ -1,7 +1,7 @@
 .titleBranding ,.titleConsulting{
   color: white;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 25px;
 }
 .Branding{ 
   color:white;
@@ -10,17 +10,21 @@
 .title{
  color:  #4BD1A0;
  font-weight: 600;
- font-size: 30px;
+ font-size: 25px;
 }
 
 .Internship{
   color: white;
 }
 
+.icons{
+  width: 5rem;
+}
 li{ 
   color: black;
   list-style: none;
-  font-size: 25px;
+  font-size: 16px;
+  
 }
 
 
