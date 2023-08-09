@@ -1,6 +1,6 @@
 import './Home.css'
 import Cards from './allCards/Cards'
-// import BookDemo from './bookDemo/BookDemo'
+import BookDemo from './bookDemo/BookDemo'
 import Main_slider from './slider/main_slider'
 import Ourfeedback from './ourfeed/ourfeedback'
 
@@ -10,7 +10,7 @@ function Home() {
     
     <Main_slider/>
     <Cards/>
-    {/* <BookDemo/> */}
+    <BookDemo/>
     <Ourfeedback/>
     
     </>

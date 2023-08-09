@@ -1,0 +1,120 @@
+
+.GiveFeedback-container
+{
+  margin-top: -15%;   
+  height: 100vh;
+  width:60%;
+  text-align: center;
+  margin-left: 20%;   
+  margin-right: 20%;   
+ 
+}
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+  }
+  
+  .label-group {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 20px;
+  }
+  
+  label {
+    margin-left: 15px  ;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .improvementSuggestions{
+    margin-left: 15px  ;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px  ;
+    width:20rem;
+  
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px 10px;
+    margin: 0;    
+    border: none;
+    border-bottom: 1px  solid #ff3333;    
+    background-color: transparent;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+  }
+  
+ 
+
+  .textarea-container{
+    align-items: left;
+    margin-left: 10%;
+  }
+  
+  textarea{   
+    
+    margin-top: 0;    
+    border: none;
+    border-bottom: 1px  solid #ff3333;    
+    background-color: transparent;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+    padding: 10px 10px;
+    width :50vh;
+    left: 10vh;
+  }
+
+ 
+
+.btn-container{
+    align-items: center;
+    margin-left: 25%;
+    
+    
+}
+
+
+ .btn-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 7rem;
+    margin-top: 40px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    text-align: center;   
+    align-items: center;
+  }
+  
+  .btn-container button:hover {
+        background-color: #0056b3;
+  }
+  
+
+  .MuiRating-root {
+
+    margin-top: 15px;    
+  }
+  
+  
+  
