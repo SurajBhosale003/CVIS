@@ -36,6 +36,7 @@ const BookDemo = () => {
 
 
       <div className="GiveFeedback-container">
+        
         <div className="GiveFeedback-Header">
           <h1>Give Us Your Feedback</h1>
           <p>We’d love to hear what you thought about our services.</p>

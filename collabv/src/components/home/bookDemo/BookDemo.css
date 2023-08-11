@@ -52,13 +52,16 @@
  
   .GiveFeedback-container
   {
-    margin-top: -15%;   
+    margin-top: -10%;   
     height: 100vh;
-    width:60%;
+    width:50%;
     text-align: center;
-    margin-left: 20%;   
-    margin-right: 20%;   
+    margin-left: 25%;   
+    margin-right: 25%;   
    background-color: rgb(253, 249, 249);
   }
 
-  
+  .GiveFeedback-Header h1{   
+   padding-top:5%;
+   justify-content: center;
+  }

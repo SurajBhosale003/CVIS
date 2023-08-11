@@ -49,7 +49,7 @@ const FeedbackForm = () => {
   return (
     <div className="GiveFeedback-Form">
       <form onSubmit={handleSubmit}>
-        <div className="row">
+        <div className="row-feedback">
           <label className="label-group ">
             First Name
             <input
@@ -73,7 +73,7 @@ const FeedbackForm = () => {
           </label>
         </div>
         <br />
-        <div className="row">
+        <div className="row-feedback">
           <label className="label-group ">
             Email
             <input
