@@ -1,0 +1,132 @@
+/* Contact.css */
+
+/* Global styling */
+.contact-title {
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  /* Styling for the contact container */
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+  }
+  .contact-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Styling for the contact details section */
+  .contact-details {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .address-section,
+  .contact-info,
+  .opening-hours {
+    margin-bottom: 20px;
+  }
+  
+  .address-section h2,
+  .contact-info h2,
+  .opening-hours h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the form */
+  .contact-form-section {
+    flex: 1;
+    margin: 20px;
+  }
+  /* Styling for the Google Maps iframe */
+  .contact-map {
+    max-width: 100%;
+    border: 0;
+  }
+  
+  /* Styling for the contact details section */
+  .contact-details {
+    margin: 20px 0;
+  }
+  
+  .contact-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details p {
+    margin: 5px 0;
+  }
+  
+  /* Styling for the form */
+  .contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="number"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #020a13;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Center align textareas */
+  .contact-form label[for="your-message"] {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .contact-form textarea#your-message {
+    margin: 0 auto;
+    display: block;
+  }
