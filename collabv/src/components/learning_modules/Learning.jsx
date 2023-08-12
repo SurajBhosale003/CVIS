@@ -38,6 +38,7 @@ const cardData = [
 function Learning() {
   return (
     <>
+    <h1 className='HeaderText'>Learning</h1>
      <div className='cards'>
         {cardData.map((card, index) => (
             <TaggedContentCard

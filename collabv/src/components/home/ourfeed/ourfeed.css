@@ -1,30 +1,81 @@
-.feedHeader{
-margin: 5rem;
-
-}
-.slick-dots {
+.feedHeader {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .feedheadertitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .FeedMain {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .FeedMain h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .FeedMain p {
+    font-size: 14px;
+  }
+  
+  /* Additional styling for react-slick */
+  .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+  }
+  
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+  }
+  
+  
+  
+  /* Customize slick-dots styles */
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; /* Adjust this margin as needed */
-    position: relative;
-    align-items: center;
-    font-size: 600;
-    size: 600;
-   }
-.feedheadertitle{
-    color: black;
-    font-size:x-large;
-    text-decoration: underline solid black;
-}
-.FeedMain{
-    display: flex;
-    background-color:  rgba(235, 233, 244, 0.708)
-}
-p{
-    flex :4;
-    padding: 30px;
-    color: black;
+    width: 100%;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
     list-style: none;
-    font-weight: 600;
-    font-size: 25px;
-}
+  }
+  
+  .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    background-color: #120303;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .slick-dots li button.active {
+    background-color: #03090f;
+  }
+  

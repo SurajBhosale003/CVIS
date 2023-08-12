@@ -2,11 +2,11 @@ import { Component } from 'react';
 import './main_slider.css'
 import SimpleImageSlider from "react-simple-image-slider";
 const images = [
-    { url: "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=600" },
-    {url:"https://images.pexels.com/photos/5926393/pexels-photo-5926393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
-    { url: "https://images.pexels.com/photos/1293120/pexels-photo-1293120.jpeg?auto=compress&cs=tinysrgb&w=600" },
-    { url: "https://images.pexels.com/photos/247819/pexels-photo-247819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
-    { url: "https://images.pexels.com/photos/7562114/pexels-photo-7562114.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { url: "https://static.wixstatic.com/media/4cdf87_c8775c53de824cf581ad9ec30356c85a~mv2.jpg/v1/fill/w_1899,h_698,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_c8775c53de824cf581ad9ec30356c85a~mv2.jpg" },
+    {url:"https://static.wixstatic.com/media/4cdf87_a8da590d59d244189fb1ed53b232d365~mv2.jpg/v1/fill/w_1899,h_698,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_a8da590d59d244189fb1ed53b232d365~mv2.jpg"},
+    { url: "https://static.wixstatic.com/media/11062b_57f2492b9e8141f8872de110c884c3d0~mv2.jpg/v1/fill/w_1899,h_698,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_57f2492b9e8141f8872de110c884c3d0~mv2.jpg" },
+    { url: "https://static.wixstatic.com/media/4cdf87_d192a958e736485680fb1f4b6b16029b~mv2.jpg/v1/fill/w_1899,h_698,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_d192a958e736485680fb1f4b6b16029b~mv2.jpg" },
+    { url: "https://static.wixstatic.com/media/4cdf87_f62b00f4c59e48e981cccb7d5497a668~mv2.jpg/v1/fill/w_1899,h_698,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_f62b00f4c59e48e981cccb7d5497a668~mv2.jpg" },
 
 ];
 
