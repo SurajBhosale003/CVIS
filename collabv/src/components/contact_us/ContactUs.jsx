@@ -67,6 +67,7 @@ function ContactUs() {
 
       <div className="contact-form-section">
         <form className="contact-form">
+          <h2>Contact us form</h2>
           <label>
             First Name:
             <input type="text" placeholder='ABC' />
@@ -81,7 +82,7 @@ function ContactUs() {
           </label>
           <label>
             Phone No:
-            <input type="number" placeholder='+911234567890' />
+            <input type="text" placeholder='+911234567890' />
           </label>
           <label>
             Subject:

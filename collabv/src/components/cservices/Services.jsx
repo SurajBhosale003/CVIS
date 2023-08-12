@@ -9,41 +9,37 @@ const cardData = [
     "title": "Graphic Designing"
   },
   {
-    "href": "/",
-    "thumbnail": "https://static.wixstatic.com/media/4cdf87_9e9081d1352843778dec36e8d8ff8c95~mv2.jpg/v1/fit/w_800,h_600,al_c,q_90/file.webp",
+    "href": "/services/seopage",
+    "thumbnail": "https://static.wixstatic.com/media/4cdf87_7ee3d44d77304c399e99bd3daf575981~mv2.jpg/v1/fill/w_950,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_7ee3d44d77304c399e99bd3daf575981~mv2.jpg",
     "title": "SEO"
   },
   {
-    "href": "/",
-    "thumbnail": "https://static.wixstatic.com/media/4cdf87_c8c2b523d2d54986a21f2b964a8bd020~mv2.jpg/v1/fit/w_800,h_600,al_c,q_90/file.webp",
+    "href": "/services/webdesign",
+    "thumbnail": "https://static.wixstatic.com/media/4cdf87_da23de8dd2d448e0bb976548bf82ecaf~mv2.jpg/v1/fill/w_558,h_419,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-empty-state.jpg",
     "title": "Web Design"
   },
   {
-    "href": "/",
-    "thumbnail": "https://static.wixstatic.com/media/4cdf87_c8c2b523d2d54986a21f2b964a8bd020~mv2.jpg/v1/fit/w_800,h_600,al_c,q_90/file.webp",
+    "href": "/services/androidpage",
+    "thumbnail": "https://static.wixstatic.com/media/4cdf87_5a89b2293faf4d98bd23a49e9fafebba~mv2.jpg/v1/fill/w_950,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_5a89b2293faf4d98bd23a49e9fafebba~mv2.jpg",
     "title": "Android Application Development"
   },
   {
-    "href": "/",
-    "thumbnail": "https://static.wixstatic.com/media/4cdf87_c8c2b523d2d54986a21f2b964a8bd020~mv2.jpg/v1/fit/w_800,h_600,al_c,q_90/file.webp",
+    "href": "/services/digitalbrandpage",
+    "thumbnail": "https://static.wixstatic.com/media/4cdf87_8d9bcd61573a4b768785f5ad7c85cdf1~mv2.jpg/v1/fill/w_558,h_419,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-empty-state.jpg",
     "title": "Digital Branding"
   },
   {
-    "href": "/",
-    "thumbnail": "https://static.wixstatic.com/media/4cdf87_c8c2b523d2d54986a21f2b964a8bd020~mv2.jpg/v1/fit/w_800,h_600,al_c,q_90/file.webp",
+    "href": "/services/softwaretesting",
+    "thumbnail": "https://static.wixstatic.com/media/4cdf87_58a160f6eef142b9b8ddefbd795eb70b~mv2.jpg/v1/fill/w_950,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_58a160f6eef142b9b8ddefbd795eb70b~mv2.jpg",
     "title": "Software Testing"
   }, {
-    "href": "/",
-    "thumbnail": "https://static.wixstatic.com/media/4cdf87_c8c2b523d2d54986a21f2b964a8bd020~mv2.jpg/v1/fit/w_800,h_600,al_c,q_90/file.webp",
+    "href": "/services/cloudpage",
+    "thumbnail": "https://static.wixstatic.com/media/4cdf87_30830cc2afe3401499f8eaaa2805ac59~mv2.jpg/v1/fill/w_950,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_30830cc2afe3401499f8eaaa2805ac59~mv2.jpg",
     "title": "Cloud Services"
   }, {
-    "href": "/",
-    "thumbnail": "https://static.wixstatic.com/media/4cdf87_c8c2b523d2d54986a21f2b964a8bd020~mv2.jpg/v1/fit/w_800,h_600,al_c,q_90/file.webp",
+    "href": "/services/swdevelopment",
+    "thumbnail": "https://static.wixstatic.com/media/4cdf87_10efa682cfba485d983f4cb28e0c8ac4~mv2.jpg/v1/fill/w_613,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_10efa682cfba485d983f4cb28e0c8ac4~mv2.jpg",
     "title": "Software Development"
-  },{
-    "href": "/",
-    "thumbnail": "https://static.wixstatic.com/media/4cdf87_c8c2b523d2d54986a21f2b964a8bd020~mv2.jpg/v1/fit/w_800,h_600,al_c,q_90/file.webp",
-    "title": "Resume Bulding"
   }
 ];
 function Services() {
