@@ -1,0 +1,188 @@
+.aboutUs-header-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('https://static.wixstatic.com/media/c837a6_f4e6a031f8634c259512f0b4bbbdfe8f~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 235, 246, 0.584);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-overlayText {
+    color: black;
+    display: flex;
+   
+}
+
+
+
+.image-left div{
+    flex:3;
+    align-items: left;   
+    margin-left: 10%;
+    margin-top: 2%;
+    justify-content: flex-start;   
+}
+
+.image-middle{
+    flex:5;   
+
+}
+
+
+
+.image-left h1{
+     
+    font-size: xxx-large;
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 3%;
+    animation: slideInFromLeft 1s forwards;
+}
+
+
+.image-left-row {
+    animation: slideInFromLeft 1s forwards;
+    display: flex;
+}
+
+.num {
+
+ 
+   padding-bottom: 1rem;
+    font-size: 56px;
+    color:rgb(142, 67, 67)
+    
+}
+
+.num-image-left-text  
+{
+    padding-top: 1rem;
+    margin-top: -15%;
+  
+}
+
+/*right*/
+
+.image-right{
+    flex:5;
+    margin-top: 10%;
+    margin-right: 10%;
+    animation: slideInFromRight 1s backwards;
+    }
+
+.image-right-title{
+
+    font-size: 25px;
+    color:black;
+    font-style: bold;
+    font-weight: bold;
+}
+.image-right-text{
+    font-weight:bold-100;
+    padding-bottom: 5%;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+ 
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+  }
+ 
+  
+  /*bottom*/
+  .aboutUs-bottom-container {
+    display: flex;
+    /* max-width: 800px;     */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .text
+  {   
+   text-align: left; 
+    margin-left: 0;
+    margin-top: 0;
+    width: 100vh;
+    height: 100%;
+    
+  }
+
+  .aboutUs-bottom-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .office-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: fadeInLeft 2s ease-in-out;
+  }
+  
+  .image{
+    width:50vh;
+    height: 100vh;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .image img{
+    width: 100vh;
+    height: 100%;
+   
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

@@ -1,6 +1,6 @@
 import "./CoreValues.css";
 
-// import { Box } from "@mui/material";
+
 import { Grid } from "@mui/material";
 import { Box, ThemeProvider } from '@mui/material';
 
@@ -86,8 +86,7 @@ const theme = createTheme({
     },
     MuiSvgIcon: {
       root: {
-        paddingBottom: '15%', // Padding for the icon within the value item
-        display: 'flex',
+        paddingBottom: '15%', 
         justifyContent: 'center',
         alignItems: 'center',
       },

@@ -1,39 +1,40 @@
 .sigleDivValue {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    
     height: 100%;
-  }
+    padding-bottom: 2%;
+  } 
   
 
 .coreValue
 {   
     background: #000;
+    height: 100%;
 }
 /* header */
 .coreValueHeader
 {
-    height: 177px;
+    background: #000;    
     font-family: Arial,Helvetica,sans-serif;
-    font-size: 16px;
+   
  
 }
 .coreValueHeaderTitle
 {
-    font-size: x-large;
+    font-size: 2.5rem;
     font-weight: 600;
     color: white;
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 5%;
+    text-align: center;    
+    padding-top: 3%;
+   
 }
 
 .coreValueHeaderText{
-    font-size: medium;
+    font-size: 1.2rem;
     color: white;
     text-align: center;
-    padding-top: 1%;
+    padding-bottom: 2.5%;
     
 }
 
@@ -66,6 +67,7 @@
     border: 0.1px solid white; 
     padding: 4px; 
   }
+
 .ValueContent{
     
     text-align: left;
@@ -78,13 +80,12 @@
 
 .coreValueBottom
 {
-    font-size: x-large;
+    font-size:2.5rem;
     font-weight: 600;
     color: white;
-    text-align: center;
-    
-    padding-bottom: 2%;
-
+    text-align: center;  
+    padding-bottom: 5%;
+    padding-top: 2.5%;
 }
 
 
