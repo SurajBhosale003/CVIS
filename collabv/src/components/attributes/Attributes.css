@@ -13,17 +13,6 @@ nav{
     justify-content: center;
 }
 
-.stickyNav{
-   
-    position: fixed;
-    top:0;
-    left:0;
-    width: 0;
-    height: 8rem;
-    padding-top :0;
-    padding-bottom: 0;
-    width: 100%;
-}
 .navbar li{
     list-style: none ;
     padding: 0 20px ;
@@ -53,69 +42,77 @@ nav{
     left:20px;
 }
 
-logoImg{
+.logoImg{
 
     padding: 10px;
 
 }
 
-
-.footerHeader{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 40px;
-    background-color:  rgba(235, 233, 244, 0.708);
-    position: relative;
-    font-size: 600;
-    size: 600;
-   }
+/*footer*/
 
 
-.footerHeaderText{
-    color: black;
-    font-size:x-large;
-    text-decoration: underline solid black;
-}
-
-.FooterMain{
-    display:  flex;
-    background-color:  rgba(235, 233, 244, 0.708)
-}
-
-.button{
-    display: flex;   
-    list-style: none; 
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    transform: scale(1);
-    transition: transform 0.3s ease;
-}
-.button:hover {
+.footer {
+    background-color: #f4f4f4;
+    padding: 50px 0;
    
-    transform: scale(1.05);
+  }
 
-}
+  .footer h2{
+    margin-left: 10%;
+ 
+  }
 
-
-.FooterMainText{
-    flex :4;
-    padding: 30px;
-    color: black;
-    list-style: none;
-    font-weight: 600;
-    font-size: 25px;
-}
-
-.socialMediaLogo{
+  .footer-content {
     display: flex;
-    display: inline-block;
-    width: 30px;
-    height: 30%;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin-left: 4%;
+    
+  }
+  
+  .footer-section {
+    flex: 1;
+    color: #333;
+    margin: 0 20px;
+    margin-left: 5%;
+    
+  }
+  .footer-section h2{
+    margin-left: 0;
+    align-items: center;
+  }
+ 
+  .footer-section h3 {
+    margin-bottom: 20px;
+  }
+  
+  .enroll-button {
     padding: 10px 20px;
-    align-items: right;
-    justify-content: center;
-    position: relative;
-
-}
+    background-color: #4c6ef5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    margin-left: 10px;
+  }
+  
+  .social-icons a {
+    color: #4c6ef5;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .social-icons a:hover {
+    color: #333;
+  }
+  

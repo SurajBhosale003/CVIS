@@ -1,4 +1,5 @@
 import React from 'react';
+import FAQDropdown from "./FAQDropdown";
 import './Contact.css';
 import { Button, Form, Input, InputNumber } from 'antd';
 
@@ -96,6 +97,7 @@ function ContactUs() {
         </form>
       </div>
     </div>
+    <FAQDropdown/>
     </>
   );
 }

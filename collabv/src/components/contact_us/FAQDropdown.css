@@ -1,0 +1,109 @@
+.faq{
+   /* background-color: black; */
+   height: 100%;
+   color: white;
+   justify-content: center;
+   text-align: center;
+   padding: 10%;
+   padding-top: 3%;
+   /* background-image: url(https://img.freepik.com/premium-photo/white-question-mark-background-question-marks-3d-illustration_230313-222.jpg); */
+   background-image: url(https://www.choicescreening.com/hs-fs/hubfs/FAQ.jpeg?width=852&name=FAQ.jpeg);
+  
+}
+.faq h1{
+  color: black;
+  margin-top: 0;
+  line-height: 4rem;
+  font-size: 57px;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 7px 4px rgba(0, 0, 0, 0.3);
+  animation: slideInFromRight 1s backwards;
+}
+
+.faq-container{
+  display: flex;
+  background-color: black;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.faq-dropdown {
+    background-color: black;   
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+     white-space: pre-line;
+
+    
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    margin: 2px 0;
+   
+  }
+
+ .settings-section {
+   padding: 2%;
+  }
+  
+   .general-section {
+    padding: 2%;
+  } 
+
+ .settings-section :hover{
+    background-color:  #555;
+  }
+  
+   .general-section :hover{
+    background-color:  #555;
+  } 
+  
+  .faq-question.open {
+    background-color: #555;
+    color: white;
+  }
+  
+  .general-section.active {
+    color: rgb(163, 11, 11); 
+  }
+  
+  .settings-section.active {
+    color: rgb(163, 11, 11); 
+  }
+  
+  .faq-answer {
+    padding: 10px;
+    display: none;
+    color: white;
+    text-align: left;
+    margin-left: 10%;
+  }
+  
+  .faq-answer.active {
+    display: block;
+  }
+  
+
+  .iconFaq{
+    margin-left: 10%;
+  }
+
+  .iconFaq a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+   
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}

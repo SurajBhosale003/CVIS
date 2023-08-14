@@ -1,49 +1,50 @@
 import "./Attributes.css";
-import insta from "../../assets/instagram.png";
-import linkedin from "../../assets/linked.png";
-import facebook from "../../assets/facebook.png";
-import Button from '@mui/material/Button';
-function Footer() {
+
+
+import PhoneIcon from "@mui/icons-material/Phone";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+const Footer = () => {
   return (
-    <>
-      <div className="footerHeader">
-        <a className="footerHeaderText"> Collab Vision Infosolutions </a>
-      </div>
-
-      <div className="FooterMain">
-        <div >
-          <li className="FooterMainText"> Join The success</li>
-          <li className="button">
-            
-            <Button  className = "button" variant="contained" >Enroll Now</Button>
-          </li>
+    <footer className="footer">
+    <h2>Collab Vision Infosolutions</h2>
+      <div className="footer-content">     
+        <div className="footer-section">         
+          <h2>Join The Success!</h2>
+          <button className="enroll-button">Enroll Now</button>
         </div>
-
-        <div >
-          <li className="FooterMainText">Contact :+91 8767421060</li>
-          <li className="FooterMainText">
-            Address : Plot No.14, Laxmi Vasahat,<br/> Jawahar Nagar,<br/> Kolhapur-416012
-          </li>
-
-          <div>
-
-          <a href="https://www.instagram.com/your_instagram_username" >
-              <img src={insta} alt="insta" className="socialMediaLogo" />
-          </a>
-
-          <a href="https://www.linkedin.com/in/collab-vision-infosolutions-24844426b/" >
-             <img src={linkedin} alt="linkedin" className="socialMediaLogo" />
-          </a>
-
-          <a href="https://www.facebook.com/sujatapradeepbadi/" >
-              <img src={facebook} alt="facebook" className="socialMediaLogo" />
-          </a>
-            
+        <div className="footer-section">
+          <h3>Contact Us</h3>
+          <div className="contact-info">
+            <PhoneIcon />
+            <p>+91 8767421060</p>
+          </div>
+          <div className="contact">
+            <LocationOnIcon />
+            <p>Plot No.14, Laxmi Vasahat, Jawahar Nagar, Kolhapur-416012</p>
+          </div>
+        </div>
+        <div className="footer-section">
+          <h3>Follow</h3>
+          <div className="social-icons">
+          <a href="https://www.instagram.com/collabvisioninfo/" >
+              <InstagramIcon />
+            </a>
+            <a href ="https://www.facebook.com/sujatapradeepbadi/">
+              <FacebookIcon />
+            </a>
+            <a href="https://www.linkedin.com/in/collab-vision-infosolutions-24844426b/">
+              <LinkedInIcon />
+            </a>
           </div>
         </div>
       </div>
-    </>
+    </footer>
   );
-}
+};
 
 export default Footer;
