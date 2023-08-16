@@ -59,7 +59,6 @@
 }
 
 .num {
-
  
    padding-bottom: 1rem;
     font-size: 56px;
@@ -85,14 +84,20 @@
 
 .image-right-title{
 
-    font-size: 25px;
+    font-size: 2.2rem;
     color:black;
     font-style: bold;
     font-weight: bold;
 }
+
 .image-right-text{
     font-weight:bold-100;
     padding-bottom: 5%;
+}
+
+.image-right-text p{
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
 @keyframes slideInFromLeft {

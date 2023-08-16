@@ -4,7 +4,7 @@ import logo from "../../assets/logoNav.png"
 function Navbar() {
   return (
     <>
-     <nav /*className ="stickyNav"*/> 
+     <nav > 
      <a className = "active" href="/">
      <img src={logo} className ="logoImg" alt="logo"width="140px" height="70px"/>
      </a>

@@ -49,26 +49,22 @@ nav{
 }
 
 /*footer*/
-
-
-.footer {
+   .footer {
     background-color: #f4f4f4;
     padding: 50px 0;
-   
   }
-
-  .footer h2{
-    margin-left: 10%;
- 
+  
+  .footer h2 {
+    margin-left: 2%;
   }
-
+  
   .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1200px;
     margin-left: 4%;
-    
+    margin-top: 20px;
   }
   
   .footer-section {
@@ -76,13 +72,13 @@ nav{
     color: #333;
     margin: 0 20px;
     margin-left: 5%;
-    
   }
-  .footer-section h2{
+  
+  .footer-section h2 {
     margin-left: 0;
     align-items: center;
   }
- 
+  
   .footer-section h3 {
     margin-bottom: 20px;
   }
@@ -95,24 +91,27 @@ nav{
     cursor: pointer;
   }
   
-  
-  .contact {
+  .Address {
+    text-align: center;
+    margin-top: 10px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
   }
   
   .contact-info p {
     margin-left: 10px;
   }
   
-  .social-icons a {
-    color: #4c6ef5;
-    font-size: 24px;
+  /* Follow */
+  .socialMedia-icons a {
+    color: #01559F;
+    font-size: 50px;
     margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
   }
   
-  .social-icons a:hover {
+  .socialMedia-icons a:hover {
     color: #333;
   }
   

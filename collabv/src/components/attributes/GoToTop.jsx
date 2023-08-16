@@ -51,7 +51,7 @@ const Wrapper = styled.section`
     width: 4rem;
     height: 4rem;
     color: #fff;
-    background-color: blue;
+    background-color:#0075B0;
 
     border-radius: 50%;
     position: fixed;

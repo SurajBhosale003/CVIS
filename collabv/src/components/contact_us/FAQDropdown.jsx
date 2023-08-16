@@ -81,16 +81,16 @@ const FAQDropdown = () => {
                 <div className="faq-answer active">{faq.answer}</div>
                 <div className="iconFaq">
                   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.collabvision.in%2Fcontact%3FquestionId%3D847ca3f0-5b64-474e-b5f3-411365f893b6&appDefId=14c92d28-031e-7910-c9a8-a670011e062d">
-                    <FacebookIcon color="white" />
+                    <FacebookIcon style ={{padding :10}} color="white" />
                   </a>
                   <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.collabvision.in%2Fcontact%3FquestionId">
-                    <LinkedInIcon color="white" />
+                    <LinkedInIcon style ={{padding :10}} color="white" />
                   </a>
                   <a href="https://twitter.com/intent/tweet?url=https://www.collabvision.in/contact?questionId=847ca3f0-5b64-474e-b5f3-411365f893b6&appDefId=14c92d28-031e-7910-c9a8-a670011e062d">
-                    <TwitterIcon color="white" />
+                    <TwitterIcon style ={{padding :10}} color="white" />
                   </a>
                   <a href="https://www.collabvision.in/contact?questionId=847ca3f0-5b64-474e-b5f3-411365f893b6&appDefId=14c92d28-031e-7910-c9a8-a670011e062d">
-                    <ContentCopyIcon color="white" />
+                    <ContentCopyIcon style ={{padding :10}} color="white" />
                   </a>
                 </div>
               </>
