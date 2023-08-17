@@ -2,9 +2,10 @@ import { Component } from 'react'
 import { Button } from '@mui/material'
 import { Image } from 'antd'
 import { Collapse } from 'antd';
-import insta from "../../../assets/instagram.png";
-import linkedin from "../../../assets/linked.png";
-import facebook from "../../../assets/facebook.png";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LinkIcon from '@mui/icons-material/Link';
 import "../learning_pages/index.css";
 import {dataforccpage} from '../learning_pages/data.json'
 const items=dataforccpage;
@@ -59,21 +60,22 @@ export class ccpage extends Component {
                 <p>Free</p>
             </div>
             <hr  className='hrs'/>
-            <div style={{ padding: '10px' }}>
-                <h2>Share</h2>
-                <div>
-                    <a href="https://www.instagram.com/your_instagram_username" >
-                        <img src={insta} alt="insta" className="socialMediaLogo" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/collab-vision-infosolutions-24844426b/" >
-                        <img src={linkedin} alt="linkedin" className="socialMediaLogo" />
-                    </a>
-                    <a href="https://www.facebook.com/sujatapradeepbadi/" >
-                        <img src={facebook} alt="facebook" className="socialMediaLogo" />
-                    </a>
-                </div>
+            <div className="socialMedia-icons-ler">
+        <h2>Share</h2>
+          <a href="https://www.instagram.com/collabvisioninfo/" >
+              <InstagramIcon fontSize="large" />
+            </a>
+            <a href ="https://www.facebook.com/sujatapradeepbadi/">
+              <FacebookIcon fontSize="large"  />
+            </a>
+            <a href="https://www.linkedin.com/in/collab-vision-infosolutions-24844426b/">
+              <LinkedInIcon fontSize="large"  />
+            </a>
+            <a href="https://www.collabvision.in/challenge-page/eb99df81-4fbb-46cb-9399-93508cc814c2">
+              <LinkIcon fontSize="large"  />
+            </a>
+          </div>
                 <Button variant="contained" href="#">Join</Button>
-            </div>
             </div>
         )
     }
