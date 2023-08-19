@@ -17,7 +17,7 @@ export class ccmulesoft extends Component {
             <div style={{ padding: '10px', textAlign: 'center' }}>
                 <h1 style={{ marginBottom: '10px' }}>Cloud computing- Mulesoft</h1>
                 <h2 style={{ marginBottom: '20px' }}>6 Steps   |   2 Participants</h2>
-                <Button variant="contained" href="#">Join</Button>
+                <Button variant="contained" href="/learning/ccmulcontent">Join</Button>
             </div>
             <div className='image'>
                 <Image 
@@ -56,7 +56,7 @@ export class ccmulesoft extends Component {
               <LinkIcon fontSize="large"  />
             </a>
           </div>
-                <Button variant="contained" href="#">Join</Button>
+                <Button variant="contained" href="/learning/ccmulcontent">Join</Button>
             </div>
         )
     }

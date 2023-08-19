@@ -36,7 +36,7 @@ export class ccpage extends Component {
             <div style={{ padding: '10px', textAlign: 'center' }}>
                 <h1 style={{ marginBottom: '10px' }}>Cloud Computing - Salesforce</h1>
                 <h2 style={{ marginBottom: '20px' }}>6 Steps   |   3 Participants</h2>
-                <Button variant="contained" href="#">Join</Button>
+                <Button variant="contained" href="/learning/ccpage/ccpagecontent">Join</Button>
             </div>
             <div className='image'>
                 <Image 
@@ -46,22 +46,22 @@ export class ccpage extends Component {
                     src="https://imageio.forbes.com/specials-images/imageserve/5f9fa9e815da35da1356a28b/The-5-Biggest-Cloud-Computing-Trends-In-2021/960x0.jpg?format=jpg&width=960"
                 />
             </div>
-            <div style={{ padding: '10px' }}>
+            <div className='about'>
                 <h1>About</h1>
                 <p>Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. Large clouds often have functions distributed over multiple locations, each of which is a data center.</p>
                 <p>You can also join this program via the mobile app.<a href='#'> Go to the app</a></p>
             </div>
-            <div style={{ marginRight: '250px', marginLeft:'250px' }}>
+            <div className='about_collapse'>
                 <Collapse items={items} />
             </div>
             <hr className='hrs' />
-            <div style={{ padding: '10px' }}>
+            <div className='pf'>
                 <h3>Price</h3>
                 <p>Free</p>
             </div>
             <hr  className='hrs'/>
             <div className="socialMedia-icons-ler">
-        <h2>Share</h2>
+        <h1>Share</h1>
           <a href="https://www.instagram.com/collabvisioninfo/" >
               <InstagramIcon fontSize="large" />
             </a>
@@ -74,8 +74,9 @@ export class ccpage extends Component {
             <a href="https://www.collabvision.in/challenge-page/eb99df81-4fbb-46cb-9399-93508cc814c2">
               <LinkIcon fontSize="large"  />
             </a>
+            <br/>
+            <Button variant="contained"  className="btnj" href="/learning/ccpage/ccpagecontent">Join</Button>
           </div>
-                <Button variant="contained" href="#">Join</Button>
             </div>
         )
     }

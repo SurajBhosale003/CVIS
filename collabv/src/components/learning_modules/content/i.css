@@ -1,0 +1,25 @@
+.title{
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+}
+.collapse1{
+    width: 1200px;
+    margin: 10px;
+    margin-left: 15%;
+    align-items: center;
+}
+.tabs{
+
+    height: auto;
+    margin: 10px;
+}
+.tabheader{
+    text-align: center;
+    font-size: large;
+
+}
+.content{
+    font-size: medium;
+
+}

@@ -10,6 +10,7 @@ import GoToTop from './components/attributes/GoToTop';
 import Ccpage from './components/learning_modules/learning_pages/ccpage';
 import Softwaretestinfpage from './components/learning_modules/learning_pages/softwaretestinfpage';
 import Ccmulesoft from './components/learning_modules/learning_pages/ccmulesoft';
+import Ccmul from './components/learning_modules/content/ccmul';
 import Garphic from './components/cservices/servicepages/garphic';
 import Seopage from "./components/cservices/servicepages/seopage"
 import Swdevelopment from './components/cservices/servicepages/swdevelopment';
@@ -17,6 +18,7 @@ import Cloudcpage from './components/cservices/servicepages/cloudcpage'
 import Softwaretesting from './components/cservices/servicepages/swtesting';
 import Digitalbranding from './components/cservices/servicepages/digitalbranding';
 import Androiddevpage from './components/cservices/servicepages/androiddevpage';
+import Ccpagecontent from './components/learning_modules/learning_pages/ccpage';
 import Webdesign from './components/cservices/servicepages/webdesign';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
@@ -40,7 +42,8 @@ function App() {
         <Route path="/services/softwaretesting" element={<Softwaretesting/>} />
         <Route path="/learning" element={<Learning />} />
         <Route path="/learning/ccpage" element={<Ccpage />} />
-
+        <Route path="/learning/ccmulcontent" element={<Ccmul />} />
+        <Route path="/learning/ccpagecontent" element={<Ccpagecontent />} />
         <Route path="/learning/softwaretestinfpage" element={<Softwaretestinfpage />} />
         <Route path="/learning/ccmulesoft" element={<Ccmulesoft/>} />
       </Routes>

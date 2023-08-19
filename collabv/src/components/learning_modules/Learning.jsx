@@ -7,9 +7,8 @@ const cardData = [
     "title": "Cloud computing -Salesforce",
     "description": "Best resource to learn Cloud computing",
     "tags": [
-      "2 Participent",
-      "Free",
-      "New"
+
+      "Free"
     ]
   },
   {
@@ -18,9 +17,7 @@ const cardData = [
     "title": "Software testing",
     "description": "Grate material to learn the software testing",
     "tags": [
-      "3 participent",
       "Free",
-      "New Launch"
     ]
   },
   {
@@ -29,9 +26,7 @@ const cardData = [
     "title": "Cloud computing- Mulesoft",
     "description": "Rated course for cloud computing",
     "tags": [
-      "1 Participent",
       "Free ",
-      "New Launch"
     ]
   }
 ];

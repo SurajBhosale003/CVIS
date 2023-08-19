@@ -44,7 +44,7 @@
         "key": "1",
         "label": "Chapter 1",
         "lable2": "2 steps",
-        "children": "Lesson 1 Lesson 2"
+        "children": "Lesson 1\n Lesson 2"
     },
     {
         "key": "2",

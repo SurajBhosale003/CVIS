@@ -1,15 +1,46 @@
 .image{
     justify-content: center;
     margin-left: 4%;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
 }
 .hrs{
     text-decoration: solid black;
     margin-left: 10px;
     margin-right: 10px;
 }
-.socialMedia-icons-ler h1{
+.about{
     align-items: center;
+    text-align: center;
+    width: 1200px;
+    margin-left: 15%;
+    
+    text-align: justify;
+}
+.about h1{
+    text-align: center;
+}
+.about p{
+    margin-right: 15%;
+    text-align: justify;
+}
+.about_collapse{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.pf{
+    text-align: center;
+}
+.pf h1{
+    font-size: xx-large;
+}
+.pf p{
+    font-size: medium;
+    text-align: center;
+}
+.socialMedia-icons-ler{
+    text-align: center;
+}
+.socialMedia-icons-ler h1{
     font-size: large;
 }
 .socialMedia-icons-ler a {
@@ -22,4 +53,13 @@
   
 .socialMedia-icons-ler a:hover {
     color: blue;
+}
+.socialMedia-icons-ler .btnj{
+    font-size: small;
+    color: black;
+    margin-top: 5px;
+}
+.socialMedia-icons-ler .btnj:hover{
+    background-color: white;
+    color: black;
 }
