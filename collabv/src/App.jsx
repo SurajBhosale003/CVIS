@@ -10,7 +10,10 @@ import GoToTop from './components/attributes/GoToTop';
 import Ccpage from './components/learning_modules/learning_pages/ccpage';
 import Softwaretestinfpage from './components/learning_modules/learning_pages/softwaretestinfpage';
 import Ccmulesoft from './components/learning_modules/learning_pages/ccmulesoft';
+
 import Ccmul from './components/learning_modules/content/ccmul';
+import CloudComputing from './components/learning_modules/content/CloudComputing';
+
 import Garphic from './components/cservices/servicepages/garphic';
 import Seopage from "./components/cservices/servicepages/seopage"
 import Swdevelopment from './components/cservices/servicepages/swdevelopment';
@@ -40,8 +43,10 @@ function App() {
         <Route path="/services/digitalbrandpage" element={<Digitalbranding/>} />
         <Route path="/services/swdevelopment" element={<Swdevelopment/>} />
         <Route path="/services/softwaretesting" element={<Softwaretesting/>} />
+
         <Route path="/learning" element={<Learning />} />
         <Route path="/learning/ccpage" element={<Ccpage />} />
+        <Route path="/learning/ccpage/ccpagecontent" element={<CloudComputing />} />
         <Route path="/learning/ccmulcontent" element={<Ccmul />} />
         <Route path="/learning/ccpagecontent" element={<Ccpagecontent />} />
         <Route path="/learning/softwaretestinfpage" element={<Softwaretestinfpage />} />
