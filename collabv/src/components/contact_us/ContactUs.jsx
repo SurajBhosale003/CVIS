@@ -66,9 +66,13 @@ function ContactUs() {
         ></iframe>
       </div>
 
+
+{/* contact us form section */}
       <div className="contact-form-section">
         <form className="contact-form">
           <h2>Contact us form</h2>
+
+          <div className = "contact-form-cotainer">
           <label>
             First Name:
             <input type="text" placeholder='ABC' />
@@ -93,6 +97,7 @@ function ContactUs() {
             Your message:
             <textarea placeholder='Enter your message'></textarea>
           </label>
+          </div>
           <input type="submit" value="Submit" />
         </form>
       </div>
