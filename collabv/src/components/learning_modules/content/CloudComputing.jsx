@@ -1,6 +1,10 @@
 
 import  { useState, useRef } from 'react';
-import { Box, Typography, Button, List, ListItem, ListItemText } from '@mui/material';
+import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
+
+import Fullscreen from '@mui/icons-material/FullscreenOutlined';
+import FullscreenExit from '@mui/icons-material/FullscreenExitOutlined';
+
 import './CloudComputing.css';
 import lessonContent from './lessonContent.json';
 
@@ -75,9 +79,10 @@ function CloudComputing() {
 
       {/* right side portion */}
       <div className={`lesson-content ${isFullScreen ? 'full-screen' : ''}`} ref={lessonContentRef}>
-      <Button className="full-screen-button" onClick={handleFullScreenToggle}>
-          {isFullScreen ? 'Exit Full Screen' : 'Full Screen'}
-        </Button>
+      <div   className="full-screen-button" onClick={handleFullScreenToggle} >
+          {isFullScreen ? <FullscreenExit fontSize="large" color="black"  /> :    <Fullscreen fontSize="large"  color="black" />}
+          
+        </div>
         <Typography variant="h5">{currentLesson}</Typography>
        
         <Typography>{lessonContentText}</Typography>
