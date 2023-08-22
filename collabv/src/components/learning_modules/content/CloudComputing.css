@@ -2,27 +2,43 @@
 
    .lesson-component {
     display: flex;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
+    background-color: #f4f4f4;
   }
   
   .lesson-list {
-    background-color: #f4f4f4;
+    background-color: white;
     padding: 16px;
     overflow-y: scroll;
-    width: 300px;
+    width:250px;
+   
   }
   
+  .chapter-list{
+    color: black;
+    
 
+  }
+.lesson{
+  color:darkgrey;
+  
+}
     /*right part */
   .lesson-content {
     flex: 1;
     padding: 16px;
     overflow-y: scroll;
+    background: white;
   }
   
 
+  .currentLesson
+  {
+    margin-left:  5px;
 
+  }
+  
 
   .full-screen-button {
     float: right;
@@ -41,3 +57,9 @@
    
   }
   
+  
+  .lessonContentText
+  {
+    text-align: justify;
+    margin: 15px;
+  }

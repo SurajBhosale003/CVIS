@@ -13,6 +13,7 @@ import Ccmulesoft from './components/learning_modules/learning_pages/ccmulesoft'
 
 import Ccmul from './components/learning_modules/content/ccmul';
 import CloudComputing from './components/learning_modules/content/CloudComputing';
+import SoftwareTesting from './components/learning_modules/content/SoftwareTesting';
 
 import Garphic from './components/cservices/servicepages/garphic';
 import Seopage from "./components/cservices/servicepages/seopage"
@@ -47,9 +48,12 @@ function App() {
         <Route path="/learning" element={<Learning />} />
         <Route path="/learning/ccpage" element={<Ccpage />} />
         <Route path="/learning/ccpage/ccpagecontent" element={<CloudComputing />} />
+        
         <Route path="/learning/ccmulcontent" element={<Ccmul />} />
         <Route path="/learning/ccpagecontent" element={<Ccpagecontent />} />
+        
         <Route path="/learning/softwaretestinfpage" element={<Softwaretestinfpage />} />
+        <Route path="/learning/ccpage/SoftwareTesting" element={<SoftwareTesting />} />
         <Route path="/learning/ccmulesoft" element={<Ccmulesoft/>} />
       </Routes>
       <GoToTop/>
