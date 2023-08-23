@@ -55,7 +55,7 @@
     margin-top: -10%;   
     height: 100vh;
     width:50%;
-    text-align: center;
+    text-align: center;align-items: center;
     margin-left: 25%;   
     margin-right: 25%;   
    background-color: rgb(253, 249, 249);
@@ -64,4 +64,11 @@
   .GiveFeedback-Header h1{   
    padding-top:5%;
    justify-content: center;
+  }
+
+  .GiveFeedback-Header p{   
+   
+   justify-content: center;
+   color: brown;
+   text-align: center;
   }

@@ -2,7 +2,11 @@ import { useState } from "react";
 import { Rating } from "@mui/material";
 import "./FeedbackForm.css";
 
+import { collection, addDoc } from "firebase/firestore"; 
+import { db } from "../../../firebase"; 
+
 const FeedbackForm = () => {
+  // const db = getFirestore(app);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -27,23 +31,59 @@ const FeedbackForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
+  //   if (!formData.firstName || !formData.lastName || !formData.email) {
+  //     alert("Please fill in the mandatory fields.");
+  //     return;
+  //   }
+
+  //   console.log(formData);
+  //   setFormData({
+  //     firstName: "",
+  //     lastName: "",
+  //     email: "",
+  //     rating: null,
+  //     likedMost: "",
+  //     improvementSuggestions: "",
+  //   });
+  // };
+
+  //new submit function tackle with database
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
     if (!formData.firstName || !formData.lastName || !formData.email) {
       alert("Please fill in the mandatory fields.");
       return;
     }
-
-    console.log(formData);
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      rating: null,
-      likedMost: "",
-      improvementSuggestions: "",
-    });
+  
+    try {
+      await addDoc(collection(db, "feedback"), {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        rating: formData.rating,
+        likedMost: formData.likedMost,
+        improvementSuggestions: formData.improvementSuggestions,
+        timestamp: new Date(),
+      });
+  
+      console.log("Feedback data sent to Firestore");
+  
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        rating: null,
+        likedMost: "",
+        improvementSuggestions: "",
+      });
+    } catch (error) {
+      console.error("Error sending feedback: ", error);
+    }
   };
 
   return (
