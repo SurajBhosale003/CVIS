@@ -28,6 +28,11 @@ body {
     align-items: flex-start;
   }
   
+  .contact-form-cotainer{
+
+    margin-right: 5%;
+  }
+  
   /* Styling for the contact details section */
   .contact-details {
     flex: 1;

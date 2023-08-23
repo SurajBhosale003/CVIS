@@ -4,6 +4,7 @@
     height: 100vh;
     overflow: hidden;
     background-image: url('https://static.wixstatic.com/media/c837a6_f4e6a031f8634c259512f0b4bbbdfe8f~mv2.jpg');
+    background-color: rgba(255, 255, 255, 0.5);
     background-size: cover;
     background-position: center;
 }
@@ -14,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(222, 235, 246, 0.584);
+    background-color: rgba(222, 235, 246, 0.679);
     display: flex;
     align-items: center;
     justify-content: center;
