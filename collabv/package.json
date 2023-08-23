@@ -16,6 +16,7 @@
     "@mui/joy": "^5.0.0-beta.0",
     "@mui/material": "^5.14.4",
     "antd": "^5.8.2",
+    "firebase": "^10.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
