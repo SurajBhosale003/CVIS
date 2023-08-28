@@ -11,7 +11,7 @@ class swtesting extends Component {
             <Image src="https://static.wixstatic.com/media/4cdf87_58a160f6eef142b9b8ddefbd795eb70b~mv2.jpg/v1/fill/w_613,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_58a160f6eef142b9b8ddefbd795eb70b~mv2.jpg" />
           </div>
           <div className="text">
-            <h1>Software Testing</h1>
+            <h1 className='texth1'>Software Testing</h1>
             <h3>About</h3>
             <p>
             QA and software testing services aim to ensure that software fully meets requirements and user expectations. ScienceSoft provides full-range QA services to help our customers deliver high-quality software meeting tight deadlines of frequent releases.
