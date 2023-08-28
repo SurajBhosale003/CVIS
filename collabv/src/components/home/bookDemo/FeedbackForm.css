@@ -1,9 +1,9 @@
 
 .GiveFeedback-container
 {
-  margin-top: -10%;   
+  margin-top: -15%;   
   height: 100vh;
-  width:50%;
+  width:60%;
   text-align: center;
   margin-left: 25%;   
   margin-right: 25%;   
@@ -12,7 +12,7 @@
  
 }
   
-  form {
+.GiveFeedback-container form {
     display: flex;
     flex-direction: column;
   }
@@ -33,7 +33,7 @@
    
   }
   
-  label {
+  .GiveFeedback-container  label {
     margin-left: 15px  ;
     font-weight: bold;
     color: #000;
@@ -49,8 +49,8 @@
     width:20rem;  
   }
   
-  input[type="text"],
-  input[type="email"] {
+  .GiveFeedback-container input[type="text"],
+  .GiveFeedback-container input[type="email"] {
     padding: 10px 10px;
     margin: 0;    
     border: none;
@@ -92,7 +92,7 @@
 
 
  .btn-container button {
-    background-color: #007bff;
+    background-color: brown;
     color: white;
     border: none;
     width: 7rem;

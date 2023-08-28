@@ -66,9 +66,9 @@ function AboutUs() {
           </div>
         </div>
       </div>
-
+<div>
       <CoreValues />
-
+</div>
       <div className="aboutUs-bottom-container">
         <div className="text">
           <h1>About Collab Vision Infosolutions</h1>

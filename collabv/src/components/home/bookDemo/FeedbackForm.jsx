@@ -2,9 +2,6 @@ import { useState } from "react";
 import { Rating } from "@mui/material";
 import "./FeedbackForm.css";
 
-import { collection, addDoc } from "firebase/firestore"; 
-import { db } from "../../../../firebase"; 
-
 const FeedbackForm = () => {
   // const db = getFirestore(app);
   const [formData, setFormData] = useState({
