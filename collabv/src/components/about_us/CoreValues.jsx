@@ -1,6 +1,7 @@
 import "./CoreValues.css";
 
 
+import { createTheme } from '@mui/material/styles';
 import { Grid } from "@mui/material";
 import { Box, ThemeProvider } from '@mui/material';
 
@@ -11,7 +12,6 @@ import FeedIcon from "@mui/icons-material/Feed";
 import QuestionAnswerOutlinedIcon from '@mui/icons-material/QuestionAnswerOutlined';
 
 
-import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   
