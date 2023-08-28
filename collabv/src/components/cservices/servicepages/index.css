@@ -13,13 +13,16 @@
 
 .text {
   flex: 1;
+  text-align: center;
   padding: 0 20px;
 }
 
-h1 {
+.texth1  {
   font-size: 28px;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-top: -250px; 
 }
+
 
 p {
   font-size: 16px;

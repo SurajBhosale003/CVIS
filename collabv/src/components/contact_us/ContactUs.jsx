@@ -186,10 +186,8 @@ function ContactUs() {
                   placeholder="Enter your message"
                 ></textarea>
               </label>
-
-              <button type="submit">Submit</button>
             </div>
-            <input type="submit" value="Submit" />
+            <input type="submit" className="csubmit" value="Submit" />
           </form>
         </div>
       </div>

@@ -117,12 +117,17 @@ body {
   .contact-form input[type="submit"] {
     background-color: #020a13;
     color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
   }
-  
+  .csubmit{
+    text-align: center;
+    padding: 100px;
+  }
   .contact-form input[type="submit"]:hover {
     background-color: #0056b3;
   }
