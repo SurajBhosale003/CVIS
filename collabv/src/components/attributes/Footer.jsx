@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <div className="contact-info">
+          <div className="contact-footer">
             
             <PhoneIcon /> <p> + 91 8767421060 </p>
           </div>
