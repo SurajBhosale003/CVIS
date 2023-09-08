@@ -19,14 +19,14 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <div className="contact-info">
-          <p>  
-            <PhoneIcon />  + 91 8767421060 </p>
+          <div className="contact-footer">
+            
+            <PhoneIcon /> <p> + 91 8767421060 </p>
           </div>
           <div className="Address">
-           <p>
+           
             <LocationOnIcon />
-             <t/>Plot No.14, Laxmi Vasahat, Jawahar Nagar, Kolhapur-416012
+             <p> Plot No.14, Laxmi Vasahat, Jawahar Nagar, Kolhapur-416012
             </p>
           </div>
         </div>
