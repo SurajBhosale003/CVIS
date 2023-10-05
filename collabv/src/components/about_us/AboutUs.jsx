@@ -100,7 +100,7 @@ function AboutUs() {
             </p>
           </div>
 
-          <div className="tools-section">
+{/*           <div className="tools-section">
             <h2>From MuleSoft Developer's Eye</h2>
             <p>Learn the essential tools needed for MuleSoft development:</p>
             <ol>
@@ -108,7 +108,7 @@ function AboutUs() {
               <li>Postman - Test applications or APIs</li>
               <li>AnyPoint Platform & Studio - Design the code</li>
             </ol>
-          </div>
+          </div> */}
         </div>
         <div className="image">
           <img
