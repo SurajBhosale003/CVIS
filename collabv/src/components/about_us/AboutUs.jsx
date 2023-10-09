@@ -71,8 +71,7 @@ function AboutUs() {
 </div>
       <div className="aboutUs-bottom-container">
         <div className="text">
-          <h1>About Collab Vision Infosolutions</h1>
-          
+          <h1>About Collab Vision Infosolutions</h1>          
           <p className="intro">
             CVIS is a leading company focused on Cloud Technology (Salesforce
             and MuleSoft), Website, Android App, Testing Project, Digital

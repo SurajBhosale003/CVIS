@@ -13,7 +13,7 @@ const FeedbackForm = () => {
     email: "",
     rating: null,
     likedMost: "",
-    improvementSuggestions: "",
+    // improvementSuggestions: "",
   });
 
   const handleChange = (e) => {
@@ -67,7 +67,7 @@ const FeedbackForm = () => {
         email: formData.email,
         rating: formData.rating,
         likedMost: formData.likedMost,
-        improvementSuggestions: formData.improvementSuggestions,
+        // improvementSuggestions: formData.improvementSuggestions,
         timestamp: new Date(),
       });
   
@@ -79,7 +79,7 @@ const FeedbackForm = () => {
         email: "",
         rating: null,
         likedMost: "",
-        improvementSuggestions: "",
+        // improvementSuggestions: "",
       });
     } catch (error) {
       console.error("Error sending feedback: ", error);
@@ -150,6 +150,7 @@ const FeedbackForm = () => {
           />
         </label>
         <br />
+{/* 
         <label className="label-group ">
           How can we improve?
          
@@ -159,7 +160,8 @@ const FeedbackForm = () => {
               onChange={handleChange}
             />
         
-        </label>
+        </label> */}
+
         </div>
         <br />
         <div className="btn-container">
