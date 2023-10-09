@@ -1,4 +1,11 @@
 import './Attributes.css'
+
+
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
+import NativeSelect from '@mui/material/NativeSelect';
+
 import logo from "../../assets/logoNav.png"
 
 function Navbar() {
@@ -17,7 +24,26 @@ function Navbar() {
         <li><a href="/learning">Learning Modules</a></li>
         <li><a href="/services">Services</a></li>
         <li><a href="/contact">Contact Us</a></li>
-        <li><a href="/">Book Online</a></li>
+        {/* <li><a href="/">Book Online</a></li> */}
+        <li><a> <Box sx={{ minWidth: 120 }}>
+      <FormControl fullWidth>
+        <InputLabel variant="standard" htmlFor="uncontrolled-native">
+        Login
+        </InputLabel>
+        <NativeSelect
+          defaultValue={30}
+          inputProps={{
+            name: 'Login',
+            id: 'uncontrolled-native',
+          }}
+        >
+          <option value={20}>Student</option> 
+          <option value={10}>Admin</option>
+
+          
+        </NativeSelect>
+      </FormControl>
+    </Box></a></li>
         <li><a href="/pagenotfound"></a></li>
       </ul>
      </div>
@@ -27,3 +53,5 @@ function Navbar() {
 }
 
 export default Navbar
+
+
