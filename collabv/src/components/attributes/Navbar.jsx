@@ -25,7 +25,7 @@ function Navbar() {
         <li><a href="/services">Services</a></li>
         <li><a href="/contact">Contact Us</a></li>
         {/* <li><a href="/">Book Online</a></li> */}
-        <li><a> <Box sx={{ minWidth: 120 }}>
+        {/* <li><a> <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
         <InputLabel variant="standard" htmlFor="uncontrolled-native">
         Login
@@ -43,7 +43,8 @@ function Navbar() {
           
         </NativeSelect>
       </FormControl>
-    </Box></a></li>
+    </Box></a></li> */}
+        <li><a href="/auth">Login</a></li>
         <li><a href="/pagenotfound"></a></li>
       </ul>
      </div>

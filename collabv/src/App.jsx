@@ -10,7 +10,7 @@ import GoToTop from './components/attributes/GoToTop';
 import Ccpage from './components/learning_modules/learning_pages/ccpage';
 import Softwaretestinfpage from './components/learning_modules/learning_pages/softwaretestinfpage';
 import Ccmulesoft from './components/learning_modules/learning_pages/ccmulesoft';
-
+import Register from './components/attributes/Register';
 import Ccmul from './components/learning_modules/content/ccmul';
 import CloudComputing from './components/learning_modules/content/CloudComputing';
 import SoftwareTesting from './components/learning_modules/content/SoftwareTesting';
@@ -46,6 +46,7 @@ function App() {
         <Route path="/services/swdevelopment" element={<Swdevelopment/>} />
         <Route path="/services/softwaretesting" element={<Softwaretesting/>} />
         <Route path="/login" element={<Login />} />
+        <Route path="/auth" element={<Register />} />
         <Route path="/learning" element={<Learning />} />
         <Route path="/learning/ccpage" element={<Ccpage />} />
         <Route path="/learning/ccpage/ccpagecontent" element={<CloudComputing />} />
