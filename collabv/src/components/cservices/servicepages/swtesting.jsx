@@ -26,7 +26,7 @@ We provide a testing team to take over a part or the whole scope of testing acti
 
 We combine manual and automated testing and apply our experience with trusted automation frameworks to help you accelerate releases, increase test coverage, and find more bugs before they enter production
             </p>
-            <button className='enqbtn'>Enquiry</button>
+            <Button className='enqbtn' variant="contained" type='submit' href="/contact" style={{color:'white'}}>Enquiry</Button>
           </div>
         </div>
         <div className="button-container">

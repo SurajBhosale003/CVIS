@@ -50,10 +50,13 @@ button .btn2{
 .enqbtn{
   align-items: center;
   background-color: black;
-  color: white;
+  text-align: center;
+  padding: 10px;
+  height: 40px;
   margin: 10px;
   border-radius: 5px;
 }
 .enqbtn:hover{
+  color: white;
   background-color:#1a75ff;
 }

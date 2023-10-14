@@ -16,8 +16,8 @@ export class softwaretestinfpage extends Component {
             <div>
             <div style={{ padding: '10px', textAlign: 'center' }}>
                 <h1 style={{ marginBottom: '10px' }}>Software Testing</h1>
-                <h2 style={{ marginBottom: '20px' }}>6 Steps   |   4 Participants</h2>
-                <Button variant="contained" href="/learning/ccpage/SoftwareTesting">Join</Button>
+                <h2 style={{ marginBottom: '20px' }}>4 Participants</h2>
+                <Button variant="contained" href="/learning/ccpage/SoftwareTesting" style={{color: 'white'}}>Join</Button>
             </div>
             <div className='image'>
                 <Image 
@@ -56,7 +56,7 @@ export class softwaretestinfpage extends Component {
               <LinkIcon fontSize="large"  />
             </a>
           </div>
-                <Button variant="contained" href="#">Join</Button>
+                <Button variant="contained" href="/learning/ccpage/ccpagecontent" style={{color: 'white' , alignItems:'center', marginLeft: '47%'}}>Join</Button>
             </div>
         )
     }

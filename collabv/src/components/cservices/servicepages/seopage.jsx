@@ -16,7 +16,7 @@ class ccpage extends Component {
             <p>
             Search Engine Optimization is technique to increase your website ranking on search engine like Google, Bing, Yahoo. Here website is targeted to visitors which improve your ranking on search engine. Now days 80 % users search on internet for their product/company/service, so SEO cannot be ignored if your developing website for your product.We make audit of your website, exact visitors, develop mobile UI, find potential keywords, meta tags, images and unique content to increase your website rank.
             </p>
-            <button className='enqbtn'>Enquiry</button>
+            <Button className='enqbtn' variant="contained" type='submit' href="/contact" style={{color:'white'}}>Enquiry</Button>
           </div>
         </div>
         <div className="button-container">

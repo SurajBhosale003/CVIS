@@ -35,8 +35,8 @@ export class ccpage extends Component {
             <div>
             <div style={{ padding: '10px', textAlign: 'center' }}>
                 <h1 style={{ marginBottom: '10px' }}>Cloud Computing - Salesforce</h1>
-                <h2 style={{ marginBottom: '20px' }}>6 Steps   |   3 Participants</h2>
-                <Button variant="contained" href="/learning/ccpage/ccpagecontent">Join</Button>
+                <h2 style={{ marginBottom: '20px' }}>3 Participants</h2>
+                <Button variant="contained" href="/learning/ccpage/ccpagecontent" style={{color: 'white'}}>Join</Button>
             </div>
             <div className='image'>
                 <Image 
@@ -75,8 +75,9 @@ export class ccpage extends Component {
               <LinkIcon fontSize="large"  />
             </a>
             <br/>
-            <Button variant="contained"  className="btnj" href="/learning/ccpage/ccpagecontent">Join</Button>
+            
           </div>
+          <Button variant="contained"  className="btnj" href="/learning/ccpage/ccpagecontent" style={{color: 'white' , alignItems:'center', marginLeft: '47%'}}>Join</Button>
             </div>
         )
     }
