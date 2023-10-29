@@ -24,7 +24,10 @@ import Digitalbranding from './components/cservices/servicepages/digitalbranding
 import Androiddevpage from './components/cservices/servicepages/androiddevpage';
 import Ccpagecontent from './components/learning_modules/learning_pages/ccpage';
 import Webdesign from './components/cservices/servicepages/webdesign';
-import Login from "./components/attributes/login"
+
+import Login from "./components/attributes/login";
+import AdminDashboard from "./components/attributes/AdminDashboard";
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 function App() {
@@ -45,8 +48,13 @@ function App() {
         <Route path="/services/digitalbrandpage" element={<Digitalbranding/>} />
         <Route path="/services/swdevelopment" element={<Swdevelopment/>} />
         <Route path="/services/softwaretesting" element={<Softwaretesting/>} />
+
+{/* login register admin */}
+          <Route path="/admin-dashboard" element={<AdminDashboard/>} />
         <Route path="/login" element={<Login />} />
+
         <Route path="/auth" element={<Register />} />
+
         <Route path="/learning" element={<Learning />} />
         <Route path="/learning/ccpage" element={<Ccpage />} />
         <Route path="/learning/ccpage/ccpagecontent" element={<CloudComputing />} />

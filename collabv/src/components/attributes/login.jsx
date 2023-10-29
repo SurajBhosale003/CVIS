@@ -80,8 +80,20 @@ class Login extends Component {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log('User signed in:', user);
-        
-        window.location.href = 'http://localhost:5173'; // Replace with your desired URL
+//pas = admin1
+        if (user.email === 'admin@example.com') {
+          // If the user is an admin, prompt for the secret key
+          const secretKey = prompt('Please enter the secret key:');
+          if (secretKey === '12345') {
+            // If the secret key is correct, redirect to the admin dashboard
+            window.location.href = 'http://localhost:5173/admin-dashboard'; // Replace with your desired URL
+          } else {
+            alert('Invalid secret key. Please try again.');
+          }
+        } else {
+         
+          window.location.href = 'http://localhost:5173'; // Replace with your desired URL
+        }
       })
       .catch((error) => {
         // Handle sign-in errors
@@ -104,7 +116,6 @@ class Login extends Component {
 
   render() {
     return (
-     
       <div>
         <div id="login-form-wrap">
           <h2>Login</h2>
@@ -135,13 +146,10 @@ class Login extends Component {
           </form>
           <div id="create-account-wrap">
             <p>Not a member? <a href="http://localhost:5173/auth/register">Create Account</a></p>
-            {/* Change the link before deployment */}
             <p> Forgot Password? <a onClick={this.resetPassword}> Reset Password</a></p>
-
           </div>
         </div>
       </div>
-    
     );
   }
 }
