@@ -155,6 +155,8 @@ class Register extends Component {
           </form>
           <div id="create-account-wrap">
             <p>Already a member? <a href="http://localhost:5173/login">Sign in</a></p>
+            <p>Admin? <a href="http://localhost:5173/AdminLogin">Admin Login</a></p>
+
               {/* Change the link before deployment */}
           </div>
         </div>

@@ -2,13 +2,13 @@
 
 import  { Component } from 'react';
 import './logincss.css';
-import { signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../Firebase';
 
-class Login extends Component {
+class AdminLogin extends Component {
   signIn = () => {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    const email =  'collabvisiontest001@gmail.com';
+    const password ='123456';
 
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -36,23 +36,13 @@ class Login extends Component {
       });
   };
 
-  resetPassword = () => {
-    const email = document.getElementById('email').value;
-    sendPasswordResetEmail(auth, email)
-      .then(() => {
-        alert('Password reset email sent. Please check your inbox.');
-      })
-      .catch((error) => {
-        console.error('Password reset error:', error);
-        alert('Unable to send a password reset email. Please try again.');
-      });
-  };
+ 
 
   render() {
     return (
       <div>
         <div id="login-form-wrap">
-          <h2>Login</h2>
+          <h2>Admin Login</h2>
           <form
             id="login-form"
             onSubmit={(e) => {
@@ -78,16 +68,11 @@ class Login extends Component {
               <input type="submit" id="login" value="Login" />
             </p>
           </form>
-          <div id="create-account-wrap">
-            <p>Not a member? <a href="http://localhost:5173/auth/auth">Create Account</a></p>
-            <p> Forgot Password? <a onClick={this.resetPassword}> Reset Password</a></p>
-            <p>Admin? <a href="http://localhost:5173/AdminLogin">Admin Login</a></p>
-
-          </div>
+         <div id="create-account-wrap"></div>
         </div>
       </div>
     );
   }
 }
 
-export default Login;
+export default AdminLogin;

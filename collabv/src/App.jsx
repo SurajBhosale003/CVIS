@@ -26,6 +26,7 @@ import Ccpagecontent from './components/learning_modules/learning_pages/ccpage';
 import Webdesign from './components/cservices/servicepages/webdesign';
 
 import Login from "./components/attributes/login";
+import AdminLogin from "./components/attributes/AdminLogin";
 import AdminDashboard from "./components/attributes/AdminDashboard";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -52,6 +53,7 @@ function App() {
 {/* login register admin */}
           <Route path="/admin-dashboard" element={<AdminDashboard/>} />
         <Route path="/login" element={<Login />} />
+        <Route path="/AdminLogin" element={<AdminLogin />} />
 
         <Route path="/auth" element={<Register />} />
 
