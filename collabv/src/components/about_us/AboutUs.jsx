@@ -2,6 +2,7 @@
 
 import "./About.css";
 import CoreValues from "./CoreValues";
+import imgaeLeft from "../../assets/imgaeLeft.jpeg";
 
 function AboutUs() {
   return (
@@ -69,8 +70,11 @@ function AboutUs() {
 <div>
       <CoreValues />
 </div>
+
+
+{/*  ========================================bottom==================*/}
       <div className="aboutUs-bottom-container">
-        <div className="text">
+        <div className="aboutUs-bottom-text">
           <h1>About Collab Vision Infosolutions</h1>          
           <p className="intro">
             CVIS is a leading company focused on Cloud Technology (Salesforce
@@ -109,11 +113,16 @@ function AboutUs() {
             </ol>
           </div> */}
         </div>
-        <div className="image">
+        
+        <div className="aboutUs-bottom-image">
           <img
-            src="https://static.wixstatic.com/media/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg/v1/fill/w_912,h_1510,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg"
+            src={imgaeLeft}
             alt="imgageLeft"
           />
+          {/* <img
+            src="https://static.wixstatic.com/media/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg/v1/fill/w_912,h_1510,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg"
+            alt="imgageLeft"
+          /> */}
         </div>
       </div>
     </>
