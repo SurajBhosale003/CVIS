@@ -7,7 +7,6 @@ const cardData = [
     "title": "Cloud computing -Salesforce",
     "description": "Best resource to learn Cloud computing",
     "tags": [
-
       "Free"
     ]
   },
