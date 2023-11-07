@@ -4,7 +4,9 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 import {getFirestore} from"firebase/firestore"
 import { getAuth } from "firebase/auth";
-// Your web app's Firebase configuration
+import 'firebase/firestore';
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyBBjBrc9YFb7O6TRFYpwUkyh-T_9Lp3ES0",
   authDomain: "collabvision.firebaseapp.com",
