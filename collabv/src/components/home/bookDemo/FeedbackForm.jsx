@@ -31,26 +31,7 @@ const FeedbackForm = () => {
     }));
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   if (!formData.firstName || !formData.lastName || !formData.email) {
-  //     alert("Please fill in the mandatory fields.");
-  //     return;
-  //   }
-
-  //   console.log(formData);
-  //   setFormData({
-  //     firstName: "",
-  //     lastName: "",
-  //     email: "",
-  //     rating: null,
-  //     likedMost: "",
-  //     improvementSuggestions: "",
-  //   });
-  // };
-
-  //new submit function tackle with database
+  
   
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -67,7 +48,6 @@ const FeedbackForm = () => {
         email: formData.email,
         rating: formData.rating,
         likedMost: formData.likedMost,
-        // improvementSuggestions: formData.improvementSuggestions,
         timestamp: new Date(),
       });
   
