@@ -218,4 +218,4 @@ function Learning() {
   )
 }
 
-export default Learning
+export default Learning;
