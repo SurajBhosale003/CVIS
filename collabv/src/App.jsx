@@ -24,11 +24,11 @@ import Digitalbranding from './components/cservices/servicepages/digitalbranding
 import Androiddevpage from './components/cservices/servicepages/androiddevpage';
 import Ccpagecontent from './components/learning_modules/learning_pages/ccpage';
 import Webdesign from './components/cservices/servicepages/webdesign';
-
+import BookNowForm from './components/attributes/booknowform';
 import Login from "./components/attributes/login";
 import AdminLogin from "./components/attributes/AdminLogin";
 import AdminDashboard from "./components/attributes/AdminDashboard";
-
+import Products from './components/Products/Products';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 function App() {
@@ -56,11 +56,11 @@ function App() {
         <Route path="/AdminLogin" element={<AdminLogin />} />
 
         <Route path="/auth" element={<Register />} />
-
+        <Route path="/bookdemof" element={<BookNowForm />} />
         <Route path="/learning" element={<Learning />} />
         <Route path="/learning/ccpage" element={<Ccpage />} />
         <Route path="/learning/ccpage/ccpagecontent" element={<CloudComputing />} />
-        
+        <Route path="/products" element={<Products />} />
         <Route path="/learning/ccmulcontent" element={<Ccmul />} />
         <Route path="/learning/ccpagecontent" element={<Ccpagecontent />} />
         

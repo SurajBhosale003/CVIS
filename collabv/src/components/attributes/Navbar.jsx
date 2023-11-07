@@ -1,11 +1,5 @@
 import './Attributes.css'
 
-
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import FormControl from '@mui/material/FormControl';
-import NativeSelect from '@mui/material/NativeSelect';
-
 import logo from "../../assets/logoNav.png"
 
 function Navbar() {
@@ -23,6 +17,7 @@ function Navbar() {
         <li><a href="/about">About us</a></li>
         <li><a href="/learning">Learning Modules</a></li>
         <li><a href="/services">Services</a></li>
+        <li><a href="/products">Products</a></li>
         <li><a href="/contact">Contact Us</a></li>
         {/* <li><a href="/">Book Online</a></li> */}
         {/* <li><a> <Box sx={{ minWidth: 120 }}>

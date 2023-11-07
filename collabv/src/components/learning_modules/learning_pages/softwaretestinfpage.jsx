@@ -37,8 +37,8 @@ export class softwaretestinfpage extends Component {
             </div>
             <hr className='hrs' />
             <div style={{ padding: '10px' }}>
-                <h3>Price</h3>
-                <p>Free</p>
+                <h3 style={{textAlign:'center'}}>Price</h3>
+                <p style={{textAlign:'center'}}>Free</p>
             </div>
             <hr  className='hrs'/>
             <div className="socialMedia-icons-ler">

@@ -20,16 +20,16 @@ const BookDemo = () => {
           loop
         />
         <div className="overlay-text">
-          <h1>Book Your Free Demo</h1>
-          <p>
+          <h1 style={{color:'black'}}>Book Your Free Demo</h1>
+          <p style={{color:'black'}}>
             Get to know Collab Vision Infosolutions! Our product experts will
             guide you through our solution:
           </p>
-          <li>Introduction to all product features</li>
-          <li>Important features for your business priorities</li>
-          <li>Answers to any questions you may have</li>
+          <li style={{color:'black'}}>Introduction to all product features</li>
+          <li style={{color:'black'}}>Important features for your business priorities</li>
+          <li style={{color:'black'}}>Answers to any questions you may have</li>
           <div className="BookNow-btn">
-            <Button variant="contained">BOOk Now</Button>
+            <Button variant="contained" href="/bookdemof" style={{color:'white'}}>Book Now</Button>
           </div>
         </div>
       </div>
