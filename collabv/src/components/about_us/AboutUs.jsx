@@ -67,21 +67,28 @@ function AboutUs() {
           </div>
         </div>
       </div>
-<div>
-      <CoreValues />
-</div>
+      <div>
+        <CoreValues />
+      </div>
 
-
-{/*  ========================================bottom==================*/}
+      {/*  ========================================bottom==================*/}
       <div className="aboutUs-bottom-container">
         <div className="aboutUs-bottom-text">
-          <h1>About Collab Vision Infosolutions</h1>          
+          <h1>About Collab Vision Infosolutions</h1>
           <p className="intro">
             CVIS is a leading company focused on Cloud Technology (Salesforce
             and MuleSoft), Website, Android App, Testing Project, Digital
             Marketing Services, and Technical Support in Kolhapur. We build
             great products and solutions for your business problems.
           </p>
+          <p>
+              We provide best solution for your business. We are startup and
+              helping our customers to deliver best-in-class- solution that
+              maximize ROI and accelerate their business. We are highly
+              professional, certified and passionate engineers which trust on
+              agile process. We are more interested and adapt any new
+              technologies.
+            </p>
 
           <div className="mission-section">
             <h2>Our Mission</h2>
@@ -90,6 +97,7 @@ function AboutUs() {
               services for various industries including Ecommerce, Education,
               Manufacturing, Healthcare, and more.
             </p>
+            
           </div>
 
           <div className="opportunities-section">
@@ -103,7 +111,7 @@ function AboutUs() {
             </p>
           </div>
 
-{/*           <div className="tools-section">
+          {/*           <div className="tools-section">
             <h2>From MuleSoft Developer's Eye</h2>
             <p>Learn the essential tools needed for MuleSoft development:</p>
             <ol>
@@ -113,12 +121,9 @@ function AboutUs() {
             </ol>
           </div> */}
         </div>
-        
+
         <div className="aboutUs-bottom-image">
-          <img
-            src={imgaeLeft}
-            alt="imgageLeft"
-          />
+          <img src={imgaeLeft} alt="imgageLeft" />
           {/* <img
             src="https://static.wixstatic.com/media/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg/v1/fill/w_912,h_1510,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg"
             alt="imgageLeft"
