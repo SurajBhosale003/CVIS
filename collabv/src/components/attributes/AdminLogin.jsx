@@ -14,7 +14,8 @@ class AdminLogin extends Component {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log('User signed in:', user);
-//pas = admin1
+//pas = 123456 -------------------------------------
+//key = 12345  -------------------------------------
         if (user.email === 'collabvisiontest001@gmail.com') {
           // If the user is an admin, prompt for the secret key
           const secretKey = prompt('Please enter the secret key:');

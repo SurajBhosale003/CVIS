@@ -27,7 +27,7 @@ import Webdesign from './components/cservices/servicepages/webdesign';
 
 import Login from "./components/attributes/login";
 import AdminLogin from "./components/attributes/AdminLogin";
-import AdminDashboard from "./components/attributes/AdminDashboard";
+import AdminDashboard from "./components/admin/AdminDashboard";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
