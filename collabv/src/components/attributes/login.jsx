@@ -79,7 +79,7 @@ class Login extends Component {
             </p>
           </form>
           <div id="create-account-wrap">
-            <p>Not a member? <a href="http://localhost:5173/auth/auth">Create Account</a></p>
+            <p>Not a member? <a href="http://localhost:5173/auth">Create Account</a></p>
             <p> Forgot Password? <a onClick={this.resetPassword}> Reset Password</a></p>
             <p>Admin? <a href="http://localhost:5173/AdminLogin">Admin Login</a></p>
 

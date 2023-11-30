@@ -152,15 +152,15 @@ const BookDemo = () => {
           loop
         />
         <div className="overlay-text">
-        <h1>Book Your Free Demo</h1>
-           <p>             Get to know Collab Vision Infosolutions! Our product experts will
+        <h1 style={{color:'black'}}>Book Your Free Demo</h1>
+           <p style={{color:'black'}}>             Get to know Collab Vision Infosolutions! Our product experts will
             guide you through our solution:
            </p>
-          <li>Introduction to all product features</li>
-           <li>Important features for your business priorities</li>
-           <li>Answers to any questions you may have</li>
-          <h1>{isDemoBooked ? 'Demo Booked' : 'Book Your Free Demo'}</h1>
-          <p>
+          <li style={{color:'black'}}>Introduction to all product features</li>
+           <li style={{color:'black'}}>Important features for your business priorities</li>
+           <li style={{color:'black'}}>Answers to any questions you may have</li>
+          <h1 style={{color:'black'}}>{isDemoBooked ? 'Demo Booked' : 'Book Your Free Demo'}</h1>
+          <p style={{color:'black'}}>
             {isDemoBooked
               ? "Thank you for booking the demo. Our product experts will be in touch shortly."
               : ""
@@ -173,7 +173,7 @@ const BookDemo = () => {
               </Button>
             ) : (
               <Button variant="contained" onClick={isPopupOpen ? closePopup : openPopup}>
-                {isPopupOpen ? 'Close' : 'BOOk Now'}
+                {isPopupOpen ? 'Close' : 'Book Now'}
               </Button>
             )}
             {isPopupOpen && !isDemoBooked && (
