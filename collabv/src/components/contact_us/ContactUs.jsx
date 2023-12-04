@@ -57,7 +57,7 @@ function ContactUs() {
         timestamp: new Date(),
       });
 
-      
+
 
       setFormData({
         firstName: "",
@@ -123,7 +123,7 @@ function ContactUs() {
 
         {/* contact us form section */}
         <div className="contact-form-section">
-          <form className="contact-form" onSubmit ={handleSubmit}>
+          <form className="contact-form" onSubmit={handleSubmit}>
             <h2>Contact us form</h2>
 
             <div className="contact-form-cotainer">
@@ -176,6 +176,19 @@ function ContactUs() {
                   onChange={handleChange}
                   placeholder="If any query please enter your query"
                 />
+              </label>
+              <label className="op">
+                Select a Branch for contact:
+                <select
+                  name="selectedOption"
+                  style={{ marginLeft: 6, width: 760, height: 50, marginBottom: 10 }}
+                  value={formData.selectedOption}
+                  onChange={handleChange}
+                >
+                  <option value="" className="op"> Select a Branch</option>
+                  <option value="USA" className="op">USA BRANCH</option>
+                  <option value="Kolhapur" className="op">KOLHAPUR BRANCH</option>
+                </select>
               </label>
               <label>
                 Your message:

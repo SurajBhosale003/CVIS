@@ -155,17 +155,17 @@ function Learning() {
               />
             </label>
             
-          <label>
+          <label className="op">
             Select a course:
             <select
               name="selectedOption"
-              style={{ marginLeft: 20 }}
+              style={{ marginLeft: 20, width:760, height:50, marginBottom:10 }}
               value={formData.selectedOption}
               onChange={handleInputChange}
             >
-              <option value=""> Select a course</option>
+              <option value="" className="op"> Select a course</option>
               {course.map((option) => (
-                <option key={option.value} value={option.value}>
+                <option key={option.value} value={option.value} className="op" >
                   {option.label}
                 </option>
               ))}

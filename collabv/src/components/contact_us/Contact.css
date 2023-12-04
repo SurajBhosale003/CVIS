@@ -144,3 +144,31 @@ body {
     margin: 0 auto;
     display: block;
   }
+/* For screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+  .contact-title {
+    font-size: large;
+  }
+  .contact-container {
+    padding: 10px;
+  }
+  .contact-page {
+    margin-left: 0;
+  }
+  .contact-form-cotainer {
+    margin-right: 0;
+  }
+  .contact-details,
+  .contact-form-section {
+    margin: 10px;
+  }
+  .contact-details h2 {
+    font-size: 16px;
+  }
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="number"],
+  .contact-form textarea {
+    margin-right: 0;
+  }
+}

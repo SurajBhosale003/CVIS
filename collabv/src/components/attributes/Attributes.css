@@ -131,4 +131,90 @@ nav{
   .socialMedia-icons a:hover {
     color: #333;
   }
+/* For screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+  nav {
+    padding: 5px 20px;
+  }
   
+  .navbar li {
+    padding: 0 10px;
+  }
+  
+  .navbar li a {
+    font-size: 1rem;
+  }
+  
+  .navbar li a:hover::after,
+  .navbar li a.active::after {
+    left: 10px;
+  }
+  
+  .footer {
+    padding: 10px 0;
+  }
+  
+  .footer h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .footer-section {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .Address p,
+  .contact-info p {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .socialMedia-icons a {
+    font-size: 30px;
+    margin-right: 5px;
+  }
+}
+
+/* For screens between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    padding: 5px 30px;
+  }
+  
+  .footer {
+    padding: 15px 0;
+  }
+  
+  .footer h2 {
+    margin-left: 1%;
+    text-align: left;
+  }
+}
+
+/* For screens larger than 1024px */
+@media only screen and (min-width: 1025px) {
+  nav {
+    padding: 5px 40px;
+  }
+  
+  .footer {
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    margin-left: 4%;
+  }
+  
+  .footer-section {
+    text-align: left;
+  }
+}
