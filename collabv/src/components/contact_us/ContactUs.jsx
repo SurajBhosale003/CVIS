@@ -1,25 +1,17 @@
 import { useState } from "react";
 import FAQDropdown from "./FAQDropdown";
-
+import LetsChat from "./LetsChat";
+// import Chatboot from '../chatboot/chatboot'
 import "./Contact.css";
 
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 
-const layout = {
-  labelCol: {
-    span: 8,
-  },
-  wrapperCol: {
-    span: 16,
-  },
-};
 
-const onFinish = (values) => {
-  console.log(values);
-};
 
 function ContactUs() {
+
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -72,17 +64,7 @@ function ContactUs() {
     }
   };
 
-  const validateMessages = {
-    required: "${label} is required!",
-    types: {
-      email: "${label} is not a valid email!",
-      number: "${label} is not a valid number!",
-    },
-    number: {
-      range: "${label} must be between ${min} and ${max}",
-    },
-  };
-
+  
   return (
     <>
       <h1 className="contact-title">Contact Us</h1>
@@ -205,11 +187,15 @@ function ContactUs() {
         </div>
       </div>
       <FAQDropdown />
+      <LetsChat/>
     </>
   );
 }
 
 export default ContactUs;
+
+
+
 // import React, { useRef } from 'react';
 // import FAQDropdown from "./FAQDropdown";
 // import {getFirebase,collection, addDoc, getFirestore} from "firebase/firestore"

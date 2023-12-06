@@ -50,9 +50,10 @@ const FeedbackForm = () => {
         likedMost: formData.likedMost,
         timestamp: new Date(),
       });
-
+      
+// Send email
       sendEmail();
-      // Send email
+      
       const response = await fetch("/send-feedback-email", {
         method: "POST",
         headers: {

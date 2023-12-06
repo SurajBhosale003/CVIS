@@ -1,7 +1,7 @@
 /* Chatbot.css */
 
 /* Styles for the chatbot container */
-.chatbot-container {
+/* .chatbot-container {
     margin-left: 20px;
     position: fixed;
     margin:10px;
@@ -17,15 +17,67 @@
     font-size: 16px;
     z-index: 998;
     overflow-y: scroll;
-  }
+  } */
   
   /* Styles for the chatbot header */
-  .chatbot-header {
+  /* .chatbot-header {
     border-bottom: 1px solid #ccc;
     padding: 12px 20px;
     background-color: black;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
-  }
+  } */
   
+
+  /* chatbot.css */
+
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Adding shadow */
+  animation: shadowAnimation 0.5s ease-in-out; /* Adding shadow animation */
+}
+
+@keyframes shadowAnimation {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.chatbot-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+/* Other styles for chatbot components can be added here */
+.chatbot-message-bot {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 8px;
+  font-size: 14px;
+}
+
+/* Style for user messages */
+.chatbot-message-user {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 8px;
+  font-size: 14px;
+  text-align: right;
+}

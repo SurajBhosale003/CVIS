@@ -74,6 +74,7 @@ const config = {
 };
 
 const ChatbotComponent = () => {
+  
   const [showChatbot, setShowChatbot] = useState(false);
 
   const toggleChatbot = () => {
