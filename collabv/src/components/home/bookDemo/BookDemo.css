@@ -21,7 +21,7 @@
   top:25%;
   left: 50%;
   transform: translate(-50%, -50%);    
-  color: white;
+  color: black;
 }
 
   
@@ -39,7 +39,7 @@
   }
 
   .overlay-text li{
-    color: white;
+    color: black;
     list-style-type: disc;
     margin-left: 2rem;
   }
@@ -72,3 +72,48 @@
    color: brown;
    text-align: center;
   }
+
+
+ /*============bookDemo============*/
+
+ .BookDemo-form-section {
+  background: rgb(232, 220, 204);
+  color: black;
+  width: 600px;
+  margin: auto; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
+ }
+
+.BookDemo-form {
+  margin: 2rem;
+  text-align: left;
+  color: #000;
+ 
+}
+
+.BookDemo-form label {
+  text-align: left;
+  font-size: 1rem;
+  color: #000;
+}
+
+.BookDemo-form input {
+  height: 1.8rem;
+  width: 80%; 
+  margin-bottom: 2rem; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  
+}
+
+.BookDemo-form input:hover {
+  border-color: #555;
+}
+
+.csubmit{
+ 
+  text-align: center;
+  padding: 100px;
+}

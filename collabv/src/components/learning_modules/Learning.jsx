@@ -1,5 +1,5 @@
 import "./Learning.css";
-import FeedbackSlider from "./FeedbackSlider";
+import FeedbackSliderStudents from "./FeedbackSliderStudents";
 import { useState } from "react";
 
 import { collection, addDoc } from "firebase/firestore";
@@ -188,7 +188,7 @@ function Learning() {
       </div>
 
       <div className="studentFeedbackSlider">
-        <FeedbackSlider />
+        <FeedbackSliderStudents />
       </div>
     </>
   );

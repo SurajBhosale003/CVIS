@@ -74,10 +74,15 @@
 
 
 import { useState } from 'react';
+import "./BookDemo.css";
+
+
+import emailjs from "@emailjs/browser";
+
+
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../../Firebase';
 
-import "./BookDemo.css";
 import File from "../../../assets/file.mp4";
 import Button from "@mui/material/Button";
 import FeedbackForm from "./FeedbackForm";
@@ -111,7 +116,7 @@ const BookDemo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formData.firstName || !formData.lastName || !formData.email) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phoneNo) {
       alert("Please fill in the mandatory fields.");
       return;
     }
@@ -125,7 +130,26 @@ const BookDemo = () => {
         timestamp: new Date(),
       });
 
-      console.log("Student data sent to Firestore");
+      console.log("CustomerRegister data sent to Firestore");
+
+      // Send email
+      sendEmail();
+      
+      const response = await fetch("/send-BookDemo-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log(
+          "BookDemo data sent to Firestore and email sent successfully"
+        );
+      } else {
+        console.error("Error sending email");
+      }
 
       setDemoBooked(true);
       setFormData({
@@ -135,8 +159,37 @@ const BookDemo = () => {
         phoneNo: '',
       });
     } catch (error) {
-      console.error("Error sending student data: ", error);
+      console.error("Error sending bookDemo data: ", error);
     }
+  };
+
+  const sendEmail = () => {
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phoneNo: formData.phoneNo,
+      did:" Booked demo",
+      form:" Book Demo form Email",
+      regardings:" This email is from the bookDemo Form section of collabvision.in."
+    };
+
+    emailjs
+                               
+      .send(
+        "service_gjd2eit", // service key 
+        "template_o6bew6f", // templete id 
+        templateParams,
+        "0pbhO_v1wn0wA9fwI"//  public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -152,15 +205,16 @@ const BookDemo = () => {
           loop
         />
         <div className="overlay-text">
-        <h1 style={{color:'black'}}>Book Your Free Demo</h1>
-           <p style={{color:'black'}}>             Get to know Collab Vision Infosolutions! Our product experts will
+        <h1 >Book Your Free Demo</h1>
+           <p >             Get to know Collab Vision Infosolutions! Our product experts will
             guide you through our solution:
            </p>
-          <li style={{color:'black'}}>Introduction to all product features</li>
-           <li style={{color:'black'}}>Important features for your business priorities</li>
-           <li style={{color:'black'}}>Answers to any questions you may have</li>
-          <h1 style={{color:'black'}}>{isDemoBooked ? 'Demo Booked' : 'Book Your Free Demo'}</h1>
-          <p style={{color:'black'}}>
+          <li >Introduction to all product features</li>
+           <li >Important features for your business priorities</li>
+           <li >Answers to any questions you may have</li>
+          <h1 >{isDemoBooked ? 'Demo Booked' : ''}</h1>
+          <p >
+
             {isDemoBooked
               ? "Thank you for booking the demo. Our product experts will be in touch shortly."
               : ""
@@ -178,27 +232,26 @@ const BookDemo = () => {
             )}
             {isPopupOpen && !isDemoBooked && (
               <div>
-                <div className="contact-form-section">
-                  <form className="contact-form" onSubmit={handleSubmit}>
+                <div className="BookDemo-form-section">
+                  <form className="BookDemo-form" onSubmit={handleSubmit}>
                     <h2>Register Now</h2>
-                    <div className="contact-form-container">
-                      <label>
+                    <div className="BookDemo-form-container">
+                      <label  style={{ paddingBottom: 20}}>
                         First Name:
+                        
                         <input
                           type="text"
                           name="firstName"
-                          style={{ marginLeft: 20 }}
                           placeholder="ABC"
                           value={formData.firstName}
                           onChange={handleInputChange}
                         />
                       </label>
-                      <label>
+                      <label style={{ marginTop: 20}} >
                         Last Name:
                         <input
                           type="text"
                           name="lastName"
-                          style={{ marginLeft: 20 }}
                           placeholder="XYZ"
                           value={formData.lastName}
                           onChange={handleInputChange}
@@ -209,7 +262,6 @@ const BookDemo = () => {
                         <input
                           type="email"
                           name="email"
-                          style={{ marginLeft: 20 }}
                           placeholder="xyz@gmail.com"
                           value={formData.email}
                           onChange={handleInputChange}
@@ -220,24 +272,24 @@ const BookDemo = () => {
                         <input
                           type="text"
                           name="phoneNo"
-                          style={{ marginLeft: 20 }}
                           placeholder="+911234567890"
                           value={formData.phoneNo}
                           onChange={handleInputChange}
                         />
                       </label>
+
                     </div>
-                    <input
-                      type="submit"
-                      style={{
+                    <Button variant="contained" type="submit"  value="Submit" style={{
                         color: 'white',
                         backgroundColor: '#0056b3',
-                        width: 800,
+                        width: 350,
                         textAlign: 'center',
                         padding: 10,
-                      }}
-                      value="Submit"
-                    />
+                        margin:25
+                      }} >
+                    submit
+                                 
+                    </Button>
                   </form>
                 </div>
               </div>

@@ -91,13 +91,16 @@ const FeedbackForm = () => {
       email: formData.email,
       rating: formData.rating,
       likedMost: formData.likedMost,
+      did:"submitted Feedback form",
+      form:"Feedback form Email",
+      regardings:"This email is from the Feedback Form section of collabvision.in."
     };
 
     emailjs
                                
       .send(
         "service_gjd2eit", // service key 
-        "template_5538gvz", // templete id 
+        "template_o6bew6f", // templete id 
         templateParams,
         "0pbhO_v1wn0wA9fwI"//  public key
       )
