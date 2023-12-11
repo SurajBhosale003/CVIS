@@ -5,6 +5,9 @@ import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 
+
+import emailjs from "@emailjs/browser";
+
 import { TaggedContentCard } from "react-ui-cards";
 
 import course from "./course.json";
@@ -77,6 +80,24 @@ function Learning() {
       });
 
       console.log("Feedback data sent to Firestore");
+// Send email
+sendEmail();
+      
+const response = await fetch("/send-feedback-email", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(formData),
+});
+
+if (response.ok) {
+  console.log(
+    "data of registered student sent to Firestore and email sent successfully"
+  );
+} else {
+  console.error("Error sending email");
+}
 
       setFormData({
         firstName: "",
@@ -86,10 +107,41 @@ function Learning() {
         selectedOption: "",
       });
     } catch (error) {
-      console.error("Error sending feedback: ", error);
+      console.error("Error sending data: ", error);
     }
   };
 
+  
+
+  const sendEmail = () => {
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phoneNo: formData.phoneNo,
+      selectedOption: formData.selectedOption,
+      did:"one student registerd for cource",
+      form:"Student registerd form Email",
+      regardings:"This email is of collabvision.in."
+    };
+
+    emailjs
+                               
+      .send(
+        "service_gjd2eit", // service key 
+        "template_o6bew6f", // templete id 
+        templateParams,
+        "0pbhO_v1wn0wA9fwI"//  public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <h1 className="HeaderText">Learning</h1>

@@ -100,7 +100,7 @@ const FeedbackForm = () => {
                                
       .send(
         "service_gjd2eit", // service key 
-        "template_o6bew6f", // templete id 
+        "template_5538gvz", // templete id 
         templateParams,
         "0pbhO_v1wn0wA9fwI"//  public key
       )
