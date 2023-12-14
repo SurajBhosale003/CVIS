@@ -120,7 +120,7 @@ if (response.ok) {
       email: formData.email,
       phoneNo: formData.phoneNo,
       selectedOption: formData.selectedOption,
-      did:"one student registerd for cource",
+      did:" one student registerd for cource",
       form:"Student registerd form Email",
       regardings:"This email is of collabvision.in."
     };

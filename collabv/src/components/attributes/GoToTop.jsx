@@ -55,8 +55,8 @@ const Wrapper = styled.section`
 
     border-radius: 50%;
     position: fixed;
-    bottom: 5rem;
-    right: 5rem;
+    bottom: 3rem;
+    right: 7.2rem;
     z-index: 999;
     display: flex;
     justify-content: center;

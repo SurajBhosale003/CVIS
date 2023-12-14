@@ -8,8 +8,8 @@
     position: fixed;
     bottom: 0.9rem;
     right: 1.25rem;
-    background-color: #007bff;
-    color: #000;
+   color: #007bff;
+   background-color: #000;
     border: none;
     border-radius: 0.3125rem;
     padding: 0.625rem 1.25rem;
@@ -18,6 +18,7 @@
   
   .chat-button:hover {
     background-color: #0056b3;
+    color: #f2f2f2;
   }
   
  
@@ -27,7 +28,7 @@
     max-width: 20rem;
     background-color: #fff;
     position: fixed;
-    bottom: 3.75rem;
+    bottom: 7rem;
     right: 1.25rem;
     height: 25rem;
   }
@@ -153,14 +154,14 @@
 
   .letsChat-buttons{
     position: fixed;
-    bottom: 0.85rem;
+    bottom: 4rem;
     color: #000;
     border: none;
     /* border-radius: 0.3125rem; */
     border: 0.0625rem solid #000;
 
     cursor: pointer;
-    background: #a3a0a0;
+    background: #fffefe;
     padding: 0.3rem;
     
    

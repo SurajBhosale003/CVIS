@@ -95,6 +95,9 @@ const LetsChatComponent = () => {
       lastName: formData.lastName,
       email: formData.email,
       phoneNo:formData.phoneNo,
+      regardings:"this is from lets chat section of collabvision.in ",
+      form:"Some one  has a Query \n user detail as follow",
+      did:" want's to chat ",
     };
 
     emailjs
@@ -119,7 +122,7 @@ const LetsChatComponent = () => {
   return (
     <div>
       <button className="chat-button" onClick={handleChatClick}>
-        {!showChat ? "Chat" : "close"}
+        {!showChat ? "Let's Chat!" : "close"}
       </button>
       {showChat && (
         <div className="chat-box">

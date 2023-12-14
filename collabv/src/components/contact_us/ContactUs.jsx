@@ -1,7 +1,6 @@
 import { useState } from "react";
 import FAQDropdown from "./FAQDropdown";
-import LetsChat from "./LetsChat";
-// import Chatboot from '../chatboot/chatboot'
+// import LetsChat from "./LetsChat";
 import "./Contact.css";
 
 import { collection, addDoc } from "firebase/firestore";
@@ -46,6 +45,7 @@ function ContactUs() {
         phoneNo: formData.phoneNo,
         Subject: formData.Subject,
         message: formData.message,
+        selectedOption: formData.selectedOption,
         timestamp: new Date(),
       });
 
@@ -58,6 +58,7 @@ function ContactUs() {
         phoneNo: "",
         Subject: "",
         message: "",
+        selectedOption:"",
       });
     } catch (error) {
       console.error("Error sending feedback: ", error);
@@ -187,7 +188,7 @@ function ContactUs() {
         </div>
       </div>
       <FAQDropdown />
-      <LetsChat/>
+      {/* <LetsChat/> */}
     </>
   );
 }
