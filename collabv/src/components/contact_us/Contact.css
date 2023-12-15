@@ -52,7 +52,8 @@ body {
   .address-section h2,
   .contact-info h2,
   .opening-hours h2 {
-    font-size: 18px;
+    font-size: 300px;
+    font-weight: bold;
     margin-bottom: 10px;
   }
   

@@ -75,7 +75,7 @@ const ourfeedData = [
     "title": "Pooja Gaikwad, Pune",
     "info": "I truly appreciate Collab Vision Infosolotions training and am very happy that I got a job!Aniket Wankhede Software Engineer Annual Salary Offered: INR 3.1 Lakhs",
   },{
-    "title": "Tejswini Lad, Kolhapur",
+    "title": "Suraj Bhosle, Kolhapur",
     "info": "I am so glad we now have organizations like Collab Vision Infosolutions to help learners like me",
   }
 ];
@@ -95,12 +95,12 @@ class FeedbackSliderStudents extends Component {
     return (
       <div className="feedHeader">
         <h1 className="feedheadertitle">Our Students Feedbacks</h1>
-        <div>
+        <div >
           <Slider {...settings}>
             {ourfeedData.map((item, index) => (
               <div className="FeedMain" key={index}>
                 <h3>{item.title}</h3>
-                <p>{item.info}</p>
+                <p style={{textAlign:'justify'}}>{item.info}</p>
               </div>
             ))}
           </Slider>

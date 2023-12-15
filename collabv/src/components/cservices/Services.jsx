@@ -24,6 +24,10 @@ const cardData = [
     "title": "Android Application Development"
   },
   {
+    "href": "/services/Consultingpage",
+    "thumbnail": "https://media.licdn.com/dms/image/D4D12AQHHzV6n8PEaeg/article-cover_image-shrink_720_1280/0/1686668361893?e=2147483647&v=beta&t=W6iLChNfF0nVUu7_5BX-WG3B-ZDiD9cgXgfnxEDxFA0",
+    "title": "Consulting about Technology"
+  },{
     "href": "/services/digitalbrandpage",
     "thumbnail": "https://static.wixstatic.com/media/4cdf87_8d9bcd61573a4b768785f5ad7c85cdf1~mv2.jpg/v1/fill/w_558,h_419,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-empty-state.jpg",
     "title": "Digital Branding"

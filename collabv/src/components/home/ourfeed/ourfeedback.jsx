@@ -50,7 +50,7 @@ class OurFeedback extends Component {
               <div className="FeedMain" key={index}>
                 <h3>{item.firstName} {item.lastName}</h3>
                 <p>{item.likedMost}</p>
-                <p> Rating : {item.rating}</p>
+                <p> Rating : {item.rating} ⭐</p>
               </div>
             ))}
           </Slider>

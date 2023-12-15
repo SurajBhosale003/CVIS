@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Image, Button } from 'antd';
 import '../servicepages/index.css';
 
-class androiddevpage extends Component {
+class androiddevpage extends Component{
   render() {
     return (
       <>

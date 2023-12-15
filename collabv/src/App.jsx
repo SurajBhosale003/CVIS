@@ -1,4 +1,4 @@
-
+import LetsChat from './components/chatboot/LetsChat'
 import AboutUs from './components/about_us/AboutUs';
 import ContactUs from './components/contact_us/ContactUs';
 import Services from './components/cservices/Services';
@@ -16,6 +16,7 @@ import CloudComputing from './components/learning_modules/content/CloudComputing
 import SoftwareTesting from './components/learning_modules/content/SoftwareTesting';
 import Garphic from './components/cservices/servicepages/garphic';
 import Seopage from "./components/cservices/servicepages/seopage"
+import Consultingpage from "./components/cservices/servicepages/Consulting"
 import Swdevelopment from './components/cservices/servicepages/swdevelopment';
 import Cloudcpage from './components/cservices/servicepages/cloudcpage'
 import Softwaretesting from './components/cservices/servicepages/swtesting';
@@ -47,7 +48,7 @@ function App() {
           <Route path="/services/digitalbrandpage" element={<Digitalbranding />} />
           <Route path="/services/swdevelopment" element={<Swdevelopment />} />
           <Route path="/services/softwaretesting" element={<Softwaretesting />} />
-
+          <Route path="/services/Consultingpage" element={<Consultingpage />} />
           {/* login register admin Page Routes */}
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
           <Route path="/login" element={<Login />} />
@@ -65,6 +66,7 @@ function App() {
           <Route path="/learning/ccmulesoft" element={<Ccmulesoft />} />
         </Routes>
         <GoToTop />
+        <LetsChat/>
         <Footer />
       </Router>
     </>

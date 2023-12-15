@@ -211,7 +211,9 @@ if (response.ok) {
             Select a course:
             <select
               name="selectedOption"
-              style={{ marginLeft: 20, width:760, height:50, marginBottom:10 }}
+              type="select"
+              className="lselect"
+              style={{ marginLeft: 20, width:760, height:60,borderColor:'#ccc',borderRadius:5, marginBottom:10, }}
               value={formData.selectedOption}
               onChange={handleInputChange}
             >

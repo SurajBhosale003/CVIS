@@ -164,7 +164,7 @@ function ContactUs() {
                 Select a Branch for contact:
                 <select
                   name="selectedOption"
-                  style={{ marginLeft: 6, width: 760, height: 50, marginBottom: 10 }}
+                  style={{ marginLeft: 6, width: 760, height: 60, marginBottom: 10,borderColor:'#ccc',borderRadius:5, fontSize:16,fontStyle:'#ccc'}}
                   value={formData.selectedOption}
                   onChange={handleChange}
                 >
@@ -177,6 +177,7 @@ function ContactUs() {
                 Your message:
                 <textarea
                   name="message"
+                  style={{fontStyle:'inherit'}}
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Enter your message"
