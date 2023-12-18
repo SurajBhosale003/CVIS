@@ -28,6 +28,7 @@ import Login from "./components/attributes/login";
 import AdminLogin from "./components/attributes/AdminLogin";
 import AdminDashboard from "./components/admin/AdminDashboard";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Products from './components/products/productinfo';
 import './App.css'
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/products" element={<Products />} />
           {/* Services page Routes */}
           <Route path="/services" element={<Services />} />
           <Route path="/services/graphic" element={<Garphic />} />

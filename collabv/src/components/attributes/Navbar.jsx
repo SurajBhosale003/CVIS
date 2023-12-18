@@ -15,6 +15,7 @@ function Navbar() {
             <li><a href="/">Home</a></li>
             <li><a href="/about">About us</a></li>
             <li><a href="/learning">Learning Modules</a></li>
+            <li><a href="/products">Products</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/contact">Contact Us</a></li>
             {/* <li><a href="/">Book Online</a></li> */}
