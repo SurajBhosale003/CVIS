@@ -1,6 +1,5 @@
 
-
-.feedHeader {
+ .feedHeader {
   text-align: center;
   margin: 20px;
   font-family: Arial, sans-serif;
@@ -14,29 +13,32 @@
 
 .FeedMain {
   box-sizing: border-box;
-  height: 200px;
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
   margin: 0px 3%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 90%; 
+  max-width: 600px; 
+  height: 30rem;
+  min-height: 200px; 
 }
 
 .FeedMain h3 {
   font-size: 20px;
-  margin-bottom: 10px;
+ 
   color: #333;
 }
 
 .FeedMain p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.3;
   color: #666;
 }
 
 .slick-slider {
-  width: 80%;
+  width: 90%; 
   margin: 0 auto;
 }
 
