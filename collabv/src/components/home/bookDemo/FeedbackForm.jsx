@@ -8,11 +8,12 @@ import { db } from "../../../firebase";
 
 import emailjs from "@emailjs/browser";
 
+
 const FeedbackForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    email: "",
+    CompanyName: "",
     rating: null,
     likedMost: "",
   });
@@ -36,16 +37,16 @@ const FeedbackForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formData.firstName || !formData.lastName || !formData.email) {
-      alert("Please fill in the mandatory fields.");
-      return;
-    }
+    // if (!formData.firstName || !formData.lastName || !formData.email) {
+    //   alert("Please fill in the mandatory fields.");
+    //   return;
+    // }
 
     try {
       await addDoc(collection(db, "feedback"), {
         firstName: formData.firstName,
         lastName: formData.lastName,
-        email: formData.email,
+        CompanyName: formData.CompanyName,
         rating: formData.rating,
         likedMost: formData.likedMost,
         timestamp: new Date(),
@@ -73,7 +74,7 @@ const FeedbackForm = () => {
       setFormData({
         firstName: "",
         lastName: "",
-        email: "",
+        CompanyName: "",
         rating: null,
         likedMost: "",
       });
@@ -88,7 +89,7 @@ const FeedbackForm = () => {
     const templateParams = {
       firstName: formData.firstName,
       lastName: formData.lastName,
-      email: formData.email,
+      CompanyName: formData.CompanyName,
       rating: formData.rating,
       likedMost: formData.likedMost,
       did:"submitted Feedback form",
@@ -143,11 +144,11 @@ const FeedbackForm = () => {
         <br />
         <div className="row-feedback">
           <label className="label-group ">
-            Email
+          Company Name
             <input
-              type="email"
-              name="email"
-              value={formData.email}
+              type="text"
+              name="CompanyName"
+              value={formData.CompanyName}
               onChange={handleChange}
               required
             />
@@ -177,17 +178,7 @@ const FeedbackForm = () => {
             />
           </label>
           <br />
-          {/* 
-        <label className="label-group ">
-          How can we improve?
-         
-            <textarea
-              name="improvementSuggestions"
-              value={formData.improvementSuggestions}
-              onChange={handleChange}
-            />
-        
-        </label> */}
+          
         </div>
         <br />
         <div className="btn-container">

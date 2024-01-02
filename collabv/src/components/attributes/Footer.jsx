@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="footer-content">     
         <div className="footer-section">         
           <h2>Join The Success!</h2>
-          <button className="enroll-button">Enroll Now</button>
+          {/* <button className="enroll-button">Enroll Now</button> */}
         </div>
         <div className="footer-section">
           <h3>Contact Us</h3>
