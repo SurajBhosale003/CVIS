@@ -8,7 +8,7 @@ class swdevelopment extends Component {
       <>
         <div className="container">
           <div className="image">
-            <Image src="https://static.wixstatic.com/media/4cdf87_10efa682cfba485d983f4cb28e0c8ac4~mv2.jpg/v1/fill/w_613,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_10efa682cfba485d983f4cb28e0c8ac4~mv2.jpg" />
+            <Image src="/imgforcollab/collabvisionservices_softwaredev.webp" />
           </div>
           <div className="text">
             <h1 className='texth1'>Software Development</h1>
@@ -22,12 +22,12 @@ class swdevelopment extends Component {
         <div className="button-container">
           <Button 
           className='btn1'
-         href="#">
+         href="/services/cloudpage">
             Previous
           </Button>
           <Button
             className='btn2'
-            href="#"
+            href="/services/graphic"
           >
             Next
           </Button>

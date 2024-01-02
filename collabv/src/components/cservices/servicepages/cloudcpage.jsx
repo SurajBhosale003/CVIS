@@ -8,7 +8,7 @@ class Graphic extends Component {
       <>
         <div className="container">
           <div className="image">
-            <Image src="https://static.wixstatic.com/media/4cdf87_30830cc2afe3401499f8eaaa2805ac59~mv2.jpg/v1/fill/w_613,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_30830cc2afe3401499f8eaaa2805ac59~mv2.jpg" />
+            <Image src="/imgforcollab/collabvisionservices_cloudpage.webp" />
           </div>
           <div className="text">
             <h1 className='texth1'>Cloud Services</h1>
@@ -21,12 +21,12 @@ class Graphic extends Component {
         <div className="button-container">
           <Button 
           className='btn1'
-         href="#">
+         href="/services/softwaretesting">
             Previous
           </Button>
           <Button
             className='btn2'
-            href="#"
+            href="/services/swdevelopment"
           >
             Next
           </Button>

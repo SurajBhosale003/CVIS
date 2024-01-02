@@ -8,7 +8,7 @@ class digitalbranding extends Component {
       <>
         <div className="container">
           <div className="image">
-            <Image src="https://static.wixstatic.com/media/4cdf87_8d9bcd61573a4b768785f5ad7c85cdf1~mv2.jpg/v1/fill/w_950,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_8d9bcd61573a4b768785f5ad7c85cdf1~mv2.jpg" />
+            <Image src="/imgforcollab/collabvisionservices_digitalbrandpage.webp" />
           </div>
           <div className="text">
             <h1 className='texth1'>Digital Branding</h1>
@@ -22,12 +22,12 @@ class digitalbranding extends Component {
         <div className="button-container">
           <Button 
           className='btn1'
-         href="#">
+         href="/services/webdesign">
             Previous
           </Button>
           <Button
             className='btn2'
-            href="#"
+            href="/services/softwaretesting"
           >
             Next
           </Button>

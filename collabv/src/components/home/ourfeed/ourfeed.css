@@ -1,11 +1,16 @@
 
- .feedHeader {
+ .FeedMain {
   text-align: center;
-  font-family: Arial, sans-serif;
+  color: #333;
+}
+.FeedMain h4{
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .feedheadertitle {
-  margin: 20px;
+  /* margin-left: 580px; */
+  text-align: center;
   font-size: xx-large;
   color: black;
   font-size: 38px;
@@ -13,7 +18,7 @@
 }
 .FeedMain {
   box-sizing: border-box;
-  height: 200px;
+  height: 600px;
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
@@ -24,13 +29,11 @@
   text-align: center;
   width: 90%; 
   max-width: 600px; 
-  height: 30rem;
-  min-height: 200px; 
 }
 .FeedMain h3 {
-  font-size: 20px;
- 
-  color: #333;
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+  color: #000;
 }
 
 .FeedMain p {

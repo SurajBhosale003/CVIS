@@ -8,7 +8,7 @@ class swtesting extends Component {
       <>
         <div className="container">
           <div className="image">
-            <Image src="https://static.wixstatic.com/media/4cdf87_58a160f6eef142b9b8ddefbd795eb70b~mv2.jpg/v1/fill/w_613,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_58a160f6eef142b9b8ddefbd795eb70b~mv2.jpg" />
+            <Image src="/imgforcollab/collabvisionlearningsoftwaretesting.webp" />
           </div>
           <div className="text">
             <h1 className='texth1'>Software Testing</h1>
@@ -32,12 +32,12 @@ We combine manual and automated testing and apply our experience with trusted au
         <div className="button-container">
           <Button 
           className='btn1'
-         href="#">
+         href="/services/digitalbrandpage">
             Previous
           </Button>
           <Button
             className='btn2'
-            href="#"
+            href="/services/cloudpage"
           >
             Next
           </Button>

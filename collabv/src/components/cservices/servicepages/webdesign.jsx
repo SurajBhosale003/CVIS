@@ -8,7 +8,7 @@ class webdesign extends Component {
       <>
         <div className="container">
           <div className="image">
-            <Image src="https://static.wixstatic.com/media/4cdf87_da23de8dd2d448e0bb976548bf82ecaf~mv2.jpg/v1/fill/w_950,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_da23de8dd2d448e0bb976548bf82ecaf~mv2.jpg" />
+            <Image src="/imgforcollab/collabvisionservices_webdesign.webp" />
           </div>
           <div className="text">
             <h1 className='texth1'>Web Design</h1>
@@ -22,12 +22,12 @@ class webdesign extends Component {
         <div className="button-container">
           <Button 
           className='btn1'
-         href="#">
+         href="/services/seopage">
             Previous
           </Button>
           <Button
             className='btn2'
-            href="#"
+            href="/services/androidpage"
           >
             Next
           </Button>

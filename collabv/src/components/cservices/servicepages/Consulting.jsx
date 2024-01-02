@@ -8,7 +8,7 @@ class Consultingpage extends Component {
       <>
         <div className="container">
           <div className="image">
-            <Image src="https://media.licdn.com/dms/image/D4D12AQHHzV6n8PEaeg/article-cover_image-shrink_720_1280/0/1686668361893?e=2147483647&v=beta&t=W6iLChNfF0nVUu7_5BX-WG3B-ZDiD9cgXgfnxEDxFA0" />
+            <Image src="/imgforcollab/collabvisionservices_consultingpage.jpeg" />
           </div>
           <div className="text">
             <h1 className='texth1'>Consulting about Technology</h1>
@@ -22,12 +22,12 @@ class Consultingpage extends Component {
         <div className="button-container">
           <Button 
           className='btn1'
-         href="#">
+         href="/services/androidpage">
             Previous
           </Button>
           <Button
             className='btn2'
-            href="#"
+            href="/services/digitalbrandpage"
           >
             Next
           </Button>

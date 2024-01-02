@@ -8,7 +8,7 @@ class ccpage extends Component {
       <>
         <div className="container">
           <div className="image">
-            <Image src="https://static.wixstatic.com/media/4cdf87_7ee3d44d77304c399e99bd3daf575981~mv2.jpg/v1/fill/w_950,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4cdf87_7ee3d44d77304c399e99bd3daf575981~mv2.jpg" />
+            <Image src="/imgforcollab/collabvisionservices_seo.webp" />
           </div>
           <div className="text">
             <h1 className='texth1'>SEO</h1>
@@ -22,12 +22,12 @@ class ccpage extends Component {
         <div className="button-container">
           <Button 
           className='btn1'
-         href="#">
+         href="/services/graphic">
             Previous
           </Button>
           <Button
             className='btn2'
-            href="#"
+            href="/services/webdesign"
           >
             Next
           </Button>
