@@ -43,14 +43,14 @@ class OurFeedback extends Component {
 
     return (
       <div className="feedHeader">
-        <h1 className="feedheadertitle">Students Feedbacks</h1>
+        <h1 className="feedheadertitle">Our Customer's Feedbacks</h1>
         <div>
           <Slider {...settings}>
             {this.state.feedbackData.map((item, index) => (
               <div className="FeedMain" key={index}>
                 <h3>{item.firstName} {item.lastName}</h3>
                 <p>{item.likedMost}</p>
-                <p> Rating : {item.rating} ⭐</p>
+                <p style={{marginTop:36, textAlign:'center'}}> Rating : {item.rating} ⭐</p>
               </div>
             ))}
           </Slider>

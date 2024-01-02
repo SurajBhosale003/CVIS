@@ -13,7 +13,6 @@
     text-align: center;
     width: 1200px;
     margin-left: 15%;
-    
     text-align: justify;
 }
 .about h1{
@@ -40,8 +39,13 @@
 .socialMedia-icons-ler{
     text-align: center;
 }
+.socialMedia-icons-ler h2{
+    font-size: larger;
+    font-weight: 700;
+}
 .socialMedia-icons-ler h1{
-    font-size: large;
+    font-size: xx-large;
+    font-weight: 700;
 }
 .socialMedia-icons-ler a {
     color: black;
@@ -52,7 +56,7 @@
 }
   
 .socialMedia-icons-ler a:hover {
-    color: blue;
+    color: rgb(12, 12, 147);
 }
 .socialMedia-icons-ler .btnj{
     font-size: small;
@@ -62,4 +66,8 @@
 .socialMedia-icons-ler .btnj:hover{
     background-color: white;
     color: black;
+}
+.priceandfree{
+    margin-left: 745px;
+    align-items:center;
 }

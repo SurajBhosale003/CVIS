@@ -2,25 +2,29 @@
 
 .feedHeader {
   text-align: center;
-  margin: 20px;
   font-family: Arial, sans-serif;
 }
 
 .feedheadertitle {
-  font-size: 28px;
+  margin: 20px;
+  font-size: xx-large;
+  color: black;
+  font-size: 38px;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .FeedMain {
   box-sizing: border-box;
-  height: 200px;
+  height: 580px;
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
-  margin: 0px 3%;
+  margin: 20px;
+  overflow: hidden;
+  margin-left: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  text-justify: auto;
 }
 
 .FeedMain h3 {

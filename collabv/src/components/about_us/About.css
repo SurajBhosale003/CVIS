@@ -126,7 +126,8 @@
     display: flex;
      /* max-height: 800px;      */
     padding: 10px;
-    margin-top: 5rem;
+    margin-top: 20px;
+    margin-bottom: 100px;
     text-align: center;
   }
 

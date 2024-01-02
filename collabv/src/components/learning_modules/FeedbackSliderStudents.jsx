@@ -63,7 +63,7 @@
 import  { Component } from 'react';
 import Slider from 'react-slick';
 // import './ourfeed.css';
-
+import './FeedbackSliderStudent.css';
 const ourfeedData = [
   {
     "title": "Tejswini Lad, Kolhapur",
@@ -93,12 +93,12 @@ class FeedbackSliderStudents extends Component {
     };
 
     return (
-      <div className="feedHeader">
-        <h1 className="feedheadertitle">Our Students Feedbacks</h1>
+      <div className="feedHeader1">
+        <h1 className="feedheadertitle1">Our Students Feedbacks</h1>
         <div >
           <Slider {...settings}>
             {ourfeedData.map((item, index) => (
-              <div className="FeedMain" key={index}>
+              <div className="FeedMain1" key={index}>
                 <h3>{item.title}</h3>
                 <p style={{textAlign:'justify'}}>{item.info}</p>
               </div>

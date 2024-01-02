@@ -14,20 +14,20 @@ export default function StudentFeedback() {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const studentsRef = collection(db, "Student register");
+          const studentsRef = collection(db, "feedback");
           const studentsSnapshot = await getDocs(studentsRef);
           const newData = [];
   
           studentsSnapshot.forEach((doc) => {
-            const { firstName, lastName, email, phoneNo, timestamp } = doc.data();
+            const { firstName, lastName, CompanyName, rating, timestamp } = doc.data();
             const formattedTimestamp = timestamp
               ? new Date(timestamp.seconds * 1000).toLocaleString()
               : "";
             newData.push({
               firstName,
               lastName,
-              email,
-              phoneNo,
+              CompanyName,
+              rating,
               formattedTimestamp,
             });
           });
@@ -36,7 +36,6 @@ export default function StudentFeedback() {
           setLoading(false);
         } catch (error) {
           console.error("Error fetching student data:", error);
-          setError("Error fetching student data");
           setLoading(false);
         }
       };
@@ -46,7 +45,7 @@ export default function StudentFeedback() {
   
   return (
     <div>
-       <h2>Student Feedback Section</h2>
+       <h2>Customer Feedback Section</h2>
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {studentData.length > 0 && (
@@ -55,8 +54,8 @@ export default function StudentFeedback() {
             <tr>
               <th>First Name</th>
               <th>Last Name</th>
-              <th>Email</th>
-              <th>Phone Number</th>
+              <th>CompanyName</th>
+              <th>Rating</th>
               <th>Timestamp</th>
             </tr>
           </thead>
@@ -65,8 +64,8 @@ export default function StudentFeedback() {
               <tr key={index}>
                 <td>{student.firstName}</td>
                 <td>{student.lastName}</td>
-                <td>{student.email}</td>
-                <td>{student.phoneNo}</td>
+                <td>{student.CompanyName}</td>
+                <td>{student.rating}</td>
                 <td>{student.formattedTimestamp}</td>
               </tr>
             ))}

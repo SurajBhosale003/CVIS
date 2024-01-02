@@ -36,7 +36,7 @@ export class softwaretestinfpage extends Component {
                 <Collapse items={items} />
             </div>
             <hr className='hrs' />
-            <div style={{ padding: '10px' }}>
+            <div className='priceandfree'>
                 <h3>Price</h3>
                 <p>Free</p>
             </div>
@@ -56,7 +56,7 @@ export class softwaretestinfpage extends Component {
               <LinkIcon fontSize="large"  />
             </a>
           </div>
-                <Button variant="contained" href="/learning/ccpage/ccpagecontent" style={{color: 'white' , alignItems:'center', marginLeft: '47%'}}>Join</Button>
+                <Button variant="contained" href="/learning/ccpage/ccpagecontent" style={{color: 'white' , alignItems:'center',margin:10, marginLeft: '47%'}}>Join</Button>
             </div>
         )
     }

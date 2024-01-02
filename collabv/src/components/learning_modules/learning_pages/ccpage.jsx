@@ -43,7 +43,7 @@ export class ccpage extends Component {
                     height={500}
                     width={1380}
                     style={{ display: 'block', margin: 'auto' }}
-                    src="https://imageio.forbes.com/specials-images/imageserve/5f9fa9e815da35da1356a28b/The-5-Biggest-Cloud-Computing-Trends-In-2021/960x0.jpg?format=jpg&width=960"
+                    src="/imgforcollab/collabvisionlearningcloudpage.webp"
                 />
             </div>
             <div className='about'>
@@ -55,7 +55,7 @@ export class ccpage extends Component {
                 <Collapse items={items} />
             </div>
             <hr className='hrs' />
-            <div className='pf'>
+            <div className='priceandfree'>
                 <h3>Price</h3>
                 <p>Free</p>
             </div>
@@ -77,7 +77,7 @@ export class ccpage extends Component {
             <br/>
             
           </div>
-          <Button variant="contained"  className="btnj" href="/learning/ccpage/ccpagecontent" style={{color: 'white' , alignItems:'center', marginLeft: '47%'}}>Join</Button>
+          <Button variant="contained"  className="btnj" href="/learning/ccpage/ccpagecontent" style={{color: 'white' , alignItems:'center',margin:10, marginLeft: '47%',}}>Join</Button>
             </div>
         )
     }
