@@ -10,7 +10,6 @@ import GoToTop from './components/attributes/GoToTop';
 import Ccpage from './components/learning_modules/learning_pages/ccpage';
 import Softwaretestinfpage from './components/learning_modules/learning_pages/softwaretestinfpage';
 import Ccmulesoft from './components/learning_modules/learning_pages/ccmulesoft';
-import Register from './components/attributes/Register';
 import Ccmul from './components/learning_modules/content/ccmul';
 import CloudComputing from './components/learning_modules/content/CloudComputing';
 import SoftwareTesting from './components/learning_modules/content/SoftwareTesting';
@@ -24,9 +23,14 @@ import Digitalbranding from './components/cservices/servicepages/digitalbranding
 import Androiddevpage from './components/cservices/servicepages/androiddevpage';
 import Ccpagecontent from './components/learning_modules/learning_pages/ccpage';
 import Webdesign from './components/cservices/servicepages/webdesign';
-import Login from "./components/attributes/login";
-import AdminLogin from "./components/attributes/AdminLogin";
-import AdminDashboard from "./components/admin/AdminDashboard";
+
+/*admin routs*/
+import Register from './components/admin/Register';
+import Login from "./components/admin/login";
+import PrivateRouts from "./components/admin/PrivateRouts";
+import AdminLogin from "./components/admin/AdminLogin";
+import AdminDashBoard from "./components/admin/AdminDashBoard";
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Products from './components/products/productinfo';
 import './App.css'
@@ -51,8 +55,12 @@ function App() {
           <Route path="/services/swdevelopment" element={<Swdevelopment />} />
           <Route path="/services/softwaretesting" element={<Softwaretesting />} />
           <Route path="/services/Consultingpage" element={<Consultingpage />} />
+
           {/* login register admin Page Routes */}
-          <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/private" element={<PrivateRouts />} > 
+          <Route path="admin-dashboard" element={<AdminDashBoard />} />
+          </Route>
+
           <Route path="/login" element={<Login />} />
           <Route path="/AdminLogin" element={<AdminLogin />} />
           <Route path="/auth" element={<Register />} />
