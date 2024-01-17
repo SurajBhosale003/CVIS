@@ -13,7 +13,7 @@ class AdminLogin extends Component {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log('User signed in:', user);
+        console.log('User signed in:', user); 
 //pas = 123456 -------------------------------------
 //key = 12345  -------------------------------------
         if (user.email === 'collabvisiontest001@gmail.com') {

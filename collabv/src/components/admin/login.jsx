@@ -1,5 +1,6 @@
 
 
+
 import  { Component } from 'react';
 import './logincss.css';
 import { signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
@@ -14,20 +15,8 @@ class Login extends Component {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log('User signed in:', user);
-//pas = admin1
-        if (user.email === 'collabvisiontest001@gmail.com') {
-          // If the user is an admin, prompt for the secret key
-          const secretKey = prompt('Please enter the secret key:');
-          if (secretKey === '12345') {
-            // If the secret key is correct, redirect to the admin dashboard
-            window.location.href = 'http://localhost:5173/admin-dashboard'; // Replace with your desired URL
-          } else {
-            alert('Invalid secret key. Please try again.');
-          }
-        } else {
-         
-          window.location.href = 'http://localhost:5173'; // Replace with your desired URL
-        }
+
+        
       })
       .catch((error) => {
         // Handle sign-in errors
@@ -79,7 +68,7 @@ class Login extends Component {
             </p>
           </form>
           <div id="create-account-wrap">
-            <p>Not a member? <a href="http://localhost:5173/auth">Create Account</a></p>
+            <p>Not a member? <a href="http://localhost:5173">Create Account</a></p>
             <p> Forgot Password? <a onClick={this.resetPassword}> Reset Password</a></p>
             <p>Admin? <a href="http://localhost:5173/AdminLogin">Admin Login</a></p>
 

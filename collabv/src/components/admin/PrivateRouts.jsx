@@ -1,4 +1,7 @@
 import { Outlet } from "react-router-dom";
+import  { useContext } from 'react';
+import AdminContext from '../../context/Admincontext';
+
 // import  { useState, useEffect } from 'react';
 
 
@@ -6,11 +9,10 @@ const PrivateRouts =()=> {
 
     // const [isLoggedIn, setisLoggedIn] = useState('');
 
+    const {isAdmin,isLoggedIn}=useContext(AdminContext);
 
 
-  let loggedIn = false;
-
-  if(loggedIn){
+  if(isAdmin && isLoggedIn ){
     return <Outlet/>
   }
   else {

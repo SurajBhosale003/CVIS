@@ -1,3 +1,8 @@
+import {useEffect,  useState } from "react";
+// import firebase from './Firebase.js'
+import { db } from "./Firebase";
+import { getDocs, collection } from "firebase/firestore";
+
 import LetsChat from './components/chatboot/LetsChat'
 import AboutUs from './components/about_us/AboutUs';
 import ContactUs from './components/contact_us/ContactUs';
@@ -26,6 +31,7 @@ import Webdesign from './components/cservices/servicepages/webdesign';
 
 /*admin routs*/
 import Register from './components/admin/Register';
+import AdminContext from './context/Admincontext';
 import Login from "./components/admin/login";
 import PrivateRouts from "./components/admin/PrivateRouts";
 import AdminLogin from "./components/admin/AdminLogin";
@@ -35,9 +41,55 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Products from './components/products/productinfo';
 import './App.css'
 function App() {
+
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleAdminLogin = async(email )=> 
+  {
+    try {
+      const adminsRef = db.collection('adminCredentials').doc(email);
+      const adminsSnapshot = await adminsRef.get();
+
+      if (adminsSnapshot.exists) {
+        // const { adminEmail, adminPas } = adminsSnapshot.data();
+        setIsAdmin(true);
+      } else {
+        console.log('Admin document does not exist!');
+        setIsAdmin(false);
+      }
+    } catch (error) {
+      console.error('Error fetching admin document:', error);
+      setIsAdmin(false);
+    }
+  
+  };
+
+  
+  useEffect(() => {
+    // Set up an authentication observer
+    const unsubscribe = firebase.auth().onAuthStateChanged((authUser) => {
+      if (authUser) {
+        // User is signed in
+        handleAdminLogin( authUser.email)
+        setIsLoggedIn(true);
+      } else {
+        // User is signed out
+      
+        setIsLoggedIn(false);
+
+      }
+    });
+
+    // Cleanup the observer when the component unmounts
+    return () => unsubscribe();
+  }, []);
+
   return (
-    <>
+    <> 
+   
       <Router>
+        <AdminContext.Provider value={{isAdmin,setIsAdmin,isLoggedIn,setIsLoggedIn}}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -58,7 +110,7 @@ function App() {
 
           {/* login register admin Page Routes */}
           <Route path="/private" element={<PrivateRouts />} > 
-          <Route path="admin-dashboard" element={<AdminDashBoard />} />
+              <Route path="admin-dashboard" element={<AdminDashBoard />} />
           </Route>
 
           <Route path="/login" element={<Login />} />
@@ -77,6 +129,7 @@ function App() {
         </Routes>
         <GoToTop />
         <LetsChat/>
+        </AdminContext.Provider>
         <Footer />
       </Router>
     </>
