@@ -1,6 +1,7 @@
 import {useEffect,  useState } from "react";
-// import firebase from './Firebase.js'
 import { db } from "./Firebase";
+import firebase from 'firebase/app';
+import 'firebase/auth';
 import { getDocs, collection } from "firebase/firestore";
 
 import LetsChat from './components/chatboot/LetsChat'
