@@ -1,12 +1,11 @@
 
-
-
 import  { Component } from 'react';
 import './logincss.css';
 import { signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
 import { auth } from '../../Firebase';
 
 class Login extends Component {
+
   signIn = () => {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
@@ -14,7 +13,7 @@ class Login extends Component {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log('User signed in:', user);
+        alert.log('User signed in:', user);
 
         
       })
@@ -25,6 +24,7 @@ class Login extends Component {
       });
   };
 
+  
   resetPassword = () => {
     const email = document.getElementById('email').value;
     sendPasswordResetEmail(auth, email)

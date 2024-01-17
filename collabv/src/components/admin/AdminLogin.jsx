@@ -1,22 +1,22 @@
 
 import {  useState } from "react";
-import { db } from "./Firebase";
-import { auth } from "./Firebase.js";
-// import 'firebase/auth';
+import { db } from "../../Firebase";
+import { auth } from "../../Firebase.js";
 import { getDocs, collection } from "firebase/firestore";
 import './logincss.css';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../Firebase';
+// import { auth } from '../../Firebase.js';
+import  { useContext } from 'react';
+import AdminContext from '../../context/Admincontext';
 
 const AdminLogin = () => {
-  const [isAdmin, setIsAdmin] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+  const {setIsAdmin,setisLoggedIn}=useContext(AdminContext);
   const [credentials, setCredentials] = useState({
     email: '',
     password: '',
   });
 
+ 
   const handleChange = (e) => {
     setCredentials({
       ...credentials,
@@ -39,6 +39,7 @@ const AdminLogin = () => {
       const isAdminFromData = users.find((user)=>user.email===email);
       if (isAdminFromData) {
         setIsAdmin(true);
+        window.location.href = 'http://localhost:5173/private/admin-dashboard';
       } else {
         console.log("Admin document does not exist!");
         setIsAdmin(false);
@@ -49,6 +50,27 @@ const AdminLogin = () => {
     }
   };
 
+
+ const signIn = () => {
+  // const { email, password } = credentials;
+  console.log("pass and email");
+  console.log(credentials.email);
+  console.log(credentials.password);
+ 
+    signInWithEmailAndPassword(auth, credentials.email, credentials.password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        setisLoggedIn(true);
+        handleAdminLogin(user.email);
+       
+        console.log('User signed in:', user);
+        // Rest of your code...
+      })
+      .catch((error) => {
+        console.error('Sign-in error:', error);
+        alert('Invalid email or password. Please try again.');
+      });
+  };
   return (
     <div>
       <div id="login-form-wrap">
@@ -58,6 +80,7 @@ const AdminLogin = () => {
           onSubmit={(e) => {
             e.preventDefault();
             signIn();
+         
           }}
         >
           <p>
