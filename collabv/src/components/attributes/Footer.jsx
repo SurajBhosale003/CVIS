@@ -11,10 +11,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Footer = () => {
   return (
     <footer className="footer">
-    <h2>Collab Vision Infosolutions</h2>
+    <h2>Collab Vision InfoSolution</h2>
       <div className="footer-content">     
         <div className="footer-section">         
-          <h2>Join The Success!</h2>
+          {/* <h2>Join The Success!</h2> */}
           {/* <button className="enroll-button">Enroll Now</button> */}
         </div>
         <div className="footer-section">
