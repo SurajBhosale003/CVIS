@@ -1,8 +1,10 @@
+import { lazy, Suspense } from 'react';
+const Home = lazy(() => import('./components/home/Home'));
+
 import LetsChat from './components/chatboot/LetsChat'
 import AboutUs from './components/about_us/AboutUs';
 import ContactUs from './components/contact_us/ContactUs';
 import Services from './components/cservices/Services';
-import Home from './components/home/Home';
 import Learning from './components/learning_modules/Learning';
 import Navbar from './components/attributes/Navbar';
 import Footer from './components/attributes/Footer';
@@ -30,6 +32,8 @@ import AdminDashboard from "./components/admin/AdminDashboard";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Products from './components/products/productinfo';
 import './App.css'
+import StudentRegistration from './components/admin/StudentRegistration';
+import StudentFeedback from './components/admin/StudentFeedback';
 function App() {
   return (
     <>
@@ -52,6 +56,9 @@ function App() {
           <Route path="/services/softwaretesting" element={<Softwaretesting />} />
           <Route path="/services/Consultingpage" element={<Consultingpage />} />
           {/* login register admin Page Routes */}
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/admin-dashboard/studetreg" element={<StudentRegistration />} />
+          <Route path="/admin-dashboard/feedback" element={<StudentFeedback />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/AdminLogin" element={<AdminLogin />} />
