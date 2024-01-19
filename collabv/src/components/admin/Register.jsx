@@ -1,170 +1,68 @@
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { UserAuth } from '../../context/AuthContext';
 
-// import React, { Component } from 'react';
-// import "./logincss.css"
+const Register = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  // eslint-disable-next-line no-unused-vars
+  const [error, setError] = useState('')
+  const { createUser } = UserAuth();
+  const navigate = useNavigate()
 
-// import { createUserWithEmailAndPassword } from 'firebase/auth'; 
-// import { auth } from '../../Firebase'; 
-
-// class Register extends Component {
-//   signup = () => {
-//     const email = document.getElementById('email').value;
-//     const password = document.getElementById('password').value;
-
-//     const authInstance = auth; 
-
-//     createUserWithEmailAndPassword(authInstance, email, password)
-//       .then((userCredential) => {
-//         const user = userCredential.user;
-//         console.log('User registered:', user);
-//         alert('Registration successful! You can now sign in.');
-//         window.location.href = 'http://localhost:5173/login'; 
-//       })
-//       .catch((error) => {
-//         if (error.code === 'auth/email-already-in-use') {
-//           alert('A user with this email address already exists. Please sign in instead.');
-//           window.location.href = 'http://localhost:5173/login';
-//         } else if (error.code === 'auth/weak-password') {
-//           alert('Invalid password. Please enter a stronger password.');
-//           document.getElementById('password').value = ''; 
-//         } else {
-//           console.error('Registration error:', error);
-//         }
-//       });
-//   };
-
-//   render() {
-//     return (
-//       <div>
-//         <div id="login-form-wrap">
-//           <h2>Registration</h2>
-//           <form
-//             id="login-form"
-//             onSubmit={(e) => {
-//               e.preventDefault();
-//               this.signup();
-//             }}
-//           >
-//             <p>
-//               <input type="text" id="username" placeholder="Enter your full name" required />
-//               <i className="validation">
-//                 <span></span>
-//                 <span></span>
-//               </i>
-//             </p>
-//             <p>
-//               <input type="email" id="email" placeholder="Email Address" required />
-//               <i className="validation">
-//                 <span></span>
-//                 <span></span>
-//               </i>
-//             </p>
-//             <p>
-//               <input type="password" id="password" placeholder="Enter password" required />
-//               <i className="validation">
-//                 <span></span>
-//                 <span></span>
-//               </i>
-//             </p>
-//             <p>
-//               <input type="submit" id="register" value="Register" />
-//             </p>
-//           </form>
-//           <div id="create-account-wrap">
-//             <p>Already a member? <a href="http://localhost:5173/login">Sign in</a></p>
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
-// export default Register;
-
-
-
-
-import  { Component } from 'react';
-import './logincss.css';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../Firebase';
-
-class Register extends Component {
-  signup = () => {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log('User registered:', user);
-        alert('Registration successful! You can now sign in.');
-        window.location.href = 'http://localhost:5173/login';  {/* Change the link before deployment */}
-      })
-      .catch((error) => {
-        // Handle registration errors
-        if (error.code === 'auth/email-already-in-use') {
-          alert('A user with this email address already exists. Please sign in instead.');
-          window.location.href = 'http://localhost:5173/login';
-            {/* Change the link before deployment */}
-        } else if (error.code === 'auth/weak-password') {
-          alert('Invalid password. Please enter a stronger password.');
-          document.getElementById('password').value = '';
-        } else {
-          console.error('Registration error:', error);
-        }
-      });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    try {
+      await createUser(email, password);
+      navigate('/account')
+    } catch (e) {
+      setError(e.message);
+      console.log(e.message);
+    }
   };
 
-  render() {
-    return (
-     
+  return (
+    <div >
       <div>
-        <div id="login-form-wrap">
-          <h2>Registration</h2>
-          <form
-            id="login-form"
-            onSubmit={(e) => {
-              e.preventDefault();
-              this.signup();
-            }}
-          >
-            <p>
-              <input type="text" id="username" placeholder="Enter your full name" required />
-              <i className="validation">
-                <span></span>
-                <span></span>
-              </i>
-            </p>
-            <p>
-              <input type="email" id="email" placeholder="Email Address" required />
-              <i className="validation">
-                <span></span>
-                <span></span>
-              </i>
-            </p>
-            <p>
-              <input type="password" id="password" placeholder="Enter password" required />
-              <i className="validation">
-                <span></span>
-                <span></span>
-              </i>
-            </p>
-            <p>
-              <input type="submit" id="register" value="Register" />
-            </p>
-          </form>
-          <div id="create-account-wrap">
-            <p>Already a member? <a href="http://localhost:5173/login">Sign in</a></p>
-            <p>Admin? <a href="http://localhost:5173/AdminLogin">Admin Login</a></p>
+        <h1 >Sign up for a free account</h1>
+        <p className='py-2'>
+          Already have an account yet?{' '}
+          <Link to='/signin' className='underline'>
+            Sign in.
+          </Link>
+        </p>
+        <p >
+          If admin then login here{' '}
+          <Link to='/adminLogin' >
+           admin Sign in.
+          </Link>
 
-              {/* Change the link before deployment */}
-          </div>
-        </div>
+        </p>
       </div>
-   
-    );
-  }
-}
+      <form onSubmit={handleSubmit}>
+        <div >
+          <label >Email Address</label>
+          <input
+            onChange={(e) => setEmail(e.target.value)}
+           
+            type='email'
+          />
+        </div>
+        <div>
+          <label >Password</label>
+          <input
+            onChange={(e) => setPassword(e.target.value)}
+            
+            type='password'
+          />
+        </div>
+        <button >
+          Sign Up
+        </button>
+      </form>
+    </div>
+  );
+};
 
 export default Register;
-

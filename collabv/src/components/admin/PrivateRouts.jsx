@@ -1,25 +1,21 @@
-import { Outlet } from "react-router-dom";
-import  { useContext } from 'react';
-import AdminContext from '../../context/Admincontext';
-
-// import  { useState, useEffect } from 'react';
 
 
-const PrivateRouts =()=> {
+import { Navigate } from 'react-router-dom';
+import { UserAuth } from '../../context/AuthContext';
+import { useAdminAuth } from '../../context/AdminContext';
 
-    // const [isLoggedIn, setisLoggedIn] = useState('');
+const PrivateRoutes = ({ children }) => {
+  const { user } = UserAuth();
+  const { isAdmin } = useAdminAuth();
 
-    const {isAdmin,isLoggedIn}=useContext(AdminContext);
-
-
-  if(isAdmin && isLoggedIn ){
-    return <Outlet/>
+  if (!user) {
+    return <Navigate to='/account' />;
   }
-  else {
-    return "user is not logged in";
-  }
+  if (isAdmin && !user) {
+    return <Navigate to='/admin/dashboard' />;
+  }  
 
-}
+  return children;
+};
 
-export default PrivateRouts
-
+export default PrivateRoutes;

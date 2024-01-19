@@ -1,82 +1,63 @@
+/* eslint-disable no-unused-vars */
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { UserAuth } from '../../context/AuthContext';
 
-import  { Component } from 'react';
-import './logincss.css';
-import { signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
-import { auth } from '../../Firebase';
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+  const { signIn } = UserAuth();
 
-class Login extends Component {
-
-  signIn = () => {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        alert.log('User signed in:', user);
-
-        
-      })
-      .catch((error) => {
-        // Handle sign-in errors
-        console.error('Sign-in error:', error);
-        alert('Invalid email or password. Please try again.');
-      });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('')
+    try {
+      await signIn(email, password)
+      navigate('/account')
+    } catch (e) {
+      setError(e.message)
+      console.log(e.message)
+    }
   };
 
-  
-  resetPassword = () => {
-    const email = document.getElementById('email').value;
-    sendPasswordResetEmail(auth, email)
-      .then(() => {
-        alert('Password reset email sent. Please check your inbox.');
-      })
-      .catch((error) => {
-        console.error('Password reset error:', error);
-        alert('Unable to send a password reset email. Please try again.');
-      });
-  };
-
-  render() {
-    return (
+  return (
+    <div >
       <div>
-        <div id="login-form-wrap">
-          <h2>Login</h2>
-          <form
-            id="login-form"
-            onSubmit={(e) => {
-              e.preventDefault();
-              this.signIn();
-            }}
-          >
-            <p>
-              <input type="email" id="email" placeholder="Email Address" required />
-              <i className="validation">
-                <span></span>
-                <span></span>
-              </i>
-            </p>
-            <p>
-              <input type="password" id="password" placeholder="Enter password" required />
-              <i className="validation">
-                <span></span>
-                <span></span>
-              </i>
-            </p>
-            <p>
-              <input type="submit" id="login" value="Login" />
-            </p>
-          </form>
-          <div id="create-account-wrap">
-            <p>Not a member? <a href="http://localhost:5173">Create Account</a></p>
-            <p> Forgot Password? <a onClick={this.resetPassword}> Reset Password</a></p>
-            <p>Admin? <a href="http://localhost:5173/AdminLogin">Admin Login</a></p>
+        <h1 >Sign in to your account</h1>
+        <p >
+          Do not have an account yet?{' '}
+          <Link to='/signup' >
+            Sign up.
+          </Link>
+          
+        </p>
+        <p >
+          If admin then login here{' '}
+          <Link to='/AdminLogin' >
+           admin Sign in.
+          </Link>
 
-          </div>
-        </div>
+        </p>
       </div>
-    );
-  }
-}
+      <form onSubmit={handleSubmit}>
+        <div >
+          <label >Email Address</label>
+          <input onChange={(e) => setEmail(e.target.value)}  type='email' />
+        </div>
+        <div >
+          <label >Password</label>
+          <input onChange={(e) => setPassword(e.target.value)}  type='password' />
+        </div>
+        <button >
+          Sign In
+        </button>
+      </form>
+
+
+    </div>
+  );
+};
 
 export default Login;

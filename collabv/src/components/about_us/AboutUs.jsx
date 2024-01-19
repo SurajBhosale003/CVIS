@@ -2,12 +2,9 @@
 
 import "./About.css";
 import CoreValues from "./CoreValues";
-import  { useContext } from 'react';
-import AdminContext from '../../context/Admincontext';
 
-function AboutUs() {
-  const {name}=useContext(AdminContext)
-  console.log(name);
+export default function AboutUs() {
+  
   return (
     <>
       <div className="aboutUs-header-container">
@@ -138,4 +135,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+// export default AboutUs;
