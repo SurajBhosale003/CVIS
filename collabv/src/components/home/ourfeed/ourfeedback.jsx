@@ -1,8 +1,10 @@
 import "./ourfeed.css";
 import { Component } from "react";
 import Slider from "react-slick";
+
 import { db } from "../../../firebase";
 import { collection, getDocs } from "firebase/firestore";
+
 class OurFeedback extends Component {
   constructor() {
     super();
@@ -39,7 +41,7 @@ class OurFeedback extends Component {
 
     return (
       <div className="feedHeader">
-        <h1 className="feedheadertitle">Our Customer's Feedbacks</h1>
+        <h1 className="feedheadertitle">Our Customer Feedbacks</h1>
         <div>
           <Slider {...settings}>
             {this.state.feedbackData.map((item, index) => (
