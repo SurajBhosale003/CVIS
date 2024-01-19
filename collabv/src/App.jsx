@@ -30,6 +30,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AuthContextProvider } from "./context/AuthContext";
 import { AdminContextProvider } from "./context/AdminContext";
 import PrivateRouts from "./components/admin/PrivateRouts";
+import PrivateRoutsAdmin from "./components/admin/PrivateRoutsAdmin";
 import Account from "./components/admin/Account";
 import AdminLogin from "./components/admin/AdminLogin";
 import AdminDashboard from "./components/admin/AdminDashboard";
@@ -77,22 +78,8 @@ function App() {
               <Route path="/signup" element={<Register />} />
               <Route path="/adminlogin" element={<AdminLogin />} />
               <Route path="/signin" element={<Login />} />
-              <Route
-                path="/account"
-                element={
-                  <PrivateRouts>
-                    <Account />
-                  </PrivateRouts>
-                }
-              />
-              <Route
-                path="/admin/dashboard"
-                element={
-                  <PrivateRouts>
-                    <AdminDashboard />
-                  </PrivateRouts>
-                }
-              />
+              <Route path="/account" element={ <PrivateRouts>   <Account />  </PrivateRouts> }/>
+              <Route path="/admin/dashboard" element={<PrivateRoutsAdmin> <AdminDashboard /> </PrivateRoutsAdmin>}/>
 
               {/* Learning Page Routes */}
               <Route path="/learning" element={<Learning />} />

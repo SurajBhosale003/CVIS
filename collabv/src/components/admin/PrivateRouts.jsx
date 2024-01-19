@@ -1,21 +1,13 @@
-
-
 import { Navigate } from 'react-router-dom';
 import { UserAuth } from '../../context/AuthContext';
-import { useAdminAuth } from '../../context/AdminContext';
 
-const PrivateRoutes = ({ children }) => {
+const PrivateRouts = ({ children }) => {
   const { user } = UserAuth();
-  const { isAdmin } = useAdminAuth();
 
   if (!user) {
-    return <Navigate to='/account' />;
+    return <Navigate to='/' />;
   }
-  if (isAdmin && !user) {
-    return <Navigate to='/admin/dashboard' />;
-  }  
-
   return children;
 };
 
-export default PrivateRoutes;
+export default PrivateRouts;

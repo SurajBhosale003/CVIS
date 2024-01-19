@@ -6,6 +6,7 @@ import { useAdminAuth } from '../../context/AdminContext';
 const AdminLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const { handleAdminLogin, isLoggedIn } = useAdminAuth();
@@ -25,9 +26,10 @@ const AdminLogin = () => {
     } catch (e) {
       setError(e.message);
       console.error(e.message);
+      alert(e.message);
     }
   };
-
+console.log(isLoggedIn);
   return (
     <div>
       <div>

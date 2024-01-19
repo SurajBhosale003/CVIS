@@ -1,62 +1,30 @@
+import { useNavigate } from 'react-router-dom';
+import { UserAuth } from '../../context/AuthContext';
 
-
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { useAdminAuth } from '../../context/AdminContext';
-
-const AdminLogin = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+const Account = () => {
+  const { user, logout } = UserAuth();
   const navigate = useNavigate();
-  const { handleAdminLogin, isLoggedIn } = useAdminAuth();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError('');
-
+  const handleLogout = async () => {
     try {
-      await handleAdminLogin(email);
-
-      if (isLoggedIn) {
-        navigate('/admin/dashboard');
-      } else {
-        setError('Invalid admin credentials');
-      }
+      await logout();
+      navigate('/');
+      console.log('You are logged out')
     } catch (e) {
-      setError(e.message);
-      console.error(e.message);
+      console.log(e.message);
     }
   };
 
   return (
-    <div>
-      <div>
-        <h1>Admin Sign in</h1>
-        <p>
-          Not an admin?{' '}
-          <Link to='/'>
-            Go to home
-          </Link>
-        </p>
-      </div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email Address</label>
-          <input onChange={(e) => setEmail(e.target.value)} type='email' />
-        </div>
-        <div>
-          <label>Password</label>
-          <input onChange={(e) => setPassword(e.target.value)} type='password' />
-        </div>
-        <button>
-          Sign In
-        </button>
-      </form>
-      {error && <p>{error}</p>}
+    <div >
+      <h1 >Account</h1>
+      <p>User Email: {user && user.email}</p>
+
+      <button onClick={handleLogout} >
+        Logout
+      </button>
     </div>
   );
 };
 
-export default AdminLogin;
-
+export default Account;
