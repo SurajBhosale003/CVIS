@@ -169,8 +169,8 @@ function ContactUs() {
                   onChange={handleChange}
                 >
                   <option value="" className="op"> Select a Branch</option>
-                  <option value="USA" className="op">USA BRANCH</option>
-                  <option value="Kolhapur" className="op">KOLHAPUR BRANCH</option>
+                  {/* <option value="USA" className="op">USA BRANCH</option> */}
+                  <option value="India" className="op">BRANCH INDIA</option>
                 </select>
               </label>
               <label>

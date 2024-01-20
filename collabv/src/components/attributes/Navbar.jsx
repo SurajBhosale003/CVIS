@@ -1,12 +1,12 @@
 import './Attributes.css'
-import logo from "../../assets/logoNav.png"
+import Logo from "/imgforcollab//collabvision_logo.jpg"
 
 function Navbar() {
   return (
     <>
       <nav >
         <a className="active" href="/">
-          <img src={logo} className="logoImg" alt="logo" width="140px" height="70px" />
+          <img src={Logo} className="logoImg" alt="Collab vision logo" height="100px" />
         </a>
         <div>
          

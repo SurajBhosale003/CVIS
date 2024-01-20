@@ -267,6 +267,7 @@ const BookDemo = () => {
                           onChange={handleInputChange}
                         />
                       </label>
+                      <br/>
                       <label>
                         Phone No:
                         <input
@@ -300,7 +301,7 @@ const BookDemo = () => {
 
       <div className="GiveFeedback-container">
         <div className="GiveFeedback-Header">
-          <h1>Give Us Your Feedback</h1>
+          <h1>Customer's Feedback</h1>
           <p>We’d love to hear what you thought about our services.</p>
         </div>
         <div className="GiveFeedback-Form">
