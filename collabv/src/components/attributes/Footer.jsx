@@ -30,7 +30,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="footer-section">
+        <div className="footer-section2">
           <h3>Follow</h3>
           <div className="socialMedia-icons">
           <a href="https://www.instagram.com/collabvisioninfo/" >

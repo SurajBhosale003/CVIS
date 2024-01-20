@@ -53,6 +53,7 @@ nav{
 /*footer*/
    .footer {
     /* background-color: #f4f4f4; */
+    margin-top: 20px;
     background: white;
     padding: 20px 0;
   }
@@ -60,6 +61,8 @@ nav{
   .footer h2 {
     margin-left: 2%;
     font-weight: bold ;
+    text-align: center;
+    font-size: 200%;
   }
   
   .footer-content {
@@ -75,7 +78,7 @@ nav{
     flex: 1;
     color: #333;
     margin: 0 20px;
-    margin-left: 5%;
+    margin-left:-10%;
   }
   
   .footer-section h2 {

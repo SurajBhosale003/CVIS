@@ -1,6 +1,6 @@
 .image{
     justify-content: center;
-    margin-left: 4%;
+    margin: 40px;
     margin-bottom: 10px;
 }
 .hrs{
@@ -66,8 +66,4 @@
 .socialMedia-icons-ler .btnj:hover{
     background-color: white;
     color: black;
-}
-.priceandfree{
-    margin-left: 745px;
-    align-items:center;
 }

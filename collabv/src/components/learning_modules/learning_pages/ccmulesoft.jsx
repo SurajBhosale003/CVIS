@@ -6,6 +6,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LinkIcon from '@mui/icons-material/Link';
+import FlipCard from '../flippingcards/cards';
 import "../learning_pages/index.css";
 import { dataforccMulpage } from '../learning_pages/data.json'
 const items = dataforccMulpage;
@@ -17,13 +18,13 @@ export class ccmulesoft extends Component {
                 <div style={{ padding: '10px', textAlign: 'center' }}>
                     <h1 style={{ marginBottom: '10px' }}>Cloud computing- Mulesoft</h1>
                     <h2 style={{ marginBottom: '20px' }}>2 Participants</h2>
-                    <Button variant="contained" href="/learning/ccmulcontent" style={{ color: 'white' }}>Join</Button>
+                    {/* <Button variant="contained" href="/learning/ccmulcontent" style={{ color: 'white' }}>Join</Button> */}
                 </div>
                 <div className='image'>
                     <Image
-                        height={500}
-                        width={1380}
-                        style={{ display: 'block', margin: 'auto', alignContent: 'center' }}
+                        height={518}
+                        width={1450}
+                        style={{ display: 'flex', margin:0,objectFit:'cover', alignContent: 'center', borderRadius:10 }}
                         src="/imgforcollab/collabvisionlearningmulsoft.webp"
                     />
                 </div>
@@ -35,8 +36,9 @@ export class ccmulesoft extends Component {
                 <div style={{ marginRight: '250px', marginLeft: '250px' }}>
                     <Collapse items={items} />
                 </div>
+                <FlipCard/>
                 <hr className='hrs' />
-                <div className='priceandfree'>
+                <div className='pf'>
                     <h3>Price</h3>
                     <p>Free</p>
                 </div>
@@ -56,7 +58,7 @@ export class ccmulesoft extends Component {
                         <LinkIcon fontSize="large" />
                     </a>
                 </div>
-                <Button variant="contained" href="/learning/ccmulcontent" style={{ color: 'white', alignItems: 'center', margin: 10, marginLeft: '47%' }}>Join</Button>
+                {/* <Button variant="contained" href="/learning/ccmulcontent" style={{ color: 'white', alignItems: 'center', margin: 10, marginLeft: '47%' }}>Join</Button> */}
             </div>
         )
     }
