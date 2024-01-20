@@ -4,16 +4,15 @@
     justify-content: center;
   }
   
-  .row {
-    
-    gap: 20px;
+  .row {    
+    gap: 10px;
     justify-content: center;
   }
   
   .card {
     position: relative;
-    width: 50vh; 
-    height:35vh; 
+    width: 60vh; 
+    height:40vh; 
     border-radius: 1px;
     overflow: hidden;
     transition: transform 0.4s ease-in-out;
@@ -25,7 +24,7 @@
   }
   
   .card-image {
-    height: 15vh;
+    height: 20vh;
     border-radius: 1rem;
     overflow: hidden;
   }
