@@ -14,10 +14,10 @@ const AdminLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-
+  
     try {
-      await handleAdminLogin(email);
-
+      await handleAdminLogin(email, password);
+  
       if (isLoggedIn) {
         navigate('/admin/dashboard');
       } else {
@@ -29,6 +29,7 @@ const AdminLogin = () => {
       alert(e.message);
     }
   };
+  
 console.log(isLoggedIn);
   return (
     <div>

@@ -35,7 +35,7 @@ import Account from "./components/admin/Account";
 import AdminLogin from "./components/admin/AdminLogin";
 import AdminDashboard from "./components/admin/AdminDashboard";
 import Register from "./components/admin/Register";
-import Login from './components/admin/Login';
+import Login from "./components/admin/Login";
 
 import Products from "./components/products/productinfo";
 import "./App.css";
@@ -59,12 +59,18 @@ function App() {
               <Route path="/services/seopage" element={<Seopage />} />
               <Route path="/services/cloudpage" element={<Cloudcpage />} />
               <Route path="/services/webdesign" element={<Webdesign />} />
-              <Route path="/services/androidpage" element={<Androiddevpage />} />
+              <Route
+                path="/services/androidpage"
+                element={<Androiddevpage />}
+              />
               <Route
                 path="/services/digitalbrandpage"
                 element={<Digitalbranding />}
               />
-              <Route path="/services/swdevelopment" element={<Swdevelopment />} />
+              <Route
+                path="/services/swdevelopment"
+                element={<Swdevelopment />}
+              />
               <Route
                 path="/services/softwaretesting"
                 element={<Softwaretesting />}
@@ -78,8 +84,24 @@ function App() {
               <Route path="/signup" element={<Register />} />
               <Route path="/adminlogin" element={<AdminLogin />} />
               <Route path="/signin" element={<Login />} />
-              <Route path="/account" element={ <PrivateRouts>   <Account />  </PrivateRouts> }/>
-              <Route path="/admin/dashboard" element={<PrivateRoutsAdmin> <AdminDashboard /> </PrivateRoutsAdmin>}/>
+              <Route
+                path="/account"
+                element={
+                  <PrivateRouts>
+                    {" "}
+                    <Account />{" "}
+                  </PrivateRouts>
+                }
+              />
+              <Route
+                path="/admin/dashboard"
+                element={
+                  <PrivateRoutsAdmin>
+                    {" "}
+                    <AdminDashboard />{" "}
+                  </PrivateRoutsAdmin>
+                }
+              />
 
               {/* Learning Page Routes */}
               <Route path="/learning" element={<Learning />} />
