@@ -31,7 +31,7 @@ const AdminLogin = () => {
     }
   };
 
-  console.log(isLoggedIn);
+  // console.log(isLoggedIn);
   return (
     <div>
       <div className="login">
@@ -52,8 +52,8 @@ const AdminLogin = () => {
           <button>Sign In</button>
         </form>
         {error && <p>{error}</p>}
-      </div>
-      <div className="login">
+      {/* </div>
+      <div className="login"> */}
         <p>
           Not an admin? <Link to="/">Go to home</Link>
         </p>

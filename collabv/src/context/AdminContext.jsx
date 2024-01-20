@@ -18,8 +18,8 @@ export const AdminContextProvider = ({ children }) => {
 
       if (!querySnapshot.empty) {
         const adminData = querySnapshot.docs[0].data();
-        console.log("Password fetched from the database:", adminData.password);
-        console.log("email fetched from the database:", adminData.email);
+        // console.log("Password fetched from the database:", adminData.password);
+        // console.log("email fetched from the database:", adminData.email);
 
         if (adminData.password === password) {
           setIsAdmin(true);

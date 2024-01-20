@@ -129,12 +129,12 @@ const LetsChatComponent = () => {
           <div className="chat-header">
             <div className="chat-header-image">
               <img
-                src="https://static.wixstatic.com/media/4cdf87_20a6654309cf4ea39eaaefed2f9cec32~mv2.png/v1/fill/w_353,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Collab%20Vision.png"
+                src="/imgforcollab//collabvision_logo.jpg"                
                 alt="Collab Visionspng"
               />
             </div>
             <div className="chat-header-text">
-              <h4>Collab Vision Infosolutions</h4>
+              <h4>Collab Vision InfoSolution</h4>
               <p>We’ll reply as soon as we can</p>
             </div>
           </div>

@@ -46,6 +46,7 @@ function Learning() {
     email: "",
     phoneNo: "",
     selectedOption: "",
+    selectedLevel:"",
   });
 
   const handleInputChange = (e) => {
@@ -63,7 +64,8 @@ function Learning() {
       !formData.firstName ||
       !formData.lastName ||
       !formData.email ||
-      !formData.selectedOption
+      !formData.selectedOption||
+      !formData.selectedLevel
     ) {
       alert("Please fill in the mandatory fields.");
       return;
@@ -76,10 +78,11 @@ function Learning() {
         email: formData.email,
         phoneNo: formData.phoneNo,
         selectedOption: formData.selectedOption,
+        selectedLevel: formData.selectedLevel,
         timestamp: new Date(),
       });
 
-      console.log("Feedback data sent to Firestore");
+      console.log(" data sent to Firestore");
 // Send email
 sendEmail();
       
@@ -105,9 +108,11 @@ if (response.ok) {
         email: "",
         phoneNo: "",
         selectedOption: "",
+        selectedLevel:"",
       });
     } catch (error) {
       console.error("Error sending data: ", error);
+      alert("Error sending data: ");
     }
   };
 
@@ -119,8 +124,8 @@ if (response.ok) {
       lastName: formData.lastName,
       email: formData.email,
       phoneNo: formData.phoneNo,
-      selectedOption: formData.selectedOption,
-      did:" one student registerd for cource",
+      selectedOption: formData.selectedOption ,
+      did:" one student registerd for cource at level  " + formData.selectedLevel  ,
       form:"Student registerd form Email",
       regardings:"This email is of collabvision.in."
     };
@@ -139,9 +144,11 @@ if (response.ok) {
         },
         (error) => {
           console.log(error.text);
+          alert.log(error.text);
         }
       );
   };
+
   return (
     <>
       <h1 className="HeaderText">Learning</h1>
@@ -157,7 +164,7 @@ if (response.ok) {
           />
         ))}
       </div>
-
+{/*  ===================Reg form=============================*/}
       <div className="contact-form-section">
         <form className="contact-form" onSubmit={handleSubmit}>
           <h2>Register Now</h2>
@@ -207,24 +214,66 @@ if (response.ok) {
               />
             </label>
             
+         
+
           <label className="op">
-            Select a course:
-            <select
-              name="selectedOption"
-              type="select"
-              className="lselect"
-              style={{ marginLeft: 20, width:760, height:60,borderColor:'#ccc',borderRadius:5, marginBottom:10, }}
-              value={formData.selectedOption}
-              onChange={handleInputChange}
-            >
-              <option value="" className="op"> Select a course</option>
-              {course.map((option) => (
-                <option key={option.value} value={option.value} className="op" >
-                  {option.label}
+              Select a course:
+              <select
+                name="selectedOption"
+                type="select"
+                className="lselect"
+                style={{
+                  marginLeft: 20,
+                  width: 760,
+                  height: 60,
+                  borderColor: "#ccc",
+                  borderRadius: 5,
+                  marginBottom: 10,
+                }}
+                value={formData.selectedOption}
+                onChange={handleInputChange}
+              >
+                <option value="" className="op">
+                  Select a course
                 </option>
-              ))}
-            </select>
-          </label>
+                {course.map((option) => (
+                  <option key={option.value} value={option.value} className="op">
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className="op">
+              Select a Level:
+              <select
+                name="selectedLevel"
+                type="select"
+                className="lselect"
+                style={{
+                  marginLeft: 20,
+                  width: 760,
+                  height: 60,
+                  borderColor: "#ccc",
+                  borderRadius: 5,
+                  marginBottom: 10,
+                }}
+                value={formData.selectedLevel}
+                onChange={handleInputChange}
+              >
+                <option value="" className="op">
+                  Select a level
+                </option>
+                {formData.selectedOption &&
+                  course
+                    .find((c) => c.value === formData.selectedOption)
+                    .levels.map((level) => (
+                      <option key={level} value={level} className="op">
+                        {level}
+                      </option>
+                    ))}
+              </select>
+            </label>
           </div>
           <input
             type="submit"

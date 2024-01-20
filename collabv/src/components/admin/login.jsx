@@ -46,8 +46,8 @@ const Login = () => {
       </form>
 
 
-    </div>
-    <div className="login">
+    {/* </div>
+    <div className="login"> */}
         
         <p >
           Do not have an account yet?{' '}

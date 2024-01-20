@@ -43,9 +43,9 @@ const Register = () => {
           </div>
           <button>Sign Up</button>
         </form>
-      </div>
+      {/* </div>
 
-      <div className="login">
+      <div className="login"> */}
         <p className="py-2">
           Already have an account yet?{" "}
           <Link to="/signin" >
