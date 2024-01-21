@@ -43,7 +43,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.chat-header-image {
+/* .chat-header-image {
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -51,12 +51,12 @@
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   margin-right: 10px;
-}
+} */
 
 .chat-header-image img {
   margin-top: 8px;
   width: 80px;
-  height: 60px;
+  height: 80px;
 }
 
 .chat-header-text {

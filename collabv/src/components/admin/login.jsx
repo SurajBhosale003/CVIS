@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../../context/AuthContext';
 
+import './logincss.css';
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -25,23 +27,10 @@ const Login = () => {
 
   return (
     <div >
-      <div>
+      <div className="login">
         <h1 >Sign in to your account</h1>
-        <p >
-          Do not have an account yet?{' '}
-          <Link to='/signup' >
-            Sign up.
-          </Link>
-          
-        </p>
-        <p >
-          If admin then login here{' '}
-          <Link to='/AdminLogin' >
-           admin Sign in.
-          </Link>
-
-        </p>
-      </div>
+       
+    
       <form onSubmit={handleSubmit}>
         <div >
           <label >Email Address</label>
@@ -57,6 +46,24 @@ const Login = () => {
       </form>
 
 
+    {/* </div>
+    <div className="login"> */}
+        
+        <p >
+          Do not have an account yet?{' '}
+          <Link to='/signup' >
+            Sign up.
+          </Link>
+          
+        </p>
+        <p >
+          If admin then login here{' '}
+          <Link to='/AdminLogin' >
+           admin Sign in.
+          </Link>
+
+        </p>
+      </div>
     </div>
   );
 };

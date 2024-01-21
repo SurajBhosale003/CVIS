@@ -1,13 +1,20 @@
 [
   {
-    "value": "Cloud Computing - saleforce",
-    "label": "Cloud Computing - saleforce"
-  },
-  { "value": "Software Testing",
-   "label": "Software Testing" 
+    "label": "Cloud computing - Salesforce",
+    "value": "Cloud_computing_Salesforcef",
+    "levels": ["Proficient", "Intermediate"],
+    "tags": ["Free"]
   },
   {
-    "value": "Cloud Computing - Mulesoft",
-    "label": "Cloud Computing - Mulesoft"
+    "label": "Software testing",
+    "value": "software_testing",
+    "levels": ["Proficient", "Intermediate"],
+    "tags": ["Free"]
+  },
+  {
+    "label": "Cloud computing - Mulesoft",
+    "value": "cloud_mulesoft",
+    "levels": ["Proficient", "Intermediate"],
+    "tags": ["Free"]
   }
 ]
