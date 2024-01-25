@@ -100,6 +100,7 @@ function ContactUs() {
             className="contact-map"
             allowFullScreen=""
             loading="lazy"
+            alt="CollabVision Map"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>

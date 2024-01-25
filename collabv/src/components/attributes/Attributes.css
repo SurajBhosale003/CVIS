@@ -4,7 +4,7 @@ nav{
   align-items: contex;
   justify-content: space-between;
   padding: 10px 40px;
-  background-color: rgba(235, 233, 244, 0.708);
+  background-color: white;
 }
 
 .navbar{
@@ -113,4 +113,11 @@ nav{
 
 .socialMedia-icons a:hover {
   color: #333;
+}
+.notfound{
+  border: 2px solid #ccc;
+  box-shadow: 5 5px 16px 0 rgba(0,1,1);
+  text-align: center;
+  padding: 10px;
+  height: 480px;
 }

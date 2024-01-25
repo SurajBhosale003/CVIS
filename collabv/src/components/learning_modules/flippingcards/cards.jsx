@@ -15,7 +15,7 @@ export class FlipCard extends Component {
                                 backgroundPosition: 'center',
                                 backgroundColor:'#00d4ff'
                             }}>
-                             <Button variant="contained" href="/learning/ccmulcontent" style={{ color: 'white', backgroundColor:'#090979', marginTop:150, marginLeft:150, height:70,width:140, fontSize:40 }}>Join</Button>  
+                             <Button variant="contained" href="https://drive.google.com/drive/folders/1jSBufzEmjrYoLTyB_VfZmyL659BU2N6w" style={{ color: 'white', backgroundColor:'#090979', marginTop:130, marginLeft:175, height:70,width:170, fontSize:40 }}>Syllabus</Button>  
                         </div>
                     </FlippingCardBack>
                     <FlippingCardFront>
@@ -41,7 +41,7 @@ export class FlipCard extends Component {
                                 backgroundPosition: 'center',
                                 backgroundColor:'#00d4ff'
                             }}>
-                            <Button variant="contained" href="/learning/ccmulcontent" style={{ color: 'white', backgroundColor:'#090979', marginTop:150, marginLeft:150, height:70,width:140, fontSize:40 }}>Join</Button>
+                            <Button variant="contained" href="https://drive.google.com/drive/folders/1jSBufzEmjrYoLTyB_VfZmyL659BU2N6w" style={{ color: 'white', backgroundColor:'#090979', marginTop:130, marginLeft:175, height:80,width:170, fontSize:40 }}>Syllabus</Button>
                         </div>
                     </FlippingCardBack>
                     <FlippingCardFront>

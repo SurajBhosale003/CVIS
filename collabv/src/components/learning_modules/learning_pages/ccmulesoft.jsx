@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
-import { Button } from '@mui/material'
 import { Image } from 'antd'
-import { Collapse } from 'antd';
+// import { Collapse } from 'antd';
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LinkIcon from '@mui/icons-material/Link';
 import FlipCard from '../flippingcards/cards';
 import "../learning_pages/index.css";
-import { dataforccMulpage } from '../learning_pages/data.json'
-const items = dataforccMulpage;
+// import { dataforccMulpage } from '../learning_pages/data.json'
+// const items = dataforccMulpage;
 
 export class ccmulesoft extends Component {
     render() {
@@ -33,9 +32,9 @@ export class ccmulesoft extends Component {
                     <p>Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. Large clouds often have functions distributed over multiple locations, each of which is a data center.</p>
                     <p>You can also join this program via the mobile app.<a href='#'> Go to the app</a></p>
                 </div>
-                <div style={{ marginRight: '250px', marginLeft: '250px' }}>
+                {/* <div style={{ marginRight: '250px', marginLeft: '250px' }}>
                     <Collapse items={items} />
-                </div>
+                </div> */}
                 <FlipCard/>
                 <hr className='hrs' />
                 <div className='pf'>

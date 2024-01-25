@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import { Button } from '@mui/material'
+// import { Button } from '@mui/material'
 import { Image } from 'antd'
-import { Collapse } from 'antd';
+// import { Collapse } from 'antd';
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LinkIcon from '@mui/icons-material/Link';
 import "../learning_pages/index.css";
-import {dataforSoftwarepage} from '../learning_pages/data.json'
-const items= dataforSoftwarepage;
-
+// import {dataforSoftwarepage} from '../learning_pages/data.json'
+// const items= dataforSoftwarepage;
+import FlipCard from '../flippingcards/cards';
 export class softwaretestinfpage extends Component {
     render() {
         return (
@@ -17,14 +17,14 @@ export class softwaretestinfpage extends Component {
             <div style={{ padding: '10px', textAlign: 'center' }}>
                 <h1 style={{ marginBottom: '10px' }}>Software Testing</h1>
                 <h2 style={{ marginBottom: '20px' }}>4 Participants</h2>
-                <Button variant="contained" href="/learning/ccpage/SoftwareTesting" style={{color: 'white'}}>Join</Button>
+                {/* <Button variant="contained" href="/learning/ccpage/SoftwareTesting" style={{color: 'white'}}>Join</Button> */}
             </div>
             <div className='image'>
                 <Image 
-                    height={500}
-                    width={1380}
-                    style={{ display: 'block', margin: 'auto' }}
-                    src="https://www.devprojournal.com/wp-content/uploads/2020/02/software-testing-768x432.jpg"
+                    height={518}
+                    width={1450}
+                    style={{ display: 'flex', margin:0,objectFit:'cover', alignContent: 'center', borderRadius:10 }}
+                    src="/imgforcollab/CollabVisionInfosolutuionsoftware-testing.jpg"
                 />
             </div>
             <div style={{ padding: '10px' }}>
@@ -32,11 +32,12 @@ export class softwaretestinfpage extends Component {
                 <p>In the tech industry, Software Testing is a highly sought-after position. Testing plays a vital role in the software development process by preventing bugs, reducing development costs, and improving performance. Software testing is integral to software development because it improves software quality, performance, and reliability and helps determine whether the software works correctly. Both manual and automation testing are in high demand to increase system performance.</p>
                 <p>You can also join this program via the mobile app.<a href='#'> Go to the app</a></p>
             </div>
-            <div style={{ marginRight: '250px', marginLeft:'250px' }}>
+            {/* <div style={{ marginRight: '250px', marginLeft:'250px' }}>
                 <Collapse items={items} />
-            </div>
+            </div> */}
+            <FlipCard/>
             <hr className='hrs' />
-            <div className='priceandfree'>
+            <div className='pf'>
                 <h3>Price</h3>
                 <p>Free</p>
             </div>
@@ -56,7 +57,7 @@ export class softwaretestinfpage extends Component {
               <LinkIcon fontSize="large"  />
             </a>
           </div>
-                <Button variant="contained" href="/learning/ccpage/ccpagecontent" style={{color: 'white' , alignItems:'center',margin:10, marginLeft: '47%'}}>Join</Button>
+                {/* <Button variant="contained" href="/learning/ccpage/ccpagecontent" style={{color: 'white' , alignItems:'center',margin:10, marginLeft: '47%'}}>Join</Button> */}
             </div>
         )
     }

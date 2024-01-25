@@ -36,7 +36,7 @@ import AdminLogin from "./components/admin/AdminLogin";
 import AdminDashboard from "./components/admin/AdminDashboard";
 import Register from "./components/admin/Register";
 import Login from "./components/admin/Login";
-
+import Notfound from "./components/attributes/notfound";
 import Products from "./components/products/productinfo";
 import "./App.css";
 
@@ -124,6 +124,7 @@ function App() {
                 element={<SoftwareTesting />}
               />
               <Route path="/learning/ccmulesoft" element={<Ccmulesoft />} />
+              <Route path="/not-found" element={<Notfound/>} />
             </Routes>
           </AdminContextProvider>
         </AuthContextProvider>
