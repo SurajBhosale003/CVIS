@@ -51,27 +51,30 @@ nav{
 /*footer*/
  .footer {
   background-color: #f4f4f4;
-  padding: 50px 0;
+  
 }
 
 .footer h2 {
-  margin-left: 2%;
+  margin-left: 40%;
+  margin-top: 3%;
+  font-weight: 800;
+  font-size: 1.7rem;
+  color: rgb(43, 43, 43);
+
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin-left: 4%;
   margin-top: 20px;
 }
 
 .footer-section {
-  flex: 1;
+   width: 40%;
   color: #333;
-  margin: 0 20px;
-  margin-left: 5%;
+  margin:2%;
+    margin-left: auto;
+ 
 }
 
 .footer-section h2 {
@@ -83,37 +86,33 @@ nav{
   margin-bottom: 20px;
 }
 
-.enroll-button {
-  padding: 10px 20px;
-  background-color: #4c6ef5;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 
 .Address {
+  display: flex;
   text-align: center;
   margin-top: 10px;
-  display: flex;
   align-items: center;
+  padding-right: 2%;
 }
 
-.contact-info p {
-  margin-left: 10px;
+
+.socialMediaIcons{
+margin-left:25%;
 }
 
-/* Follow */
-.socialMedia-icons a {
-  color: #01559F;
-  font-size: 50px;
-  margin-right: 10px;
-  display: inline-flex;
-  align-items: center;
+.socialMediaIcons a {
+  color: #1f477e;
+  font-size: 75px; 
+  margin: 1%;
+ 
 }
 
-.socialMedia-icons a:hover {
+.socialMediaIcons a:hover {
   color: #333;
 }
+
+
 .notfound{
   border: 2px solid #ccc;
   box-shadow: 5 5px 16px 0 rgba(0,1,1);
@@ -121,3 +120,4 @@ nav{
   padding: 10px;
   height: 480px;
 }
+

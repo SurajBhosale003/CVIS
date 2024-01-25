@@ -1,14 +1,14 @@
 
 .GiveFeedback-container
 {
-  margin-top: -23%;   
+  margin-top: -21%;   
   height: 100vh;
-  width:50%;
+  width:45%;
   text-align: center;
-  margin-left: 25%;   
-  margin-right: 25%;   
+  margin-left: 25%;
   align-items: center;
   justify-content: center;
+
  
 }
   
@@ -20,9 +20,9 @@
   .row-feedback {
     display: flex;
     align-items: baseline;
-    margin-bottom: 15px;
-    margin-left: 15%;
-    width:60%;
+    margin-bottom: 15px;  
+    width:auto;
+   
   }
   
   .label-group {
@@ -34,7 +34,7 @@
   }
   
   .GiveFeedback-container  label {
-    margin-left: 15px  ;
+    /* margin-left: 15px  ; */
     font-weight: bold;
     color: #000;
   }
@@ -67,7 +67,7 @@
   .textarea-container{
     padding-top: 2rem;
     align-items: left;
-    margin-left: 15%;
+    margin-left: auto;
     margin-right: 15%;
   }
   
@@ -78,7 +78,7 @@
     font-size: 16px;
     color: #000;
     outline: none;
-    width :100%;
+    width :20rem;
    
   }
 
@@ -100,14 +100,12 @@
     margin-top: 40px;
     border-radius: 4px;
     padding: 10px 20px;
-    cursor: pointer;
-    font-size: 0.75rem;
-    text-align: center;   
+    cursor: pointer;   
     align-items: center;
   }
   
   .btn-container button:hover {
-        background-color: #0056b3;
+        background-color: rgb(28, 80, 101);
   }
   
 
