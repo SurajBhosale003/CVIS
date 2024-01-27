@@ -138,6 +138,7 @@ function App() {
 }
 
 export default App;
+
 // import { lazy, Suspense } from "react";
 // const LetsChat = lazy(()=>import("./components/chatboot/LetsChat"));
 // const AboutUs= lazy(()=>import("./components/about_us/AboutUs"))

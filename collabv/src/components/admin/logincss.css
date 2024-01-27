@@ -67,4 +67,12 @@
     margin-top: 10px;
   }
 
+  .googleSignin{
+    border-radius: 2%;
+  }
+
+  .googleSignin button{
+    margin: 2% auto;
+  }
+
   

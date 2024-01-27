@@ -27,13 +27,13 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Follow</h3>
           <div className="socialMediaIcons">
-          <a href="https://www.instagram.com/collabvisioninfo/" >
+          <a href="https://www.instagram.com/collabvisioninfo/" target= "blank" >
               <InstagramIcon fontSize="large" />
             </a>
-            <a href ="https://www.facebook.com/sujatapradeepbadi/">
+            <a href ="https://www.facebook.com/sujatapradeepbadi/" target= "blank">
               <FacebookIcon fontSize="large"  />
             </a>
-            <a href="https://www.linkedin.com/in/collab-vision-infosolutions-24844426b/">
+            <a href="https://www.linkedin.com/in/collab-vision-infosolutions-24844426b/" target= "blank">
               <LinkedInIcon fontSize="large"  />
             </a>
           </div>
