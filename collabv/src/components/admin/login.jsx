@@ -45,10 +45,7 @@ const Login = () => {
         </button>
       </form>
 
-
-    {/* </div>
-    <div className="login"> */}
-        
+    
         <p >
           Do not have an account yet?{' '}
           <Link to='/signup' >
@@ -69,3 +66,4 @@ const Login = () => {
 };
 
 export default Login;
+

@@ -111,24 +111,12 @@ export default function AboutUs() {
             </p>
           </div>
 
-          {/*           <div className="tools-section">
-            <h2>From MuleSoft Developer's Eye</h2>
-            <p>Learn the essential tools needed for MuleSoft development:</p>
-            <ol>
-              <li>GitHub and GitHub Desktop - Push code to repositories</li>
-              <li>Postman - Test applications or APIs</li>
-              <li>AnyPoint Platform & Studio - Design the code</li>
-            </ol>
-          </div> */}
+          
         </div>
 
         <div className="aboutUs-bottom-image">
-          {/* <img src={imgaeLeft} alt="imgageLeft"  /> */}
           <img src="/imgforcollab/collabvisonaboutus_footer.webp" alt="imgageLeft"  />
-          {/* <img
-            src="https://static.wixstatic.com/media/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg/v1/fill/w_912,h_1510,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg"
-            alt="imgageLeft"
-          /> */}
+          
         </div>
       </div>
     </>

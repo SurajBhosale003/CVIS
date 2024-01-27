@@ -13,3 +13,5 @@ const PrivateRoutsAdmin = ({ children }) => {
 };
 
 export default PrivateRoutsAdmin;
+
+

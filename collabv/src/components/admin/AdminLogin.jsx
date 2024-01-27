@@ -52,8 +52,7 @@ const AdminLogin = () => {
           <button>Sign In</button>
         </form>
         {error && <p>{error}</p>}
-      {/* </div>
-      <div className="login"> */}
+    
         <p>
           Not an admin? <Link to="/">Go to home</Link>
         </p>

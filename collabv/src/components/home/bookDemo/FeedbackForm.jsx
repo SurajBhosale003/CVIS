@@ -37,10 +37,6 @@ const FeedbackForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // if (!formData.firstName || !formData.lastName || !formData.email) {
-    //   alert("Please fill in the mandatory fields.");
-    //   return;
-    // }
 
     try {
       await addDoc(collection(db, "feedback"), {

@@ -3,10 +3,8 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* background-image: url('https://static.wixstatic.com/media/c837a6_f4e6a031f8634c259512f0b4bbbdfe8f~mv2.jpg'); */
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk_PXP9WzShzBtEIYGvVMoIqDxZHKHGbPq1g&usqp=CAU');
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk_PXP9WzShzBtEIYGvVMoIqDxZHKHGbPq1g&usqp=CAU');
-    /* background-color: rgba(255, 255, 255, 0.5); */
     background-size: cover;
     background-position: center;
 }

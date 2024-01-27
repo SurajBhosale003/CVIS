@@ -1,29 +1,4 @@
-/* .HeaderText{
-    text-align: center;
-    font-size: 1500;
-    text-emphasis: 200;
-}
-.Headerimage{
-    position: relative;
-    width: 1380px; 
-    height: 300px; 
-    justify-content: center;
-    margin-left: 4%;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    border-radius: 5px;
-}
 
-.mainCard{
-    padding: 10px;
-    margin-top: 10px;
-}
- .cards .mainCard{
-    padding: 2rem;
- } */
- 
-
-/* Updated styles */
 .HeaderText {
     text-align: center;
     font-size: 2rem;

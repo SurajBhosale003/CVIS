@@ -5,12 +5,9 @@
    justify-content: center;
    text-align: center;
    padding: 10%;
-   padding-top: 3%;
-   /* background-image: url(https://img.freepik.com/premium-photo/white-question-mark-background-question-marks-3d-illustration_230313-222.jpg); */
-   /* background-image: url(https://www.choicescreening.com/hs-fs/hubfs/FAQ.jpeg?width=852&name=FAQ.jpeg); */
-   /* background-image: url(https://images.pexels.com/photos/11183364/pexels-photo-11183364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
-  background-color: rgb(148, 233, 205);
+   padding-top: 3%; background-color: rgb(148, 233, 205);
 }
+
 .faq h1{
   color: black;
   margin-top: 0;

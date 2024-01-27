@@ -43,15 +43,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* .chat-header-image {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  overflow: hidden;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin-right: 10px;
-} */
 
 .chat-header-image img {
   margin-top: 8px;
@@ -157,7 +148,6 @@
     bottom: 4rem;
     color: #000;
     border: none;
-    /* border-radius: 0.3125rem; */
     border: 0.0625rem solid #000;
 
     cursor: pointer;
@@ -172,3 +162,5 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
+
+  
