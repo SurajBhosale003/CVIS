@@ -162,9 +162,10 @@ const BookDemo = () => {
                   <form className="BookDemo-form" onSubmit={handleSubmit}>
                     <h2>Register Now</h2>
                     <div className="BookDemo-form-container">
-                      <label  style={{ paddingBottom: 20}}>
+                      
+                      <label  >
                         First Name:
-                        
+                        </label>
                         <input
                           type="text"
                           name="firstName"
@@ -172,9 +173,10 @@ const BookDemo = () => {
                           value={formData.firstName}
                           onChange={handleInputChange}
                         />
-                      </label>
-                      <label style={{ marginTop: 20}} >
+                       
+                      <label  >
                         Last Name:
+                        </label>
                         <input
                           type="text"
                           name="lastName"
@@ -182,9 +184,11 @@ const BookDemo = () => {
                           value={formData.lastName}
                           onChange={handleInputChange}
                         />
-                      </label>
+                        
+                        
                       <label>
                         Email:
+                        </label>
                         <input
                           type="email"
                           name="email"
@@ -192,10 +196,11 @@ const BookDemo = () => {
                           value={formData.email}
                           onChange={handleInputChange}
                         />
-                      </label>
-                      <br/>
+                        
+                      
                       <label>
                         Phone No:
+                        </label>
                         <input
                           type="text"
                           name="phoneNo"
@@ -203,17 +208,9 @@ const BookDemo = () => {
                           value={formData.phoneNo}
                           onChange={handleInputChange}
                         />
-                      </label>
 
                     </div>
-                    <Button variant="contained" type="submit"  value="Submit" style={{
-                        color: 'white',
-                        backgroundColor: '#0056b3',
-                        width: 350,
-                        textAlign: 'center',
-                        padding: 10,
-                        margin:25
-                      }} >
+                    <Button variant="contained" type="submit"  value="Submit" styles={{padding:"2%" , margin : "2%"}}>
                     submit
                                  
                     </Button>

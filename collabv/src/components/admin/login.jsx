@@ -1,10 +1,7 @@
-/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import GoogleIcon from "@mui/icons-material/Google";
-
+import googleLogo from "../../assets/googleLogo.jpeg";
 import { UserAuth } from "../../context/AuthContext";
-import { auth } from "../../firebase";
 
 import "./logincss.css";
 
@@ -26,12 +23,16 @@ const Login = () => {
     } catch (e) {
       alert(e.message);
       setError(e.message);
-      console.log(e.message);
     }
   };
+
   const handleGoogleSignIn = async () => {
     try {
       await googleSignIn();
+      if (user != null) {
+        navigate("/account");
+      }
+     
     } catch (error) {
       console.log(error);
     }
@@ -64,7 +65,12 @@ const Login = () => {
         </form>
 
         <div className="googleSignin">
-          <button onClick={handleGoogleSignIn}> Sign in with Google</button>
+          <p onClick={handleGoogleSignIn}>
+            <button>
+              <img src={googleLogo} alt="googleLogo" />
+              Sign in with Google
+            </button>
+          </p>
         </div>
         <p>
           Do not have an account yet? <Link to="/signup">Sign up.</Link>

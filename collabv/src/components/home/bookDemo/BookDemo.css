@@ -79,41 +79,67 @@
  .BookDemo-form-section {
   background: rgb(232, 220, 204);
   color: black;
-  width: 600px;
-  margin: auto; 
-  padding: 20px;
+  max-width: 500px;
+  max-height: 600px;
+  margin: auto 10%; 
+  padding: 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   border-radius: 10px; 
  }
 
 .BookDemo-form {
-  margin: 2rem;
-  text-align: left;
+  margin: auto ;
+ padding: 0%;
   color: #000;
  
 }
 
-.BookDemo-form label {
+.BookDemo-form h2 {
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+.BookDemo-form-container {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.BookDemo-form-container p {
+  margin: 10px 0;
+}
+
+.BookDemo-form-container label {
+  font-weight: bold;
   text-align: left;
-  font-size: 1rem;
-  color: #000;
 }
 
-.BookDemo-form input {
-  height: 1.8rem;
-  width: 80%; 
-  margin-bottom: 2rem; 
-  border: 1px solid #ccc;
-  border-radius: 5px; 
-  
+.BookDemo-form-container input[type="text"],
+.BookDemo-form-container input[type="email"] {
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc; 
 }
 
-.BookDemo-form input:hover {
-  border-color: #555;
+.BookDemo-form-container input[type="text"]:focus,
+.BookDemo-form-container input[type="email"]:focus {
+  outline: none;
+  border-color: #0056b3; 
 }
 
-.csubmit{
- 
-  text-align: center;
-  padding: 100px;
+.Button-submit {
+  color: white;
+  background-color: #0056b3; 
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Button-submit:hover {
+  background-color: #004080; 
 }
