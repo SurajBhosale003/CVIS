@@ -1,0 +1,12 @@
+.account{
+    align-items: center;
+    margin:   auto 40% ;
+
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    margin:2% 30%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

@@ -1,3 +1,5 @@
+import './account.css';
+
 import { useNavigate } from 'react-router-dom';
 import { UserAuth } from '../../context/AuthContext';
 
@@ -16,10 +18,9 @@ const Account = () => {
   };
 
   return (
-    <div >
+    <div className = "account">
       <h1 >Account</h1>
       <p>User Email: {user && user.email}</p>
-
       <button onClick={handleLogout} >
         Logout
       </button>

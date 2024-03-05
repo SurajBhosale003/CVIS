@@ -1,10 +1,24 @@
-
-
 import "./Attributes.css";
 import Logo from "/imgforcollab//collabvision_logo.jpg";
 
+import { useNavigate } from "react-router-dom";
+import { UserAuth } from "../../context/AuthContext";
+
 function Navbar() {
-   
+  const { user, logout } = UserAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate("/");
+      console.log("You are logged out");
+    } catch (e) {
+      console.log(e.message);
+    }
+  };
+
+  
   return (
     <>
       <nav>
@@ -36,12 +50,15 @@ function Navbar() {
             <li>
               <a href="/contact">Contact Us</a>
             </li>
-              <li>
-                <a href="/signup">Login</a>
-              </li>
+            <li>
+           { !user &&  <a href="/signup">Login</a>}
+            {user &&  <button onClick={handleLogout}>Logout</button>}
+            </li>
             <li>
               <a href="/pagenotfound"></a>
             </li>
+
+          
           </ul>
         </div>
       </nav>
@@ -50,4 +67,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
